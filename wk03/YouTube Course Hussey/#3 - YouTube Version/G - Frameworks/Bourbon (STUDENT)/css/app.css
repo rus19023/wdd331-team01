@@ -1,0 +1,61 @@
+/* PLUGINS */
+/* BASE STYLES */
+body {
+  font-size: 14px;
+  background: #c69; }
+
+.brand {
+  background: center no-repeat;
+  height: 56px;
+  margin: 30px auto; }
+
+h2, h3 {
+  font-size: 25.2px;
+  font-weight: normal;
+  text-align: center; }
+
+h3 {
+  color: #699;
+  padding: 10px 0;
+  font-size: 19.6px;
+  text-transform: uppercase; }
+
+footer {
+  text-align: center;
+  color: #df9fbf; }
+
+/* LAYOUTS */
+header {
+  text-align: center; }
+
+.container {
+  padding: 30px;
+  width: 960px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  background: white;
+  position: relative; }
+  .container::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 10px;
+    left: -10px;
+    background: #bf4080;
+    box-shadow: -10px 10px 0 #c6538c; }
+
+/* MODULES */
+.box {
+  background: #699;
+  color: white;
+  border: solid 1px shade(#699, 20%);
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 100px;
+  margin: 0 30px 0 0; }
+  .box:last-child {
+    margin-right: 0; }
+
+/*# sourceMappingURL=app.css.map */

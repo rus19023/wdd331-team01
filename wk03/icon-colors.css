@@ -1,0 +1,80 @@
+html {
+  padding: 1rem;
+}
+
+.sunflower {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: #9C6E00;
+}
+.sunflower:nth-of-type(2) {
+  background: #F3D900;
+}
+.sunflower:nth-of-type(3) {
+  background: #E19235;
+}
+
+.lotus {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: #BB516C;
+}
+.lotus:nth-of-type(2) {
+  background: #CEA4AE;
+}
+.lotus:nth-of-type(3) {
+  background: #F1F5F6;
+}
+.lotus:nth-of-type(4) {
+  background: #F4E642;
+}
+
+.pansy {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: #EEE600;
+}
+.pansy:nth-of-type(2) {
+  background: #FECA01;
+}
+.pansy:nth-of-type(3) {
+  background: #251182;
+}
+
+.forgetmenot {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: #527BE5;
+}
+.forgetmenot:nth-of-type(2) {
+  background: #C6B90B;
+}
+.forgetmenot:nth-of-type(3) {
+  background: #7D9D14;
+}
+.forgetmenot:nth-of-type(4) {
+  background: #F3F8FF;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid1 {
+  display: grid;
+}
+
+.grid2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+/*# sourceMappingURL=icon-colors.css.map */

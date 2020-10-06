@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Meetup//RemoteApi//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-ORIGINAL-URL:https://www.meetup.com/Philadelphia-WordPress-Meetup-Group
+ /events/273241991/ical/Count+Down+to+WordCamp+Philly!.ics
+X-WR-CALNAME:Events - Count Down to WordCamp Philly%21.ics
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:America/New_York
+TZURL:http://tzurl.org/zoneinfo-outlook/America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200917T030850Z
+DTSTART;TZID=America/New_York:20200917T183000
+DTEND;TZID=America/New_York:20200917T210000
+STATUS:CONFIRMED
+SUMMARY:Count Down to WordCamp Philly!
+DESCRIPTION:Philadelphia WordPress Meetup Group\nThursday\, September 17 
+ at 6:30 PM\n\nSEPTEMBER VIRTUAL MEETUP: Countdown to WordCamp Philly 202
+ 0! WordCamp Philly is the premiere WordPress-related conference in Phila
+ delphia (got your ti...\n\nhttps://www.meetup.com/Philadelphia-WordPress
+ -Meetup-Group/events/273241991/
+CLASS:PUBLIC
+CREATED:20200914T022740Z
+GEO:39.95;-75.19
+LOCATION:Online event
+URL:https://www.meetup.com/Philadelphia-WordPress-Meetup-Group/events/273
+ 241991/
+LAST-MODIFIED:20200915T150235Z
+UID:event_273241991@meetup.com
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,84 @@
+/* -----------------------
+predefined 
+----------------------- */
+
+body
+{
+	margin: 0;
+	padding: 2em;
+	color: #555;
+	background: #fff;
+	font: 100%/1.3 helvetica, arial, sans-serif;
+}
+
+/* -----------------------
+rule sets
+----------------------- */
+h1, h2, h3 {
+	color: #0060a2;
+	margin: 0 0 .5em;
+}
+/* -----------------------
+type selectors 
+----------------------- */
+p, blockquote, li {
+	line-height: 1.5;
+
+}
+
+p {
+	margin: 0 0 1.5em;
+}
+
+blockquote {
+	margin: 1em 0;
+	padding: 1em 0;
+	border-top: 1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
+	color: 976500;
+	font-size: 120%;
+
+}
+
+abbr {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+/* -----------------------
+class selectors 
+----------------------- */
+
+/* -----------------------
+id selectors 
+----------------------- */
+
+/* -----------------------
+universal selector 
+----------------------- */
+/* -----------------------
+descendant selector 
+----------------------- */
+
+/* -----------------------
+child selector 
+----------------------- */
+
+/* -----------------------
+adjacent sibling selector 
+----------------------- */
+
+/* -----------------------
+general sibling selector 
+----------------------- */
+
+/* -----------------------
+links selector 
+----------------------- */
+
+/* -----------------------
+first-line selector 
+----------------------- */
+
+/* -----------------------
+first-letter selector 
+----------------------- */

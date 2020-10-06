@@ -1,0 +1,294 @@
+@use "sass:color";
+// base color variables
+$crimson: #a51c30;
+// Other color variables
+
+
+$color-base: #904d01;
+$color-analogous-base: color.adjust($color-base, $hue: 30deg);
+$color-analogous2-base: color.adjust($color-base, $hue: -30deg);
+$color-complementary-base: color.complement($color-base);
+
+// monochromatic
+// TODO add if statement to toggle font color for dark/light background color
+$color-light: lighten($color-base, 30%);
+$color-dark: darken($color-base, 30%);
+$color-accent: saturate($color-base, 20%);
+$color-highlight: lighten($color-base, 20%);
+$color-shade: color.mix($color-base, #000, 30%);
+$color-tint: color.mix($color-base, #fff, 30%);
+
+// analogous
+$color-analogous-light: $color-analogous-base;// lighten($color-analogous-base, 40%);
+$color-analogous-dark: $color-analogous2-base; // darken($color-analogous-base, 20%);
+$color-analogous-accent: saturate(
+  adjust-color($color-analogous-base, $hue: 30%),
+  20%
+);
+$color-analogous-highlight: lighten(
+  saturate(adjust-color($color-analogous-base, $hue: 300), 30%),
+  20%
+);
+$color-analogous-shade: color.mix($color-analogous-base, #000, 30%);
+$color-analogous-tint: color.mix($color-analogous-base, #fff, 30%);
+
+// complementary
+$color-complementary-light: lighten($color-complementary-base, 30%);
+$color-complementary-dark: darken($color-complementary-base, 20%);
+$color-complementary-accent: saturate(
+  adjust-color($color-complementary-base, $hue: 180),
+  20%
+);
+$color-complementary-shade: color.mix($color-complementary-base, #000, 30%);
+$color-complementary-tint: color.mix($color-complementary-base, #fff, 30%);
+
+// Monochrome
+// TODO add ::before/::after each color: hex code, color name, rgb, sat, hue, lightness
+.chip {
+  &span:after {
+  content: "#{$color-base}";
+  font-size: 42px;
+  color: white;
+}
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: $color-base;
+  &:nth-of-type(2) {
+    background: $color-light;
+  }
+  &:nth-of-type(3) {
+    background: $color-dark;
+  }
+  &:nth-of-type(4) {
+    background: $color-accent;
+  }
+  &:nth-of-type(5) {
+    background: $color-shade;
+  }
+  &:nth-of-type(6) {
+    background: $color-tint;
+  }}
+
+// analogous
+.analogous {
+  .chip {
+    background: $color-analogous-base;
+    &:nth-of-type(2) {
+      background: $color-analogous2-base;
+    }
+    &:nth-of-type(3) {
+      background: $color-analogous-dark;
+    }
+    &:nth-of-type(4) {
+      background: $color-analogous-accent;
+    }
+    &:nth-of-type(5) {
+      background: $color-analogous-highlight;
+    }
+  }
+}
+
+// complementary
+.complementary {
+  .chip {
+    background: $color-complementary-base;
+    &:nth-of-type(2) {
+      background: $color-complementary-light;
+    }
+    &:nth-of-type(3) {
+      background: $color-complementary-dark;
+    }
+    &:nth-of-type(4) {
+      background: $color-complementary-accent;
+    }
+    &:nth-of-type(5) {
+      background: $color-complementary-shade;
+    }
+    &:nth-of-type(6) {
+      background: $color-complementary-tint;
+    }
+  }
+}
+
+// reset <li> styles
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Mono:500);
+
+html {
+    background-color: #b0bec5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    padding: 1em;
+}
+
+.material-color-picker {
+    display: flex;
+    width: 32em;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #78909c;
+    border-radius: 0.5em;
+    box-shadow: 0 1em 8em rgba(black, 0.35);
+    
+    &__left-panel {
+        z-index: 1;
+    }
+    
+    &__right-panel {
+        position: relative;
+        flex-grow: 1;
+        overflow: hidden;
+    }
+}
+
+.color-selector { // this whole chunk could be done better/smarter
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    border-right: 0.25em solid #E0E0E0;
+    
+    input[type='radio'] {
+        display: none;
+    }
+    
+    label {
+        position: relative;
+        display: inline-block;
+        padding: 0.5em 1.5em;
+        cursor: pointer;
+        
+        &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0.75em;
+            background-color: currentColor;
+            border-radius: 50%;
+        }
+        
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            padding: 0.5em;
+            border: 0.25em solid;
+            border-radius: 50%;
+            
+            transition: padding 250ms;
+        }
+    }
+    
+    input[type='radio']:checked + label:after {
+        padding: 1em;
+    }
+} // end sucky chunk
+
+.color-palette-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    //transition: transform 250ms;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    
+    &.js-active {
+        transform: translateX(0);
+    }
+}
+
+.color-palette-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 1em;
+    font-weight: 400;
+    color: #757575;
+}
+
+.color-palette {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+        
+        margin: 0.25em 0;
+        padding: 0 1em;
+        border-radius: 0.25em;
+        font-family: "Roboto Mono", monospace;
+        
+        transition: transform 250ms;
+        cursor: pointer;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+.copied-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: all 250ms;
+
+    &.js-copied {
+        transform: translate(-50%, -50%);
+        opacity: 0.75;
+    }
+}
+
+
+/*
+
+@function set-color-theme(
+$primary,
+$secondary: darken($primary, 10%),
+$tertiary: lighten($primary, 10%)
+) {
+// Do something
+}
+$color-theme: set-color-theme(hotpink, $tertiary: pink);
+
+
+
+$base-color: red;
+
+@debug lightness($base-color);
+// 40%
+
+@debug saturation($base-color);
+// 50%;
+
+
+adjust-color($base-color, $hue: 120deg, $saturation: 30, $lightness: 10)
+
+*/
