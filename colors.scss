@@ -1,0 +1,266 @@
+// VARIABLES
+// Colors
+$color1: #EAA307;
+$color2: #BB516C;
+$color3: #FFCB0C;
+$color4: #251182;
+$color5: #000000;
+$color6: #c7c4b3;
+$color7: #7c9150;
+$color8: #ac094b;
+$color9: #1fd145;
+
+
+$header-font: #ac094b;
+$border-green: #7c9150;
+$background-grey: #c7c4b3;
+$text-font: #000;
+
+$lighter1: mix($color1, white, 50%);
+$lighter2: mix($color2, white, 50%);
+$lighter3: mix($color3, white, 50%);
+$lighter4: mix($color4, white, 50%);
+$lighter5: mix($color5, white, 50%);
+$lighter6: mix($color6, white, 50%);
+$lighter7: mix($color7, white, 50%);
+$lighter8: mix($color8, white, 50%);
+$lighter9: mix($color9, white, 50%);
+
+
+
+$lighter21: mix($color1, white, 25%);
+$lighter22: mix($color2, white, 25%);
+$lighter23: mix($color3, white, 25%);
+$lighter24: mix($color4, white, 25%);
+$lighter25: mix($color5, white, 25%);
+$lighter26: mix($color6, white, 25%);
+$lighter27: mix($color7, white, 25%);
+$lighter28: mix($color8, white, 25%);
+$lighter29: mix($color9, white, 25%);
+
+$comp1: complement($color1);
+$comp2: complement($color2);
+$comp3: complement($color3);
+$comp4: complement($color4);
+$comp5: complement($color5);
+$comp6: complement($color6);
+$comp7: complement($color7);
+$comp8: complement($color8);
+$comp9: complement($color9);
+
+$comp21: mix($comp1, white, 25%);
+$comp22: mix($comp2, white, 25%);
+$comp23: mix($comp3, white, 25%);
+$comp24: mix($comp4, white, 25%);
+$comp25: mix($comp5, white, 25%);
+$comp26: mix($comp6, white, 25%);
+$comp27: mix($comp7, white, 25%);
+$comp28: mix($comp8, white, 25%);
+$comp29: mix($comp9, white, 25%);
+
+
+
+// MIXINS
+
+@mixin hex() {
+  .hex::before {
+    content: #{$color1};
+  }
+}
+      
+html {
+  line-height: .25rem;
+}
+
+div {
+  line-height: 1rem;
+}
+
+h1 {
+    padding: 1rem;
+  }
+
+  p {
+    padding: .4rem;
+  }
+
+  
+  
+  .swatch {
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #000;
+    display: inline-block;
+    background: $color1;
+  }
+  .swatch:nth-of-type(2) {
+    background: $color2;
+  }
+  .swatch:nth-of-type(3) {
+    background:$color3;
+  }
+  .swatch:nth-of-type(4) {
+    background: $color4;
+  }
+  .swatch:nth-of-type(5) {
+    background: $color5;
+  }
+  .swatch:nth-of-type(6) {
+    background: $color6;
+  }
+  .swatch:nth-of-type(7) {
+    background: $color7;
+  }
+  .swatch:nth-of-type(8) {
+    background: $color8;
+  }
+  .swatch:nth-of-type(9) {
+    background: $color9;
+  }  
+  
+  .lighter1 {
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #000;
+    display: inline-block;
+    background: $lighter1;
+  }
+  .lighter1:nth-of-type(2) {
+    background: $lighter2;
+  }
+  .lighter1:nth-of-type(3) {
+    background:$lighter3;
+  }
+  .lighter1:nth-of-type(4) {
+    background: $lighter4;
+  }
+  .lighter1:nth-of-type(5) {
+    background: $lighter5;
+  }
+  .lighter1:nth-of-type(6) {
+    background: $lighter6;
+  }
+  .lighter1:nth-of-type(7) {
+    background: $lighter7;
+  }
+  .lighter1:nth-of-type(8) {
+    background: $lighter8;
+  }
+  .lighter1:nth-of-type(9) {
+    background: $lighter9;
+  }
+  
+  .lighter2 {
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #000;
+    display: inline-block;
+    background: $lighter21;
+  }
+  .lighter2:nth-of-type(2) {
+    background: $lighter22;
+  }
+  .lighter2:nth-of-type(3) {
+    background:$lighter23;
+  }
+  .lighter2:nth-of-type(4) {
+    background: $lighter24;
+  }
+  .lighter2:nth-of-type(5) {
+    background: $lighter25;
+  }
+  .lighter2:nth-of-type(6) {
+    background: $lighter26;
+  }
+  .lighter2:nth-of-type(7) {
+    background: $lighter27;
+  }
+  .lighter2:nth-of-type(8) {
+    background: $lighter28;
+  }
+  .lighter2:nth-of-type(9) {
+    background: $lighter29;
+  }
+  
+  .comp1 {
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #000;
+    display: inline-block;
+    background: $comp1;
+  }
+  .comp1:nth-of-type(2) {
+    background: $comp2;
+  }
+  .comp1:nth-of-type(3) {
+    background:$comp3;
+  }
+  .comp1:nth-of-type(4) {
+    background: $comp4;
+  }
+  .comp1:nth-of-type(5) {
+    background: $comp5;
+  }
+  .comp1:nth-of-type(6) {
+    background: $comp6;
+  }
+  .comp1:nth-of-type(7) {
+    background: $comp7;
+  }
+  .comp1:nth-of-type(8) {
+    background: $comp8;
+  }
+  .comp1:nth-of-type(9) {
+    background: $comp9;
+  }
+  
+  
+  .comp2 {
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #000;
+    display: inline-block;
+    background: $comp21;
+  }
+  .comp2:nth-of-type(2) {
+    background: $comp22;
+  }
+  .comp2:nth-of-type(3) {
+    background:$comp23;
+  }
+  .comp2:nth-of-type(4) {
+    background: $comp24;
+  }
+  .comp2:nth-of-type(5) {
+    background: $comp25;
+  }
+  .comp2:nth-of-type(6) {
+    background: $comp26;
+  }
+  .comp2:nth-of-type(7) {
+    background: $comp27;
+  }
+  .comp2:nth-of-type(8) {
+    background: $comp28;
+  }
+  .comp2:nth-of-type(9) {
+    background: $comp29;
+  }
+  
+  .title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    grid-gap: 1rem;
+  }
+  
+  .grid1 {
+    display: grid;
+  }
+  
+  .grid2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  /*# sourceMappingURL=icon-colors.css.map */
+  
