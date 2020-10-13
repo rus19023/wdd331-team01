@@ -382,39 +382,39 @@ p {
   height: 4rem;
   border: 2px solid #000;
   display: inline-block;
-  background: #f59983;
+  background: #faccc1;
 }
 
 .analogousr2:nth-of-type(2) {
-  background: #dda8d0;
+  background: #eed4e8;
 }
 
 .analogousr2:nth-of-type(3) {
-  background: #ffa986;
+  background: #ffd4c2;
 }
 
 .analogousr2:nth-of-type(4) {
-  background: #889bc1;
+  background: #c4cde0;
 }
 
 .analogousr2:nth-of-type(5) {
-  background: gray;
+  background: #bfbfbf;
 }
 
 .analogousr2:nth-of-type(6) {
-  background: #e3ddd9;
+  background: #f1eeec;
 }
 
 .analogousr2:nth-of-type(7) {
-  background: #c8c3a8;
+  background: #e4e1d3;
 }
 
 .analogousr2:nth-of-type(8) {
-  background: #d684ce;
+  background: #eac2e7;
 }
 
 .analogousr2:nth-of-type(9) {
-  background: #a9e88f;
+  background: #d4f4c7;
 }
 
 .title {

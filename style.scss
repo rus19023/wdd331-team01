@@ -4,11 +4,26 @@
 $header-font: #ac094b;
 $border-green: #7c9150;
 $background-grey: #c7c4b3;
-$text-font: #000;
+$original-bgd: #251182;
+$animate-bgd: mix($original-bgd, white, 25%);
+$text: $animate-bgd;
+$animate-text: $original-bgd;
 
 body {
     display: grid;
-    grid-template-columns: repeat(3);
-    border: 1px solid $header-font;
 }
+
+div {
+    grid-template-columns: auto;
+    border: 3px solid $header-font;
+    padding: 1rem;
+    background: $original-bgd;
+    color: $text;
+    &:hover {
+        background: $animate-bgd;
+        color: $animate-text;
+    }
+}
+
+
 
