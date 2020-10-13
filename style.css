@@ -1,18 +1,53 @@
 body {
   display: grid;
+  padding: 1rem;
 }
 
-div {
+.page-wrapper {
   grid-template-columns: auto;
-  border: 3px solid #09AC6A;
+  background: #BB516C;
+  color: #eed4da;
+}
+.page-wrapper:hover {
+  background: #eed4da;
+  color: #BB516C;
+}
+
+.intro {
+  background: #ac094b;
+  color: #eac2d2;
+}
+.intro:hover {
+  background: #eac2d2;
+  color: #ac094b;
+}
+
+.summary {
   padding: 1rem;
   background: #09AC6A;
   color: #c2eada;
 }
-div:hover {
+.summary:hover {
   background: #c2eada;
   color: #09AC6A;
-  border: 3px solid #c2eada;
+}
+
+.preamble {
+  background: #FFCB0C;
+  color: #fff5ce;
+}
+.preamble:hover {
+  background: #fff5ce;
+  color: #FFCB0C;
+}
+
+.explanation {
+  background: #251182;
+  color: #c9c4e0;
+}
+.explanation:hover {
+  background: #c9c4e0;
+  color: #251182;
 }
 
 /*# sourceMappingURL=style.css.map */

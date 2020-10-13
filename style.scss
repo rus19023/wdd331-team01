@@ -1,30 +1,74 @@
 // VARIABES
 
 // COLORS
-$header-font: #ac094b;
-$border-green: #09AC6A ;
-$background-grey: #c7c4b3;
-$original-bgd: $border-green;
-$animate-bgd: mix($border-green, white, 25%);
-$text: $animate-bgd;
-$animate-text: $original-bgd;
+$burgundy: #ac094b;
+$burgundy-light: mix($burgundy, white, 25%);
+
+$green: #09AC6A;
+$green-light: mix($green, white, 25%);
+
+$blue: #251182;
+$blue-light: mix($blue, white, 25%);
+
+$yellow: #FFCB0C;
+$yellow-light: mix($yellow, white, 20%);
+
+$pink: #BB516C;
+$pink-light: mix($pink, white, 25%);
+
+@mixin reverse {
+    
+}
 
 body {
     display: grid;
+    padding: 1rem;
 }
 
-div {
+.page-wrapper {  
     grid-template-columns: auto;
-    border: 3px solid $original-bgd;
-    padding: 1rem;
-    background: $original-bgd;
-    color: $text;
+    background:$pink;
+    color:$pink-light;
     &:hover {
-        background: $animate-bgd;
-        color: $animate-text;
-        border: 3px solid $animate-bgd;
+        background:$pink-light;
+        color:$pink;
     }
 }
 
 
+.intro {        
+    background: $burgundy;
+    color: $burgundy-light;
+    &:hover {
+        background: $burgundy-light;
+        color: $burgundy;
+    }
+}
 
+.summary {
+    padding: 1rem;
+    background: $green;
+    color: $green-light;
+    &:hover {
+        background: $green-light;
+        color: $green;
+    }
+}
+
+.preamble {    
+    background:$yellow;
+    color:$yellow-light;
+    &:hover {
+        background:$yellow-light;
+        color:$yellow;
+    }
+}
+
+.explanation {    
+    background:$blue;
+    color:$blue-light;
+    &:hover {
+        background:$blue-light;
+        color:$blue;
+    }
+}
