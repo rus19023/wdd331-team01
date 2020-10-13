@@ -1,14 +1,25 @@
 // VARIABLES
 // Colors
-$color1: #EAA307;
-$color2: #BB516C;
-$color3: #FFCB0C;
-$color4: #251182;
-$color5: #000000;
-$color6: #c7c4b3;
+$color1: #BB516C;
+$color2: #FFCB0C;
+$color3: #251182;
+$color6: #09AC6A;
 $color7: #7c9150;
 $color8: #ac094b;
 $color9: #1fd145;
+$color4: complement($color8);
+$color5: complement($color8);
+
+@function encodecolor($string) {
+  @if type-of($string) == 'color' and str-index(#{$string}, '#') == 1 {
+    $hex: str-slice(ie-hex-str($string), 4);
+    $string: unquote('#{$hex}');
+
+    @return '#' + $string;
+  }
+
+  @return $string;
+}
 
 $colors: (
   color1: #EAA307,
@@ -134,6 +145,10 @@ $analogousr29: mix($analogousr9, white, 25%);
   $light2: mix($base-color, white, 50%);
   $dark: mix($base-color, black, 40%);
 }
+
+.element {
+  @debug $color4;
+}
       
 html {
   line-height: .25rem;
@@ -157,12 +172,13 @@ h1 {
     border: 2px solid #000;
     display: inline-block;
     background: $color1;
-    &::before {
+    &:before {
       content: #{$color1};
     }
   }
   .swatch:nth-of-type(2) {
     background: $color2;
+
   }
   .swatch:nth-of-type(3) {
     background:$color3;

@@ -2,10 +2,10 @@
 
 // COLORS
 $header-font: #ac094b;
-$border-green: #7c9150;
+$border-green: #09AC6A ;
 $background-grey: #c7c4b3;
-$original-bgd: #251182;
-$animate-bgd: mix($original-bgd, white, 25%);
+$original-bgd: $border-green;
+$animate-bgd: mix($border-green, white, 25%);
 $text: $animate-bgd;
 $animate-text: $original-bgd;
 

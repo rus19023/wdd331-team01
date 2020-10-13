@@ -4,14 +4,15 @@ body {
 
 div {
   grid-template-columns: auto;
-  border: 3px solid #ac094b;
+  border: 3px solid #09AC6A;
   padding: 1rem;
-  background: #251182;
-  color: #c9c4e0;
+  background: #09AC6A;
+  color: #c2eada;
 }
 div:hover {
-  background: #c9c4e0;
-  color: #251182;
+  background: #c2eada;
+  color: #09AC6A;
+  border: 3px solid #c2eada;
 }
 
 /*# sourceMappingURL=style.css.map */
