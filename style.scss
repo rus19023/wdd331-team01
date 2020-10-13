@@ -15,13 +15,14 @@ body {
 
 div {
     grid-template-columns: auto;
-    border: 3px solid $header-font;
+    border: 3px solid $original-bgd;
     padding: 1rem;
     background: $original-bgd;
     color: $text;
     &:hover {
         background: $animate-bgd;
         color: $animate-text;
+        border: 3px solid $animate-bgd;
     }
 }
 
