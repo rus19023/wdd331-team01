@@ -16,7 +16,7 @@ $yellow-light: mix($yellow, white, 20%);
 $pink: #BB516C;
 $pink-light: mix($pink, white, 25%);
 
-@mixin reverse {
+@mixin reverse-colors {
     
 }
 
@@ -46,7 +46,17 @@ body {
 }
 
 .summary {
-    padding: 1rem;
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    background-color: red;
+    text-align: center;
+    padding: 2.4em 1.4em .6em 1.4em;
+    //$size: 400px;
+    // width: $size;
+    // height: $size;
+    // border-radius: $size / 2;
+    // padding: 2rem;
     background: $green;
     color: $green-light;
     &:hover {
@@ -71,4 +81,112 @@ body {
         background:$blue-light;
         color:$blue;
     }
+}
+
+.main {
+
+}
+
+.supporting {
+
+}
+
+.participation {
+
+}
+
+.benefits {
+
+}
+
+.requirements {
+
+}
+
+.sidebar {
+
+}
+
+.wrapper {
+
+}
+
+.design-selection {
+
+}
+
+.select {
+
+}
+
+.designer-name {
+
+}
+
+.design-name {
+
+}
+
+.design-archives {
+
+}
+
+.archives {
+
+}
+
+.next {
+
+}
+
+.viewall {
+
+}
+
+.zen-resources {
+
+}
+
+.view-css {
+
+}
+
+.css-resources {
+
+}
+
+.zen-faq {
+
+}
+
+.zen-submit {
+
+}
+
+.zen-translations {
+
+}
+
+.zen-validate-html {
+
+}
+
+.zen-validate-css {
+
+}
+
+.zen-license {
+
+}
+
+.zen-accessibility {
+
+}
+
+.zen-github {
+
+}
+
+.indicator {
+
 }

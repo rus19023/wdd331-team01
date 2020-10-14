@@ -23,7 +23,12 @@ body {
 }
 
 .summary {
-  padding: 1rem;
+  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+  background-color: red;
+  text-align: center;
+  padding: 2.4em 1.4em 0.6em 1.4em;
   background: #09AC6A;
   color: #c2eada;
 }
