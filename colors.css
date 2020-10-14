@@ -34,15 +34,15 @@ p {
 }
 
 .swatch:nth-of-type(4) {
-  background: #09ac6a;
+  background: #09AC6A;
 }
 
 .swatch:nth-of-type(5) {
-  background: #09ac6a;
+  background: #8B4513;
 }
 
 .swatch:nth-of-type(6) {
-  background: #c7c4b3;
+  background: #09AC6A;
 }
 
 .swatch:nth-of-type(7) {
@@ -78,11 +78,11 @@ p {
 }
 
 .lighter1:nth-of-type(5) {
-  background: #84d6b5;
+  background: #c5a289;
 }
 
 .lighter1:nth-of-type(6) {
-  background: #e3e2d9;
+  background: #84d6b5;
 }
 
 .lighter1:nth-of-type(7) {
@@ -118,11 +118,11 @@ p {
 }
 
 .lighter2:nth-of-type(5) {
-  background: #c2eada;
+  background: #e2d1c4;
 }
 
 .lighter2:nth-of-type(6) {
-  background: #f1f0ec;
+  background: #c2eada;
 }
 
 .lighter2:nth-of-type(7) {
@@ -158,11 +158,11 @@ p {
 }
 
 .comp1:nth-of-type(5) {
-  background: #ac094b;
+  background: #13598b;
 }
 
 .comp1:nth-of-type(6) {
-  background: #b3b6c7;
+  background: #ac094b;
 }
 
 .comp1:nth-of-type(7) {
@@ -198,11 +198,11 @@ p {
 }
 
 .comp2:nth-of-type(5) {
-  background: #d684a5;
+  background: #89acc5;
 }
 
 .comp2:nth-of-type(6) {
-  background: #d9dbe3;
+  background: #d684a5;
 }
 
 .comp2:nth-of-type(7) {
@@ -238,11 +238,11 @@ p {
 }
 
 .comp3:nth-of-type(5) {
-  background: #eac2d2;
+  background: #c4d6e2;
 }
 
 .comp3:nth-of-type(6) {
-  background: #ecedf1;
+  background: #eac2d2;
 }
 
 .comp3:nth-of-type(7) {
@@ -278,11 +278,11 @@ p {
 }
 
 .analogousl:nth-of-type(5) {
-  background: #099dac;
+  background: #8b8113;
 }
 
 .analogousl:nth-of-type(6) {
-  background: #c0c7b3;
+  background: #099dac;
 }
 
 .analogousl:nth-of-type(7) {
@@ -318,11 +318,11 @@ p {
 }
 
 .analogousr:nth-of-type(5) {
-  background: #09ac19;
+  background: #8b131d;
 }
 
 .analogousr:nth-of-type(6) {
-  background: #c7bab3;
+  background: #09ac19;
 }
 
 .analogousr:nth-of-type(7) {
@@ -358,11 +358,11 @@ p {
 }
 
 .analogousl2:nth-of-type(5) {
-  background: #c2e7ea;
+  background: #e2e0c4;
 }
 
 .analogousl2:nth-of-type(6) {
-  background: #eff1ec;
+  background: #c2e7ea;
 }
 
 .analogousl2:nth-of-type(7) {
@@ -398,11 +398,11 @@ p {
 }
 
 .analogousr2:nth-of-type(5) {
-  background: #c2eac6;
+  background: #e2c4c7;
 }
 
 .analogousr2:nth-of-type(6) {
-  background: #f1eeec;
+  background: #c2eac6;
 }
 
 .analogousr2:nth-of-type(7) {
