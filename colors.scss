@@ -10,15 +10,15 @@ $color7: #7c9150;
 $color8: #ac094b;
 $color9: #1fd145;
 
-@function encodecolor($string) {
-  @if type-of($string) == 'color' and str-index(#{$string}, '#') == 1 {
-    $hex: str-slice(ie-hex-str($string), 4);
-    $string: unquote('#{$hex}');
+@function get-hex-code($color-string) {
+  @if type-of($color-string) == 'color' and str-index(#{color-$string}, '#') == 1 {
+    $code: str-slice(ie-hex-str($color-string), 4);
+    $color-string: unquote('#{$code}');
 
-    @return '#' + $string;
+    @return '#' + $color-string;
   }
 
-  @return $string;
+  @return $color-string;
 }
 
 $colors: (
