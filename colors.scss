@@ -3,12 +3,12 @@
 $color1: #BB516C;
 $color2: #FFCB0C;
 $color3: #251182;
+$color4: #09AC6A;
+$color5: #8B4513;
 $color6: #09AC6A;
 $color7: #7c9150;
 $color8: #ac094b;
 $color9: #1fd145;
-$color4: complement($color8);
-$color5: complement($color8);
 
 @function encodecolor($string) {
   @if type-of($string) == 'color' and str-index(#{$string}, '#') == 1 {
@@ -30,7 +30,7 @@ $colors: (
   color6: #c7c4b3,
   color7: #7c9150,
   color8: #ac094b,
-  color9: #1fd145
+  color9: #09AC6A
   );
 
 $header-font: #ac094b;
