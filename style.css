@@ -3,47 +3,38 @@ body {
   padding: 1rem;
 }
 
-.page-wrapper {
+.page-wrapper, .preamble {
   grid-template-columns: auto;
-  background: #BB516C;
-  color: #eed4da;
+  background: #8B4513;
+  color: #e2d1c4;
 }
-.page-wrapper:hover {
-  background: #eed4da;
-  color: #BB516C;
-}
-
-.intro {
-  background: #ac094b;
-  color: #eac2d2;
-}
-.intro:hover {
-  background: #eac2d2;
-  color: #ac094b;
+.page-wrapper:hover, .preamble:hover {
+  background: #e2d1c4;
+  color: #8B4513;
 }
 
 .summary {
   border-radius: 50%;
   height: 12rem;
-  width: 12rem;
+  width: 18rem;
   background-color: red;
   text-align: center;
   padding: 2.4em 1.4em 0.6em 1.4em;
-  background: #09AC6A;
-  color: #c2eada;
+  background: #8B4513;
+  color: #8B4513;
+}
+.summary p a {
+  color: #8B4513;
+}
+.summary p a:visited {
+  color: #8B4513;
 }
 .summary:hover {
   background: #c2eada;
   color: #09AC6A;
 }
-
-.preamble {
-  background: #FFCB0C;
-  color: #fff5ce;
-}
-.preamble:hover {
-  background: #fff5ce;
-  color: #FFCB0C;
+.summary:hovera:visited {
+  color: #09AC6A;
 }
 
 .explanation {

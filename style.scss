@@ -1,8 +1,8 @@
 // VARIABES
 
 // COLORS
-$burgundy: #ac094b;
-$burgundy-light: mix($burgundy, white, 25%);
+$brown: #8B4513;
+$brown-light: mix($brown, white, 25%);
 
 $green: #09AC6A;
 $green-light: mix($green, white, 25%);
@@ -25,30 +25,24 @@ body {
     padding: 1rem;
 }
 
-.page-wrapper {  
+.page-wrapper, .preamble {  
     grid-template-columns: auto;
-    background:$pink;
-    color:$pink-light;
+    background:$brown;
+    color:$brown-light;
     &:hover {
-        background:$pink-light;
-        color:$pink;
+        background:$brown-light;
+        color:$brown;
     }
 }
 
 
-.intro {        
-    background: $burgundy;
-    color: $burgundy-light;
-    &:hover {
-        background: $burgundy-light;
-        color: $burgundy;
-    }
+.intro {
 }
 
 .summary {
     border-radius: 50%;
     height: 12rem;
-    width: 12rem;
+    width: 18rem;
     background-color: red;
     text-align: center;
     padding: 2.4em 1.4em .6em 1.4em;
@@ -57,21 +51,24 @@ body {
     // height: $size;
     // border-radius: $size / 2;
     // padding: 2rem;
-    background: $green;
-    color: $green-light;
+    background: $brown;
+    color: $brown;
+    & p a {
+        color: $brown;
+        &:visited {
+            color: $brown;
+        }
+    }
     &:hover {
         background: $green-light;
         color: $green;
+        &a:visited {
+            color: $green;
+        }
     }
 }
 
-.preamble {    
-    background:$yellow;
-    color:$yellow-light;
-    &:hover {
-        background:$yellow-light;
-        color:$yellow;
-    }
+.preamble {
 }
 
 .explanation {    
