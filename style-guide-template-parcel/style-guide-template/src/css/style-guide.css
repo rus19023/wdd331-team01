@@ -59,7 +59,8 @@ xBackground
 -------------------------------- */
 body {
   /* this is the page background */
-  background-color: #3d2818;
+
+  background-color: skyblue;
 }
 
 /* -------------------------------- 
@@ -175,7 +176,7 @@ xTypography
 h1,
 h2 {
   font-family: "Roboto", serif;
-  color: #ffe586;
+  color: #9288c1;
 }
 
 h1 {
@@ -251,6 +252,7 @@ xButtons
   background: #c2637b;
 }
 .btn.btn-success {
+<<<<<<< HEAD
   background: #6fce72;
 }
 .no-touch .btn.btn-success:hover {
@@ -260,7 +262,17 @@ xButtons
   background: #251182;
 }
 .no-touch .btn.btn-alert:hover {
-  background: #2b1499;
+    background: #56b859;
+}
+.no-touch .btn.btn-success:hover {
+  background: #68c06b;
+}
+.btn.btn-alert {
+  background: #f00;
+}
+.no-touch .btn.btn-alert:hover {
+  background: #ff1a1a;
+
 }
 .btn.btn-outline {
   color: #bb516c;
@@ -279,7 +291,9 @@ xButtons
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
-  color: #bb516c;
+
+  background: #bb516c;
+
 }
 
 /* -------------------------------- 
@@ -314,12 +328,14 @@ input[type=text] {
   box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
 }
 input[type=text].success {
-  border-color: #6fce72;
-  box-shadow: 0 0 6px rgba(111, 206, 114, 0.2);
+
+  border-color: #56b859;
+  box-shadow: 0 0 6px rgba(86, 184, 89, 0.2);
 }
 input[type=text].alert {
-  border-color: #251182;
-  box-shadow: 0 0 6px rgba(37, 17, 130, 0.2);
+  border-color: #f00;
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.2);
+
 }
 input[type=text]:focus {
   border-color: #bb516c;
@@ -912,6 +928,7 @@ section:nth-of-type(10) h2::before {
   background: #f2be00;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
+
   background: #251182;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::before {

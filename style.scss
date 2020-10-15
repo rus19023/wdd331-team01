@@ -5,10 +5,10 @@ $brown: #3d2818;
 $brown-light: mix($brown, white, 25%);
 
 $green: #09ac6a;
-$green-light: mix($green, white, 25%);
+$green-light: mix($green, white, 15%);
 
 $blue: #251182;
-$blue-light: mix($blue, white, 25%);
+$blue-light: mix($blue, white, 15%);
 
 $yellow: #ffcb0c;
 $yellow-light: mix($yellow, white, 20%);
@@ -21,22 +21,30 @@ $pink-light: mix($pink, white, 25%);
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr;
+    //display: grid;
+    //grid-template-columns: 1fr;
     padding: 1rem;
 }
 
 .page-wrapper { 
-    grid-template-columns: 1fr;
-    background:$brown;
-    color:$brown-light;
+    //grid-template-columns: 1fr;
+    background:$blue;
+    color:$blue-light;
     border: 5px solid mix(green, white, 50%);
+
+    &:hover {
+        background: $blue-light;
+        color: $blue;
+        & a:visited {
+            color: $blue;
+        }
+    }
 }
 
 .intro {
-    grid-template-columns: 1fr 1fr 1fr;
+    //grid-template-columns: 1fr 1fr 1fr;
     border-radius: 50%;
-    height: 12rem;
+    //height: 12rem;
     max-width: 100%;
     text-align: center;
     padding: 2.4em 1.4em .6em 1.4em;
@@ -78,7 +86,7 @@ body {
     color:$brown-light;
     & p {        
     border-radius: 50%;
-    height: 12rem;
+    //height: 12rem;
     width: 18rem;
     text-align: center;
     padding: 2.4em 1.4em .6em 1.4em;
@@ -100,8 +108,8 @@ body {
 }
 
 .main {
-    grid-template-columns: 1fr 1fr 1fr;
-    border: 5px solid mix(indigo, white, 75%);
+    //grid-template-columns: 1fr 1fr 1fr;
+    border: 5px solid mix(indigo, white, 65%);
     background: $brown;
     color: $brown-light;
     &:hover {

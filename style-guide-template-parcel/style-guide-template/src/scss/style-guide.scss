@@ -6,14 +6,15 @@
 
 $color-1: #bb516c; // lotus pink - Action color
 $color-2: #ffcb0c; // 
-$color-3: #251182; // Dark Blue
+$color-3: #251183; // Dark Blue
 $color-4: #09ac6a; // leaf green
 $color-5: #3d2818; // dirt brown
+$color-6: skyblue;
 
 // additional colors
 
-$success: #6fce72; // green
-$alert: $color-3; // red
+$success: #56b859; // green
+$alert: #f00; // red
 
 // fonts
 $primary-font: 'Poppin', sans-serif;
@@ -29,7 +30,7 @@ xBackground
 
 body {
   /* this is the page background */
-  background-color: $color-5;
+  background-color: $color-6;
 }
 
 /* -------------------------------- 
@@ -135,7 +136,7 @@ xButtons
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
-  color: $color-1;
+  background: $color-1;
 }
 
 /* -------------------------------- 
