@@ -1,7 +1,6 @@
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
-@import 'partials/typography';
 
 // color palette - these colors will be the color swatches of the Colors section
 
@@ -17,8 +16,10 @@ $success: #6fce72; // green
 $alert: $color-3; // red
 
 // fonts
-$primary-font: 'Merriweather', serif;
-$secondary-font: 'Open Sans', sans-serif;
+$primary-font: 'Poppin', serif;
+$secondary-font: 'Roboto', sans-serif;
+
+@import 'partials/typography';
 
 /* -------------------------------- 
 
@@ -147,6 +148,12 @@ main > h1 {
     color: $color-5;
   }
 }
+
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
 
 /* -------------------------------- 
 
