@@ -10,17 +10,6 @@ $color7: #7c9150;
 $color8: #ac094b;
 $color9: #8b4513;
 
-@function get-hex-code($color-string) {
-  @if type-of($color-string) == 'color' and str-index(#{color-$string}, '#') == 1 {
-    $code: str-slice(ie-hex-str($color-string), 4);
-    $color-string: unquote('#{$code}');
-
-    @return '#' + $color-string;
-  }
-
-  @return $color-string;
-}
-
 $colors: (
   color1: #eaa307,
   color2: #bb516c,
@@ -32,6 +21,13 @@ $colors: (
   color8: #ac094b,
   color9: #09ac6a
   );
+
+  
+  
+// MIXINS 
+@import 'mixins';
+// FUNCTIONS
+@import 'functions';
 
 $header-font: #ac094b;
 $border-green: #7c9150;
@@ -127,24 +123,6 @@ $analogousr26: mix($analogousr6, white, 25%);
 $analogousr27: mix($analogousr7, white, 25%);
 $analogousr28: mix($analogousr8, white, 25%);
 $analogousr29: mix($analogousr9, white, 25%);
-
-// MIXINS & FUNCTIONS
-
-@mixin hex() {
-  .hex::before {
-    content: "Color code:";
-  }
-}
-
-@function color-varieties($base-color) {
-  $comp1: complement($base-color);
-  $comp2: mix(complement($base-color), white, 25%);
-  $accent: mix($comp2, black, 20%);
-  $highlight: mix($base-color, black, 20%);
-  $light1: mix($base-color, white, 25%);
-  $light2: mix($base-color, white, 50%);
-  $dark: mix($base-color, black, 40%);
-}
 
 .element {
   @debug $color4;

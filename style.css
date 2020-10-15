@@ -1,20 +1,22 @@
 body {
-  display: grid;
-  grid-template-columns: 1fr;
   padding: 1rem;
 }
 
 .page-wrapper {
-  grid-template-columns: 1fr;
-  background: #3d2818;
-  color: #cfc9c5;
+  background: #251182;
+  color: #dedbec;
   border: 5px solid #80c080;
+}
+.page-wrapper:hover {
+  background: #dedbec;
+  color: #251182;
+}
+.page-wrapper:hover a:visited {
+  color: #251182;
 }
 
 .intro {
-  grid-template-columns: 1fr 1fr 1fr;
   border-radius: 50%;
-  height: 12rem;
   max-width: 100%;
   text-align: center;
   padding: 2.4em 1.4em 0.6em 1.4em;
@@ -33,7 +35,7 @@ body {
   color: #3d2818;
 }
 .summary:hover {
-  background: #c2eada;
+  background: #daf3e9;
   color: #09ac6a;
 }
 .summary:hover a:visited {
@@ -47,7 +49,6 @@ body {
 }
 .preamble p {
   border-radius: 50%;
-  height: 12rem;
   width: 18rem;
   text-align: center;
   padding: 2.4em 1.4em 0.6em 1.4em;
@@ -68,8 +69,7 @@ body {
 }
 
 .main {
-  grid-template-columns: 1fr 1fr 1fr;
-  border: 5px solid #7840a1;
+  border: 5px solid #8a59ae;
   background: #3d2818;
   color: #cfc9c5;
 }
