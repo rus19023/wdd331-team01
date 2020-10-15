@@ -1,14 +1,14 @@
 // VARIABLES
 // Colors
-$color1: #BB516C;
-$color2: #FFCB0C;
+$color1: #bb516C;
+$color2: #ffcb0c;
 $color3: #251182;
-$color4: #09AC6A;
-$color5: #8B4513;
-$color6: #09AC6A;
+$color4: #09ac6a;
+$color5: #3d2818;
+$color6: #532c10;
 $color7: #7c9150;
 $color8: #ac094b;
-$color9: #1fd145;
+$color9: #8b4513;
 
 @function get-hex-code($color-string) {
   @if type-of($color-string) == 'color' and str-index(#{color-$string}, '#') == 1 {
@@ -22,15 +22,15 @@ $color9: #1fd145;
 }
 
 $colors: (
-  color1: #EAA307,
-  color2: #BB516C,
-  color3: #FFCB0C,
+  color1: #eaa307,
+  color2: #bb516c,
+  color3: #ffcb0c,
   color4: #251182,
   color5: #000000,
   color6: #c7c4b3,
   color7: #7c9150,
   color8: #ac094b,
-  color9: #09AC6A
+  color9: #09ac6a
   );
 
 $header-font: #ac094b;
