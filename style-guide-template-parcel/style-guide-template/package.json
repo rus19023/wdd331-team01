@@ -18,6 +18,9 @@
     "sass": "^1.23.0"
   },
   "dependencies": {
-    "js": "^0.1.0"
+    "@popperjs/core": "^2.5.3",
+    "js": "^0.1.0",
+    "node-forge": "^0.10.0",
+    "urix": "^0.1.0"
   }
 }
