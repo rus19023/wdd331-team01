@@ -287,10 +287,53 @@ xButtons
 xIcons 
 
 -------------------------------- */
-.cd-icons li {
-  /* icons size */
-  width: 32px;
-  height: 32px;
+.btn {
+  border: none;
+  box-shadow: none;
+  border-radius: 0.25em;
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  padding: 0.6em 2.2em;
+  cursor: pointer;
+  background: #5f8ee4;
+}
+.btn:focus {
+  outline: none;
+}
+.no-touch .btn:hover {
+  background: #759de8;
+}
+.btn.btn-success {
+  background: #6fce72;
+}
+.no-touch .btn.btn-success:hover {
+  background: #82d485;
+}
+.btn.btn-alert {
+  background: #e4655f;
+}
+.no-touch .btn.btn-alert:hover {
+  background: #e87a75;
+}
+.btn.btn-outline {
+  color: #5f8ee4;
+  background: transparent;
+  box-shadow: inset 0 0 0 1px #5f8ee4;
+}
+.no-touch .btn.btn-outline:hover {
+  color: #ffffff;
+  background: #5f8ee4;
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+}
+
+.cd-buttons .cd-box:nth-of-type(2) span {
+  /* CSS class name color */
+  color: #5f8ee4;
 }
 
 /* -------------------------------- 
