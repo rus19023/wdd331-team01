@@ -1,7 +1,6 @@
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
-@import 'partials/navigation';
 
 // color palette - these colors will be the color swatches of the Colors section
 
@@ -20,7 +19,7 @@ $alert: $color-3; // red
 $primary-font: 'Poppin', serif;
 $secondary-font: 'Roboto', sans-serif;
 
-@import 'partials/typography';
+
 
 /* -------------------------------- 
 
@@ -53,7 +52,7 @@ xPatterns
 xNavigation 
 
 -------------------------------- */
-
+@import 'partials/navigation';
 /* -------------------------------- 
 
 xPage title 
@@ -74,7 +73,7 @@ main > h1 {
 xTypography 
 
 -------------------------------- */
-
+@import 'partials/typography';
 /* -------------------------------- 
 
 xButtons 
