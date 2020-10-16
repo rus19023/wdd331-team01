@@ -1,11 +1,4 @@
-// breakpoints
-   
-$S:     768px;   
-$M:     1024px;     
-$L:     1600px;   
-
 // media queries
-
 
 @mixin MQ($canvas) {
   @if $canvas == S {
