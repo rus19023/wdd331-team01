@@ -59,7 +59,8 @@ xBackground
 -------------------------------- */
 body {
   /* this is the page background */
-  background-color: #b7e2f3;
+
+  background-color: skyblue;
 }
 
 /* -------------------------------- 
@@ -71,7 +72,7 @@ xPatterns
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
   border: 1px solid #09ac6a;
   border-radius: 3px;
-  background: #8b4513;
+  background: #3d2818;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px;
 }
@@ -82,7 +83,7 @@ xNavigation
 
 -------------------------------- */
 header {
-  background-color: #251183;
+  background-color: #ffcb0c;
 }
 
 .cd-logo {
@@ -101,7 +102,7 @@ header {
   background: #ffcb0c;
 }
 .cd-main-nav li a {
-  color: #8b4513;
+  color: #3d2818;
   border-color: #ffd026;
 }
 @media only screen and (min-width: 1024px) {
@@ -109,30 +110,30 @@ header {
     color: #fff7d8;
   }
   .cd-main-nav li a.selected {
-    color: #8b4513;
+    color: #3d2818;
     box-shadow: 0 2px 0 #bb516c;
   }
   .cd-main-nav li a:hover {
-    color: #8b4513;
+    color: #3d2818;
   }
 }
 
 .cd-nav-trigger span {
   /* hamburger menu */
-  background-color: #8b4513;
+  background-color: #3d2818;
 }
 .cd-nav-trigger span::before, .cd-nav-trigger span::after {
   /* upper and lower lines */
-  background-color: #8b4513;
+  background-color: #3d2818;
 }
 
 .nav-is-visible .cd-nav-trigger span {
   /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(139, 69, 19, 0);
+  background-color: rgba(61, 40, 24, 0);
 }
 .nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
   /* preserve visibility of upper and lower lines - close icon */
-  background-color: saddlebrown;
+  background-color: #3d2818;
 }
 
 .cd-download {
@@ -145,7 +146,7 @@ header {
 .cd-download span {
   /* tooltip */
   background: #bb516c;
-  color: #8b4513;
+  color: #3d2818;
 }
 .cd-download span::before {
   /* right arrow color */
@@ -163,14 +164,14 @@ main > h1 {
 @media only screen and (min-width: 1600px) {
   main > h1 {
     /* title goes into the header on big devices */
-    color: #8b4513;
+    color: #3d2818;
   }
 }
 
 /* -------------------------------- 
 
 xTypography 
-
+(moved to partial file named typography)
 -------------------------------- */
 h1,
 h2 {
@@ -239,7 +240,7 @@ xButtons
   border-radius: 0.25em;
   font-size: 1.4rem;
   font-family: "Roboto", serif;
-  color: #8b4513;
+  color: #3d2818;
   padding: 0.6em 2.2em;
   cursor: pointer;
   background: #bb516c;
@@ -251,7 +252,16 @@ xButtons
   background: #c2637b;
 }
 .btn.btn-success {
-  background: #56b859;
+  background: #6fce72;
+}
+.no-touch .btn.btn-success:hover {
+  background: #82d485;
+}
+.btn.btn-alert {
+  background: #251182;
+}
+.no-touch .btn.btn-alert:hover {
+    background: #56b859;
 }
 .no-touch .btn.btn-success:hover {
   background: #68c06b;
@@ -261,6 +271,7 @@ xButtons
 }
 .no-touch .btn.btn-alert:hover {
   background: #ff1a1a;
+
 }
 .btn.btn-outline {
   color: #bb516c;
@@ -268,7 +279,7 @@ xButtons
   box-shadow: inset 0 0 0 1px #bb516c;
 }
 .no-touch .btn.btn-outline:hover {
-  color: #8b4513;
+  color: #3d2818;
   background: #bb516c;
 }
 @media only screen and (min-width: 768px) {
@@ -279,7 +290,9 @@ xButtons
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
+
   background: #bb516c;
+
 }
 
 /* -------------------------------- 
@@ -302,7 +315,7 @@ input[type=text],
 select {
   border: 1px solid #09ac6a;
   border-radius: 0.25em;
-  background: #8b4513;
+  background: #3d2818;
 }
 input[type=text]:focus,
 select:focus {
@@ -314,12 +327,14 @@ input[type=text] {
   box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
 }
 input[type=text].success {
+
   border-color: #56b859;
   box-shadow: 0 0 6px rgba(86, 184, 89, 0.2);
 }
 input[type=text].alert {
   border-color: #f00;
   box-shadow: 0 0 6px rgba(255, 0, 0, 0.2);
+
 }
 input[type=text]:focus {
   border-color: #bb516c;
@@ -912,13 +927,14 @@ section:nth-of-type(10) h2::before {
   background: #f2be00;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-  background: #251183;
+
+  background: #251182;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-  background: #2b149a;
+  background: #2b1499;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-  background: #1f0e6c;
+  background: #1f0e6b;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
   background: #09ac6a;
@@ -930,13 +946,13 @@ section:nth-of-type(10) h2::before {
   background: #08945b;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
-  background: #8b4513;
+  background: #3d2818;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
-  background: #a15016;
+  background: #4f341f;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
-  background: #753a10;
+  background: #2b1c11;
 }
 @media only screen and (min-width: 768px) {
   .cd-colors li {
