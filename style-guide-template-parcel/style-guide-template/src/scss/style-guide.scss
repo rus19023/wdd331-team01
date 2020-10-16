@@ -1,14 +1,15 @@
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600;1,900&family=Roboto+Slab:wght@500;700;900&display=swap');
 
 // color palette - these colors will be the color swatches of the Colors section
 
-$color-1: #bb516c; // lotus pink - Action color
-$color-2: #ffcb0c; // 
-$color-3: #251183; // Dark Blue
-$color-4: #09ac6a; // leaf green
-$color-5: #3d2818; // dirt brown
+$color-1: #bb516c; // lotus pink [rgb(187, 81, 108);hsl(345, 44%, 53%)]- Action color
+$color-2: #ffcb0c; // Sun yellow [rgb(255, 203, 12);hsl(47, 100%, 52%)]
+$color-3: #251183; // Dark Blue [rgb(37, 17, 131);hsl(251, 77%, 29%)]
+$color-4: #09ac6a; // leaf green [rgb(9, 172, 106);hsl(156, 90%, 35%)]
+$color-5: #3d2818; // dirt brown [rgb(61, 40, 24);hsl(26, 44%, 17%)]
 $color-6: skyblue;
 
 // additional colors
