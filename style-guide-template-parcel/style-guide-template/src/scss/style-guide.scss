@@ -29,6 +29,10 @@ xPatterns
   background: $color-3;
   box-shadow: 0 1px 1px rgba(#000, 0.05);
   padding: 6px;
+  & 
+  h1, h2 {
+    color: mix($color-1, white, 20%);
+  }
 }
 
 /* -------------------------------- 

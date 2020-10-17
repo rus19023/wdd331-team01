@@ -73,6 +73,10 @@ xPatterns
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px;
 }
+.cd-box h1,
+.cd-box h2 {
+  color: #f1dce2;
+}
 
 /* -------------------------------- 
 xNavigation 
@@ -98,7 +102,7 @@ header {
   background: #ffcb0c;
 }
 .cd-main-nav li a {
-  color: #8b4513;
+  color: #87ceeb;
   border-color: #ffd026;
 }
 @media only screen and (min-width: 1024px) {
@@ -168,7 +172,7 @@ xTypography
 h1,
 h2 {
   font-family: "Roboto Slab", serif;
-  color: #9288c1;
+  color: #251183;
 }
 
 h1 {
