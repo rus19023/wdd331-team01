@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600;1,900&family=Roboto+Slab:wght@500;700;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -59,7 +60,6 @@ xBackground
 -------------------------------- */
 body {
   /* this is the page background */
-
   background-color: skyblue;
 }
 
@@ -175,7 +175,7 @@ xTypography
 -------------------------------- */
 h1,
 h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto Slab", serif;
   color: #9288c1;
 }
 
@@ -239,7 +239,7 @@ xButtons
   box-shadow: none;
   border-radius: 0.25em;
   font-size: 1.4rem;
-  font-family: "Roboto", serif;
+  font-family: "Roboto Slab", serif;
   color: #3d2818;
   padding: 0.6em 2.2em;
   cursor: pointer;
@@ -252,17 +252,7 @@ xButtons
   background: #c2637b;
 }
 .btn.btn-success {
-<<<<<<< HEAD
-  background: #6fce72;
-}
-.no-touch .btn.btn-success:hover {
-  background: #82d485;
-}
-.btn.btn-alert {
-  background: #251182;
-}
-.no-touch .btn.btn-alert:hover {
-    background: #56b859;
+  background: #56b859;
 }
 .no-touch .btn.btn-success:hover {
   background: #68c06b;
@@ -272,7 +262,6 @@ xButtons
 }
 .no-touch .btn.btn-alert:hover {
   background: #ff1a1a;
-
 }
 .btn.btn-outline {
   color: #bb516c;
@@ -291,9 +280,7 @@ xButtons
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
-
   background: #bb516c;
-
 }
 
 /* -------------------------------- 
@@ -328,14 +315,12 @@ input[type=text] {
   box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
 }
 input[type=text].success {
-
   border-color: #56b859;
   box-shadow: 0 0 6px rgba(86, 184, 89, 0.2);
 }
 input[type=text].alert {
   border-color: #f00;
   box-shadow: 0 0 6px rgba(255, 0, 0, 0.2);
-
 }
 input[type=text]:focus {
   border-color: #bb516c;
@@ -928,14 +913,13 @@ section:nth-of-type(10) h2::before {
   background: #f2be00;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-
-  background: #251182;
+  background: #251183;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-  background: #2b1499;
+  background: #2b149a;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-  background: #1f0e6b;
+  background: #1f0e6c;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
   background: #09ac6a;
