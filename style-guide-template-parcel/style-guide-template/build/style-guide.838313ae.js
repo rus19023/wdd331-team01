@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../assets/form/icon-check.svg":[["icon-check.b3fa7148.svg","assets/form/icon-check.svg"],"assets/form/icon-check.svg"],"./../assets/form/icon-select.svg":[["icon-select.65729cd7.svg","assets/form/icon-select.svg"],"assets/form/icon-select.svg"],"./../assets/icon-download.svg":[["icon-download.b20aadac.svg","assets/icon-download.svg"],"assets/icon-download.svg"],"./../assets/icons/icon-1.svg":[["icon-1.de09c112.svg","assets/icons/icon-1.svg"],"assets/icons/icon-1.svg"],"./../assets/icons/icon-2.svg":[["icon-2.153ae19e.svg","assets/icons/icon-2.svg"],"assets/icons/icon-2.svg"],"./../assets/icons/icon-3.svg":[["icon-3.255805d5.svg","assets/icons/icon-3.svg"],"assets/icons/icon-3.svg"],"./../assets/icons/icon-4.svg":[["icon-4.51c8ed33.svg","assets/icons/icon-4.svg"],"assets/icons/icon-4.svg"],"./../assets/icons/icon-5.svg":[["icon-5.b5f82357.svg","assets/icons/icon-5.svg"],"assets/icons/icon-5.svg"],"./../assets/icons/icon-6.svg":[["icon-6.7440f143.svg","assets/icons/icon-6.svg"],"assets/icons/icon-6.svg"],"./../assets/icons/icon-7.svg":[["icon-7.d3ac3450.svg","assets/icons/icon-7.svg"],"assets/icons/icon-7.svg"],"./../assets/icons/icon-8.svg":[["icon-8.3c326c9f.svg","assets/icons/icon-8.svg"],"assets/icons/icon-8.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\assets\\form\\icon-check.svg":[["icon-check.b3fa7148.svg","assets/form/icon-check.svg"],"assets/form/icon-check.svg"],"./..\\assets\\form\\icon-select.svg":[["icon-select.65729cd7.svg","assets/form/icon-select.svg"],"assets/form/icon-select.svg"],"./..\\assets\\icon-download.svg":[["icon-download.b20aadac.svg","assets/icon-download.svg"],"assets/icon-download.svg"],"./..\\assets\\icons\\icon-1.svg":[["icon-1.de09c112.svg","assets/icons/icon-1.svg"],"assets/icons/icon-1.svg"],"./..\\assets\\icons\\icon-2.svg":[["icon-2.153ae19e.svg","assets/icons/icon-2.svg"],"assets/icons/icon-2.svg"],"./..\\assets\\icons\\icon-3.svg":[["icon-3.255805d5.svg","assets/icons/icon-3.svg"],"assets/icons/icon-3.svg"],"./..\\assets\\icons\\icon-4.svg":[["icon-4.51c8ed33.svg","assets/icons/icon-4.svg"],"assets/icons/icon-4.svg"],"./..\\assets\\icons\\icon-5.svg":[["icon-5.b5f82357.svg","assets/icons/icon-5.svg"],"assets/icons/icon-5.svg"],"./..\\assets\\icons\\icon-6.svg":[["icon-6.7440f143.svg","assets/icons/icon-6.svg"],"assets/icons/icon-6.svg"],"./..\\assets\\icons\\icon-7.svg":[["icon-7.d3ac3450.svg","assets/icons/icon-7.svg"],"assets/icons/icon-7.svg"],"./..\\assets\\icons\\icon-8.svg":[["icon-8.3c326c9f.svg","assets/icons/icon-8.svg"],"assets/icons/icon-8.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,11 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
+<<<<<<< HEAD
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "37271" + '/');
+=======
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "9439" + '/');
+>>>>>>> dev-alain
 
   ws.onmessage = function (event) {
     checkedAssets = {};
