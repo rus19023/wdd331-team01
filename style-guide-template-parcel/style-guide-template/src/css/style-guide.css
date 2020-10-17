@@ -1,7 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600;1,900&family=Roboto+Slab:wght@500;700;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,9 +53,7 @@ table {
 }
 
 /* -------------------------------- 
-
 xBackground 
-
 -------------------------------- */
 body {
   /* this is the page background */
@@ -63,9 +61,7 @@ body {
 }
 
 /* -------------------------------- 
-
 xPatterns
-
 -------------------------------- */
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
@@ -77,9 +73,7 @@ xPatterns
 }
 
 /* -------------------------------- 
-
 xNavigation 
-
 -------------------------------- */
 header {
   background-color: #251183;
@@ -153,9 +147,7 @@ header {
 }
 
 /* -------------------------------- 
-
 xPage title 
-
 -------------------------------- */
 main > h1 {
   color: #ffcb0c;
@@ -168,13 +160,11 @@ main > h1 {
 }
 
 /* -------------------------------- 
-
 xTypography 
-
 -------------------------------- */
 h1,
 h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto Slab", serif;
   color: #9288c1;
 }
 
@@ -229,16 +219,14 @@ p a {
 }
 
 /* -------------------------------- 
-
 xButtons 
-
 -------------------------------- */
 .btn {
   border: none;
   box-shadow: none;
   border-radius: 0.25em;
   font-size: 1.4rem;
-  font-family: "Roboto", serif;
+  font-family: "Roboto Slab", serif;
   color: #8b4513;
   padding: 0.6em 2.2em;
   cursor: pointer;
@@ -279,24 +267,63 @@ xButtons
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
+  color: #bb516c;
+}
+
+/* -------------------------------- 
+xIcons 
+-------------------------------- */
+.btn {
+  border: none;
+  box-shadow: none;
+  border-radius: 0.25em;
+  font-size: 1.4rem;
+  font-family: "Roboto Slab", serif;
+  color: #8b4513;
+  padding: 0.6em 2.2em;
+  cursor: pointer;
   background: #bb516c;
 }
+.btn:focus {
+  outline: none;
+}
+.no-touch .btn:hover {
+  background: #c2637b;
+}
+.btn.btn-success {
+  background: #56b859;
+}
+.no-touch .btn.btn-success:hover {
+  background: #68c06b;
+}
+.btn.btn-alert {
+  background: #f00;
+}
+.no-touch .btn.btn-alert:hover {
+  background: #ff1a1a;
+}
+.btn.btn-outline {
+  color: #bb516c;
+  background: transparent;
+  box-shadow: inset 0 0 0 1px #bb516c;
+}
+.no-touch .btn.btn-outline:hover {
+  color: #8b4513;
+  background: #bb516c;
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+}
 
-/* -------------------------------- 
-
-xIcons 
-
--------------------------------- */
-.cd-icons li {
-  /* icons size */
-  width: 32px;
-  height: 32px;
+.cd-buttons .cd-box:nth-of-type(2) span {
+  /* CSS class name color */
+  color: #bb516c;
 }
 
 /* -------------------------------- 
-
 xForm 
-
 -------------------------------- */
 input[type=text],
 select {
@@ -405,6 +432,27 @@ input[type=checkbox]:checked + label::after {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../assets/form/icon-select.svg") no-repeat center center;
+  pointer-events: none;
+}
+
+select {
+  position: relative;
+  padding: 0.6em 2em 0.6em 1em;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* -------------------------------- 
+xBasic style
+Y(-50%);
   display: block;
   width: 16px;
   height: 16px;
