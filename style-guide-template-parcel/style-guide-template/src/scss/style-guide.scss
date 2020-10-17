@@ -24,6 +24,7 @@ xPatterns
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
   border: 1px solid $color-3;
+  font-family: $primary-font;
   color: $color-2;
   border-radius: 3px;
   background: $color-3;

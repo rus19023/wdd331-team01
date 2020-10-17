@@ -67,6 +67,7 @@ xPatterns
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
   border: 1px solid #251183;
+  font-family: "Poppin", sans-serif;
   color: #ffcb0c;
   border-radius: 3px;
   background: #251183;
