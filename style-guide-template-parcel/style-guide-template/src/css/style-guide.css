@@ -58,7 +58,7 @@ xBackground
 -------------------------------- */
 body {
   /* this is the page background */
-  background-color: skyblue;
+  background-color: #b7e2f3;
 }
 
 /* -------------------------------- 
@@ -66,9 +66,10 @@ xPatterns
 -------------------------------- */
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #09ac6a;
+  border: 1px solid #251183;
+  color: #ffcb0c;
   border-radius: 3px;
-  background: #8b4513;
+  background: #251183;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px;
 }
@@ -78,6 +79,7 @@ xNavigation
 -------------------------------- */
 header {
   background-color: #251183;
+  color: #ffcb0c;
 }
 
 .cd-logo {
@@ -104,7 +106,7 @@ header {
     color: #fff7d8;
   }
   .cd-main-nav li a.selected {
-    color: #8b4513;
+    color: #ffcb0c;
     box-shadow: 0 2px 0 #bb516c;
   }
   .cd-main-nav li a:hover {
@@ -114,20 +116,20 @@ header {
 
 .cd-nav-trigger span {
   /* hamburger menu */
-  background-color: #8b4513;
+  background-color: #ffcb0c;
 }
 .cd-nav-trigger span::before, .cd-nav-trigger span::after {
   /* upper and lower lines */
-  background-color: #8b4513;
+  background-color: #ffcb0c;
 }
 
 .nav-is-visible .cd-nav-trigger span {
   /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(139, 69, 19, 0);
+  background-color: rgba(255, 203, 12, 0);
 }
 .nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
   /* preserve visibility of upper and lower lines - close icon */
-  background-color: saddlebrown;
+  background-color: #ffcb0c;
 }
 
 .cd-download {
@@ -228,7 +230,7 @@ xButtons
   border-radius: 0.25em;
   font-size: 1.4rem;
   font-family: "Roboto Slab", serif;
-  color: #3d2818;
+  color: #8b4513;
   padding: 0.6em 2.2em;
   cursor: pointer;
   background: #bb516c;
@@ -268,18 +270,59 @@ xButtons
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
-  background: #bb516c;
+  color: #bb516c;
 }
 
 /* -------------------------------- 
-
 xIcons 
-
 -------------------------------- */
-.cd-icons li {
-  /* icons size */
-  width: 32px;
-  height: 32px;
+.btn {
+  border: none;
+  box-shadow: none;
+  border-radius: 0.25em;
+  font-size: 1.4rem;
+  font-family: "Roboto Slab", serif;
+  color: #8b4513;
+  padding: 0.6em 2.2em;
+  cursor: pointer;
+  background: #bb516c;
+}
+.btn:focus {
+  outline: none;
+}
+.no-touch .btn:hover {
+  background: #c2637b;
+}
+.btn.btn-success {
+  background: #56b859;
+}
+.no-touch .btn.btn-success:hover {
+  background: #68c06b;
+}
+.btn.btn-alert {
+  background: #f00;
+}
+.no-touch .btn.btn-alert:hover {
+  background: #ff1a1a;
+}
+.btn.btn-outline {
+  color: #bb516c;
+  background: transparent;
+  box-shadow: inset 0 0 0 1px #bb516c;
+}
+.no-touch .btn.btn-outline:hover {
+  color: #8b4513;
+  background: #bb516c;
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+}
+
+.cd-buttons .cd-box:nth-of-type(2) span {
+  /* CSS class name color */
+  color: #bb516c;
 }
 
 /* -------------------------------- 

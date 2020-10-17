@@ -1,5 +1,6 @@
 header {
     background-color: $color-3;
+    color: $color-2;
   }
   
   .cd-logo {
@@ -26,7 +27,7 @@ header {
         color: lighten($color-2, 40%);
   
         &.selected {
-          color: $color-5;
+          color: $color-2;
           box-shadow: 0 2px 0 $color-1;
         }
   
@@ -39,23 +40,23 @@ header {
   
   .cd-nav-trigger span {
     /* hamburger menu */
-    background-color: $color-5;
+    background-color: $color-2;
   
     &::before,
     &::after {
       /* upper and lower lines */
-      background-color: $color-5;
+      background-color: $color-2;
     }
   }
   
   .nav-is-visible .cd-nav-trigger span {
     /* hide line in the center on mobile when nav is visible */
-    background-color: rgba($color-5, 0);
+    background-color: rgba($color-2, 0);
   
     &::before,
     &::after {
       /* preserve visibility of upper and lower lines - close icon */
-      background-color: rgba($color-5, 1);
+      background-color: rgba($color-2, 1);
     }
   }
   
