@@ -58,7 +58,7 @@ xBackground
 -------------------------------- */
 body {
   /* this is the page background */
-  background-color: #b7e2f3;
+  background-color: skyblue;
 }
 
 /* -------------------------------- 
@@ -228,7 +228,7 @@ xButtons
   border-radius: 0.25em;
   font-size: 1.4rem;
   font-family: "Roboto Slab", serif;
-  color: #8b4513;
+  color: #3d2818;
   padding: 0.6em 2.2em;
   cursor: pointer;
   background: #bb516c;
@@ -268,59 +268,18 @@ xButtons
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
-  color: #bb516c;
+  background: #bb516c;
 }
 
 /* -------------------------------- 
-xIcons 
--------------------------------- */
-.btn {
-  border: none;
-  box-shadow: none;
-  border-radius: 0.25em;
-  font-size: 1.4rem;
-  font-family: "Roboto Slab", serif;
-  color: #8b4513;
-  padding: 0.6em 2.2em;
-  cursor: pointer;
-  background: #bb516c;
-}
-.btn:focus {
-  outline: none;
-}
-.no-touch .btn:hover {
-  background: #c2637b;
-}
-.btn.btn-success {
-  background: #56b859;
-}
-.no-touch .btn.btn-success:hover {
-  background: #68c06b;
-}
-.btn.btn-alert {
-  background: #f00;
-}
-.no-touch .btn.btn-alert:hover {
-  background: #ff1a1a;
-}
-.btn.btn-outline {
-  color: #bb516c;
-  background: transparent;
-  box-shadow: inset 0 0 0 1px #bb516c;
-}
-.no-touch .btn.btn-outline:hover {
-  color: #8b4513;
-  background: #bb516c;
-}
-@media only screen and (min-width: 768px) {
-  .btn {
-    font-size: 1.6rem;
-  }
-}
 
-.cd-buttons .cd-box:nth-of-type(2) span {
-  /* CSS class name color */
-  color: #bb516c;
+xIcons 
+
+-------------------------------- */
+.cd-icons li {
+  /* icons size */
+  width: 32px;
+  height: 32px;
 }
 
 /* -------------------------------- 
