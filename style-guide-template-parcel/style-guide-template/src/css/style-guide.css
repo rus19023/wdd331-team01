@@ -1,6 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
+*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600;1,900&family=Roboto+Slab:wght@500;700;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -452,29 +453,6 @@ select {
 
 /* -------------------------------- 
 xBasic style
-Y(-50%);
-  display: block;
-  width: 16px;
-  height: 16px;
-  background: url("../assets/form/icon-select.svg") no-repeat center center;
-  pointer-events: none;
-}
-
-select {
-  position: relative;
-  padding: 0.6em 2em 0.6em 1em;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-}
-
-/* -------------------------------- 
-
-xBasic style
-
 -------------------------------- */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
