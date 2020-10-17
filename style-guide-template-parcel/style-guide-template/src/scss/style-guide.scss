@@ -16,16 +16,16 @@ body {
 }
 
 
-
 /* -------------------------------- 
 xPatterns
 -------------------------------- */
 
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid $color-4;
+  border: 1px solid $color-3;
+  color: $color-2;
   border-radius: 3px;
-  background: $color-5;
+  background: $color-3;
   box-shadow: 0 1px 1px rgba(#000, 0.05);
   padding: 6px;
 }
@@ -61,22 +61,16 @@ xButtons
 -------------------------------- */
 
 @import 'partials/buttons';
-
 /* -------------------------------- 
 xIcons 
 -------------------------------- */
 
-.cd-icons li {
-  /* icons size */
-  width: 32px;
-  height: 32px;
-}
+@import 'partials/buttons';
 
 /* -------------------------------- 
 xForm 
 -------------------------------- */
-
-@import 'partials/forms';
+@import 'partials/form';
 
 
 /* -------------------------------- 
