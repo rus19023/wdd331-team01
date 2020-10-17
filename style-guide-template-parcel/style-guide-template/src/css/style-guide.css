@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600;1,900&family=Roboto+Slab:wght@500;700;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,9 +54,7 @@ table {
 }
 
 /* -------------------------------- 
-
 xBackground 
-
 -------------------------------- */
 body {
   /* this is the page background */
@@ -63,9 +62,7 @@ body {
 }
 
 /* -------------------------------- 
-
 xPatterns
-
 -------------------------------- */
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
@@ -77,9 +74,7 @@ xPatterns
 }
 
 /* -------------------------------- 
-
 xNavigation 
-
 -------------------------------- */
 header {
   background-color: #251183;
@@ -153,9 +148,7 @@ header {
 }
 
 /* -------------------------------- 
-
 xPage title 
-
 -------------------------------- */
 main > h1 {
   color: #ffcb0c;
@@ -168,13 +161,11 @@ main > h1 {
 }
 
 /* -------------------------------- 
-
 xTypography 
-
 -------------------------------- */
 h1,
 h2 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto Slab", serif;
   color: #9288c1;
 }
 
@@ -229,16 +220,14 @@ p a {
 }
 
 /* -------------------------------- 
-
 xButtons 
-
 -------------------------------- */
 .btn {
   border: none;
   box-shadow: none;
   border-radius: 0.25em;
   font-size: 1.4rem;
-  font-family: "Roboto", serif;
+  font-family: "Roboto Slab", serif;
   color: #8b4513;
   padding: 0.6em 2.2em;
   cursor: pointer;
@@ -283,9 +272,7 @@ xButtons
 }
 
 /* -------------------------------- 
-
 xIcons 
-
 -------------------------------- */
 .cd-icons li {
   /* icons size */
@@ -294,9 +281,7 @@ xIcons
 }
 
 /* -------------------------------- 
-
 xForm 
-
 -------------------------------- */
 input[type=text],
 select {
@@ -424,9 +409,7 @@ select {
 }
 
 /* -------------------------------- 
-
 xBasic style
-
 -------------------------------- */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
