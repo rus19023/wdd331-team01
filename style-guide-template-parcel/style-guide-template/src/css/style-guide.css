@@ -100,11 +100,11 @@ header {
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: #ffcb0c;
+  background: #251183;
 }
 .cd-main-nav li a {
-  color: #87ceeb;
-  border-color: #ffd026;
+  color: #ffcb0c;
+  border-color: #c9c4e0;
 }
 @media only screen and (min-width: 1024px) {
   .cd-main-nav li a {
@@ -158,12 +158,12 @@ header {
 xPage title 
 -------------------------------- */
 main > h1 {
-  color: #ffcb0c;
+  color: #251183;
 }
 @media only screen and (min-width: 1600px) {
   main > h1 {
     /* title goes into the header on big devices */
-    color: #8b4513;
+    color: #ffcb0c;
   }
 }
 
@@ -932,46 +932,64 @@ section:nth-of-type(10) h2::before {
   background: #bb516c;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
-  background: #c2637b;
+  background: #eed4da;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
-  background: #ae445f;
+  background: #fcf6f8;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
   background: #ffcb0c;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
-  background: #ffd026;
+  background: #fff2c2;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
-  background: #f2be00;
+  background: #fffcf3;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
   background: #251183;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-  background: #2b149a;
+  background: #c9c4e0;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-  background: #1f0e6c;
+  background: #f4f3f9;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
   background: #09ac6a;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
-  background: #0ac479;
+  background: #c2eada;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
-  background: #08945b;
+  background: #f3fbf8;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
   background: #8b4513;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
-  background: #a15016;
+  background: #e2d1c4;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
-  background: #753a10;
+  background: #f9f6f3;
+}
+.cd-colors li:nth-of-type(6) .cd-color-swatch {
+  background: #87ceeb;
+}
+.cd-colors li:nth-of-type(6) .cd-color-swatch::before {
+  background: #e1f3fa;
+}
+.cd-colors li:nth-of-type(6) .cd-color-swatch::after {
+  background: #f9fdfe;
+}
+.cd-colors li:nth-of-type(7) .cd-color-swatch {
+  background: #626160;
+}
+.cd-colors li:nth-of-type(7) .cd-color-swatch::before {
+  background: #d8d8d7;
+}
+.cd-colors li:nth-of-type(7) .cd-color-swatch::after {
+  background: #f7f7f7;
 }
 @media only screen and (min-width: 768px) {
   .cd-colors li {

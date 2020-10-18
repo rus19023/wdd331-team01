@@ -32,7 +32,7 @@ xPatterns
   padding: 6px;
   & 
   h1, h2 {
-    color: mix($color-1, white, 20%);
+    color: $color-1-light;
   }
 }
 
@@ -47,11 +47,11 @@ xPage title
 -------------------------------- */
 
 main > h1 {
-  color: $color-2;
+  color: $color-3;
 
   @include MQ(L) {
     /* title goes into the header on big devices */
-    color: $color-5;
+    color: $color-2;
   }
 }
 

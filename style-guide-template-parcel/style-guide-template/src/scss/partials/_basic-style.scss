@@ -454,11 +454,11 @@ section {
 		background: $color-1;
 
 		&::before {
-			background: lighten($color-1, 5%);
+			background: mix($color-1, white, 25%);
 		}
 
 		&::after {
-			background: darken($color-1, 5%);
+			background: mix($color-1, white, 5%);
 		}
 	}
 
@@ -466,11 +466,11 @@ section {
 		background: $color-2;
 
 		&::before {
-			background: lighten($color-2, 5%);
+			background: mix($color-2, white, 25%);
 		}
 
 		&::after {
-			background: darken($color-2, 5%);
+			background: mix($color-2, white, 5%);
 		}
 	}
 
@@ -478,11 +478,11 @@ section {
 		background: $color-3;
 
 		&::before {
-			background: lighten($color-3, 5%);
+			background: mix($color-3, white, 25%);
 		}
 
 		&::after {
-			background: darken($color-3, 5%);
+			background: mix($color-3, white, 5%);
 		}
 	}
 
@@ -490,11 +490,11 @@ section {
 		background: $color-4;
 
 		&::before {
-			background: lighten($color-4, 5%);
+			background: mix($color-4, white, 25%);
 		}
 
 		&::after {
-			background: darken($color-4, 5%);
+			background: mix($color-4, white, 5%);
 		}
 	}
 
@@ -502,11 +502,35 @@ section {
 		background: $color-5;
 
 		&::before {
-			background: lighten($color-5, 5%);
+			background: mix($color-5, white, 25%);
 		}
 
 		&::after {
-			background: darken($color-5, 5%);
+			background: mix($color-5, white, 5%);
+		}
+	}
+
+	li:nth-of-type(6) .cd-color-swatch {
+		background: $color-6;
+
+		&::before {
+			background: mix($color-6, white, 25%);
+		}
+
+		&::after {
+			background: mix($color-6, white, 5%);
+		}
+	}
+
+	li:nth-of-type(7) .cd-color-swatch {
+		background: $color-7;
+
+		&::before {
+			background: mix($color-7, white, 25%);
+		}
+
+		&::after {
+			background: mix($color-7, white, 5%);
 		}
 	}
 
