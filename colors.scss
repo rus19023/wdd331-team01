@@ -299,6 +299,12 @@ h1 {
   }
   .comp2:nth-of-type(5) {
     background: $comp25;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp29);
+      // print the color info in the swatch
+      content: "#{$comp29}";
+    }
   }
   .comp2:nth-of-type(6) {
     background: $comp26;
@@ -311,6 +317,12 @@ h1 {
   }
   .comp2:nth-of-type(9) {
     background: $comp29;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp29);
+      // print the color info in the swatch
+      content: "#{$comp29}";
+    }
   } 
   
   
