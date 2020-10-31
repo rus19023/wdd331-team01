@@ -200,6 +200,10 @@ p {
 .comp2:nth-of-type(5) {
   background: #8c969e;
 }
+.comp2:nth-of-type(5)::before {
+  color: light-dark(#89acc5);
+  content: "#89acc5";
+}
 
 .comp2:nth-of-type(6) {
   background: #889ba9;
@@ -215,6 +219,10 @@ p {
 
 .comp2:nth-of-type(9) {
   background: #89acc5;
+}
+.comp2:nth-of-type(9)::before {
+  color: light-dark(#89acc5);
+  content: "#89acc5";
 }
 
 .comp3 {

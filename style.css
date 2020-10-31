@@ -1,32 +1,44 @@
 body {
   padding: 1rem;
+  background: #09ac6a;
+  font-size: 1.5vw;
+}
+body :hover {
+  background: #daf3e9;
+}
+
+p {
+  max-width: 100%;
 }
 
 .page-wrapper {
-  background: #251182;
-  color: #dedbec;
-  border: 5px solid #80c080;
+  background: #09ac6a;
+  color: #daf3e9;
+  border: 5px solid #09ac6a;
+}
+.page-wrapper h1, .page-wrapper h2 {
+  color: #09ac6a;
 }
 .page-wrapper:hover {
-  background: #dedbec;
-  color: #251182;
+  background: #daf3e9;
+  color: #daf3e9;
 }
-.page-wrapper:hover a:visited {
-  color: #251182;
+.page-wrapper:hover a:visited, .page-wrapper:hover h1, .page-wrapper:hover h2 {
+  color: #daf3e9;
 }
 
 .intro {
-  border-radius: 50%;
   max-width: 100%;
   text-align: center;
   padding: 2.4em 1.4em 0.6em 1.4em;
-  border: 5px solid #c080c0;
+  border: 5px solid #3d2818;
+  color: #cfc9c5;
 }
 
 .summary {
   background: #3d2818;
   color: #3d2818;
-  border: 5px solid #8080ff;
+  border: 5px solid #3d2818;
 }
 .summary p a {
   color: #3d2818;
@@ -35,15 +47,15 @@ body {
   color: #3d2818;
 }
 .summary:hover {
-  background: #daf3e9;
-  color: #09ac6a;
+  background: #cfc9c5;
+  color: #cfc9c5;
 }
 .summary:hover a:visited {
-  color: #09ac6a;
+  color: #3d2818;
 }
 
 .preamble {
-  border: 5px solid #bfbfbf;
+  border: 5px solid #3d2818;
   background: #3d2818;
   color: #cfc9c5;
 }
@@ -58,22 +70,22 @@ body {
   color: #3d2818;
 }
 
-.explanation {
-  background: #3d2818;
-  border: 5px solid #ffb4da;
-  color: #cfc9c5;
-}
-.explanation:hover {
-  background: #cfc9c5;
-  color: #3d2818;
-}
-
 .main {
   border: 5px solid #8a59ae;
   background: #3d2818;
   color: #cfc9c5;
 }
 .main:hover {
+  background: #cfc9c5;
+  color: #3d2818;
+}
+
+.explanation {
+  background: #3d2818;
+  border: 5px solid #ffb4da;
+  color: #cfc9c5;
+}
+.explanation:hover {
   background: #cfc9c5;
   color: #3d2818;
 }

@@ -24,34 +24,46 @@ body {
     //display: grid;
     //grid-template-columns: 1fr;
     padding: 1rem;
+    background: $green;
+    & :hover {
+        background: $green-light;
+
+    }
+    font-size: 1.5vw;
+}
+p {        
+    max-width: 100%;
 }
 
 .page-wrapper { 
     //grid-template-columns: 1fr;
-    background:$blue;
-    color:$blue-light;
-    border: 5px solid mix(green, white, 50%);
-
+    background: $green;
+    color: $green-light;
+    border: 5px solid $green;
+    & h1, h2 {
+        color: $green;
+    }
     &:hover {
-        background: $blue-light;
-        color: $blue;
-        & a:visited {
-            color: $blue;
+        background: $green-light;
+        color: $green-light;
+        & a:visited, h1, h2 {
+            color: $green-light;
         }
     }
 }
 
-.intro {
+.intro {                                // container for 'main' section
     //grid-template-columns: 1fr 1fr 1fr;
-    border-radius: 50%;
+    // border-radius: 50%;
     //height: 12rem;
     max-width: 100%;
     text-align: center;
     padding: 2.4em 1.4em .6em 1.4em;
-    border: 5px solid mix(purple, white, 50%);
+    border: 5px solid $brown;
+    color: $brown-light;
 }
 
-.summary {
+.summary {                               // A demonstration of what...
     //grid-template-columns: 1fr 1fr 1fr;
     //$size: 400px;
     // width: $size;
@@ -60,7 +72,7 @@ body {
     // padding: 2rem;
     background: $brown;
     color: $brown;
-    border: 5px solid mix(blue, white, 50%);
+    border: 5px solid $brown;
 
     & p a {
         color: $brown;
@@ -71,19 +83,19 @@ body {
     }
 
     &:hover {
-        background: $green-light;
-        color: $green;
+        background: $brown-light;
+        color: $brown-light;
         & a:visited {
-            color: $green;
+            color: $brown;
         }
     }
 }
 
-.preamble {
+.preamble {                                 // The road to enlightenment...
     //grid-template-columns: 1fr 1fr 1fr;
-    border: 5px solid mix(black, white, 25%);
-    background:$brown;
-    color:$brown-light;
+    border: 5px solid $brown;
+    background: $brown;
+    color: $brown-light;
     & p {        
     border-radius: 50%;
     //height: 12rem;
@@ -97,9 +109,10 @@ body {
     }
 }
 
-.explanation {
+.main {                    // holds Explanation, Participation, Benefits & Requirements
+    //grid-template-columns: 1fr 1fr 1fr;
+    border: 5px solid mix(indigo, white, 65%);
     background: $brown;
-    border: 5px solid mix(hotpink, white, 50%);
     color: $brown-light;
     &:hover {
         background:$brown-light;
@@ -107,10 +120,9 @@ body {
     }
 }
 
-.main {
-    //grid-template-columns: 1fr 1fr 1fr;
-    border: 5px solid mix(indigo, white, 65%);
+.explanation {                                      // So what is this about?
     background: $brown;
+    border: 5px solid mix(hotpink, white, 50%);
     color: $brown-light;
     &:hover {
         background:$brown-light;
