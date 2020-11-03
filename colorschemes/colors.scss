@@ -4,8 +4,8 @@ $color1: #bb516C;
 $color2: #ffcb0c;
 $color3: #251182;
 $color4: #09ac6a;
-$color5: #3d2818;
-$color6: #532c10;
+$color5: #532c10;
+$color6: #3d2818;
 $color7: #7c9150;
 $color8: #ac094b;
 $color9: #8b4513;
@@ -153,22 +153,48 @@ h1 {
     border: 2px solid #000;
     display: inline-block;
     background: $color1;
-    &:before {
-      content: #{$color1};
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($color1);
+      // print the color info in the swatch
+      content: "#{$color1}";
     }
   }
   .swatch:nth-of-type(2) {
     background: $color2;
-
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($color2);
+      // print the color info in the swatch
+      content: "#{$color2}";
+    }
   }
   .swatch:nth-of-type(3) {
     background:$color3;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($color3);
+      // print the color info in the swatch
+      content: "#{$color3}";
+    }
   }
   .swatch:nth-of-type(4) {
     background: $color4;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($color4);
+      // print the color info in the swatch
+      content: "#{$color4}";
+    }
   }
   .swatch:nth-of-type(5) {
     background: $color5;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($color5);
+      // print the color info in the swatch
+      content: "#{$color5}";
+    }
   }
   .swatch:nth-of-type(6) {
     background: $color6;
@@ -189,30 +215,84 @@ h1 {
     border: 2px solid #000;
     display: inline-block;
     background: $lighter1;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter1);
+      // print the color info in the swatch
+      content: "#{$lighter1}";
+    }
   }
   .lighter1:nth-of-type(2) {
     background: $lighter2;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter2);
+      // print the color info in the swatch
+      content: "#{$lighter2}";
+    }
   }
   .lighter1:nth-of-type(3) {
     background:$lighter3;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter3);
+      // print the color info in the swatch
+      content: "#{$lighter3}";
+    }
   }
   .lighter1:nth-of-type(4) {
     background: $lighter4;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter4);
+      // print the color info in the swatch
+      content: "#{$lighter4}";
+    }
   }
   .lighter1:nth-of-type(5) {
     background: $lighter5;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter5);
+      // print the color info in the swatch
+      content: "#{$lighter5}";
+    }
   }
   .lighter1:nth-of-type(6) {
     background: $lighter6;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter6);
+      // print the color info in the swatch
+      content: "#{$lighter6}";
+    }
   }
   .lighter1:nth-of-type(7) {
     background: $lighter7;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter7);
+      // print the color info in the swatch
+      content: "#{$lighter7}";
+    }
   }
   .lighter1:nth-of-type(8) {
     background: $lighter8;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter8);
+      // print the color info in the swatch
+      content: "#{$lighter8}";
+    }
   }
   .lighter1:nth-of-type(9) {
     background: $lighter9;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter9);
+      // print the color info in the swatch
+      content: "#{$lighter9}";
+    }
   }
   
   .lighter2 {
@@ -221,30 +301,84 @@ h1 {
     border: 2px solid #000;
     display: inline-block;
     background: $lighter21;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter21);
+      // print the color info in the swatch
+      content: "#{$lighter21}";
+    }
   }
   .lighter2:nth-of-type(2) {
     background: $lighter22;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter22);
+      // print the color info in the swatch
+      content: "#{$lighter22}";
+    }
   }
   .lighter2:nth-of-type(3) {
     background:$lighter23;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter23);
+      // print the color info in the swatch
+      content: "#{$lighter23}";
+    }
   }
   .lighter2:nth-of-type(4) {
     background: $lighter24;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter24);
+      // print the color info in the swatch
+      content: "#{$lighter24}";
+    }
   }
   .lighter2:nth-of-type(5) {
     background: $lighter25;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter25);
+      // print the color info in the swatch
+      content: "#{$lighter25}";
+    }
   }
   .lighter2:nth-of-type(6) {
     background: $lighter26;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter26);
+      // print the color info in the swatch
+      content: "#{$lighter26}";
+    }
   }
   .lighter2:nth-of-type(7) {
     background: $lighter27;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter27);
+      // print the color info in the swatch
+      content: "#{$lighter27}";
+    }
   }
   .lighter2:nth-of-type(8) {
     background: $lighter28;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter28);
+      // print the color info in the swatch
+      content: "#{$lighter28}";
+    }
   }
   .lighter2:nth-of-type(9) {
     background: $lighter29;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($lighter29);
+      // print the color info in the swatch
+      content: "#{$lighter29}";
+    }
   }
   
   .comp1 {
@@ -253,18 +387,48 @@ h1 {
     border: 2px solid #000;
     display: inline-block;
     background: $comp1;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp1);
+      // print the color info in the swatch
+      content: "#{$comp1}";
+    }
   }
   .comp1:nth-of-type(2) {
     background: $comp2;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp2);
+      // print the color info in the swatch
+      content: "#{$comp2}";
+    }
   }
   .comp1:nth-of-type(3) {
     background:$comp3;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp3);
+      // print the color info in the swatch
+      content: "#{$comp3}";
+    }
   }
   .comp1:nth-of-type(4) {
     background: $comp4;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp4);
+      // print the color info in the swatch
+      content: "#{$comp4}";
+    }
   }
   .comp1:nth-of-type(5) {
     background: $comp5;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp5);
+      // print the color info in the swatch
+      content: "#{$comp5}";
+    }
   }
   .comp1:nth-of-type(6) {
     background: $comp6;
@@ -286,33 +450,75 @@ h1 {
     border: 2px solid #000;
     display: inline-block;
     background: $comp21;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp21);
+      // print the color info in the swatch
+      content: "#{$comp21}";
+    }
   }
   .comp2:nth-of-type(2) {
     background: $comp22;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp22);
+      // print the color info in the swatch
+      content: "#{$comp22}";
+    }
   }
   .comp2:nth-of-type(3) {
     background:$comp23;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp23);
+      // print the color info in the swatch
+      content: "#{$comp23}";
+    }
   }
   .comp2:nth-of-type(4) {
     background: $comp24;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp24);
+      // print the color info in the swatch
+      content: "#{$comp24}";
+    }
   }
   .comp2:nth-of-type(5) {
     background: $comp25;
     &::before {
       // if color is light, use black text color, else use white
-      color: light-dark($comp29);
+      color: light-dark($comp25);
       // print the color info in the swatch
-      content: "#{$comp29}";
+      content: "#{$comp25}";
     }
   }
   .comp2:nth-of-type(6) {
     background: $comp26;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp26);
+      // print the color info in the swatch
+      content: "#{$comp26}";
+    }
   }
   .comp2:nth-of-type(7) {
     background: $comp27;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp27);
+      // print the color info in the swatch
+      content: "#{$comp27}";
+    }
   }
   .comp2:nth-of-type(8) {
     background: $comp28;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp28);
+      // print the color info in the swatch
+      content: "#{$comp28}";
+    }
   }
   .comp2:nth-of-type(9) {
     background: $comp29;
@@ -331,18 +537,48 @@ h1 {
     border: 2px solid #000;
     display: inline-block;
     background: $comp31;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp31);
+      // print the color info in the swatch
+      content: "#{$comp31}";
+    }
   }
   .comp3:nth-of-type(2) {
     background: $comp32;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp32);
+      // print the color info in the swatch
+      content: "#{$comp32}";
+    }
   }
   .comp3:nth-of-type(3) {
     background:$comp33;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp33);
+      // print the color info in the swatch
+      content: "#{$comp33}";
+    }
   }
   .comp3:nth-of-type(4) {
     background: $comp34;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp34);
+      // print the color info in the swatch
+      content: "#{$comp34}";
+    }
   }
   .comp3:nth-of-type(5) {
     background: $comp35;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($comp35);
+      // print the color info in the swatch
+      content: "#{$comp35}";
+    }
   }
   .comp3:nth-of-type(6) {
     background: $comp36;
@@ -363,18 +599,48 @@ h1 {
     border: 2px solid #000;
     display: inline-block;
     background: $analogousl1;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousl1);
+      // print the color info in the swatch
+      content: "#{$analogousl1}";
+    }
   }
   .analogousl:nth-of-type(2) {
     background: $analogousl2;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousl2);
+      // print the color info in the swatch
+      content: "#{$analogousl2}";
+    }
   }
   .analogousl:nth-of-type(3) {
     background:$analogousl3;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousl3);
+      // print the color info in the swatch
+      content: "#{$analogousl3}";
+    }
   }
   .analogousl:nth-of-type(4) {
     background: $analogousl4;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousl4);
+      // print the color info in the swatch
+      content: "#{$analogousl4}";
+    }
   }
   .analogousl:nth-of-type(5) {
     background: $analogousl5;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousl5);
+      // print the color info in the swatch
+      content: "#{$analogousl5}";
+    }
   }
   .analogousl:nth-of-type(6) {
     background: $analogousl6;
@@ -397,18 +663,48 @@ h1 {
     border: 2px solid #000;
     display: inline-block;
     background: $analogousr1;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousr1);
+      // print the color info in the swatch
+      content: "#{$analogousr1}";
+    }
   }
   .analogousr:nth-of-type(2) {
     background: $analogousr2;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousr2);
+      // print the color info in the swatch
+      content: "#{$analogousr2}";
+    }
   }
   .analogousr:nth-of-type(3) {
     background:$analogousr3;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousr3);
+      // print the color info in the swatch
+      content: "#{$analogousr3}";
+    }
   }
   .analogousr:nth-of-type(4) {
     background: $analogousr4;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousr4);
+      // print the color info in the swatch
+      content: "#{$analogousr4}";
+    }
   }
   .analogousr:nth-of-type(5) {
     background: $analogousr5;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousr5);
+      // print the color info in the swatch
+      content: "#{$analogousr5}";
+    }
   }
   .analogousr:nth-of-type(6) {
     background: $analogousr6;
@@ -431,18 +727,48 @@ h1 {
     border: 2px solid #000;
     display: inline-block;
     background: $analogousl21;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousl21);
+      // print the color info in the swatch
+      content: "#{$analogousl21}";
+    }
   }
   .analogousl2:nth-of-type(2) {
     background: $analogousl22;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousl22);
+      // print the color info in the swatch
+      content: "#{$analogousl22}";
+    }
   }
   .analogousl2:nth-of-type(3) {
     background:$analogousl23;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousl23);
+      // print the color info in the swatch
+      content: "#{$analogousl23}";
+    }
   }
   .analogousl2:nth-of-type(4) {
     background: $analogousl24;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousl24);
+      // print the color info in the swatch
+      content: "#{$analogousl24}";
+    }
   }
   .analogousl2:nth-of-type(5) {
     background: $analogousl25;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousl25);
+      // print the color info in the swatch
+      content: "#{$analogousl25}";
+    }
   }
   .analogousl2:nth-of-type(6) {
     background: $analogousl26;
@@ -465,18 +791,48 @@ h1 {
     border: 2px solid #000;
     display: inline-block;
     background: $analogousr21;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousr21);
+      // print the color info in the swatch
+      content: "#{$analogousr21}";
+    }
   }
   .analogousr2:nth-of-type(2) {
     background: $analogousr22;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousr22);
+      // print the color info in the swatch
+      content: "#{$analogousr22}";
+    }
   }
   .analogousr2:nth-of-type(3) {
     background:$analogousr23;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousr23);
+      // print the color info in the swatch
+      content: "#{$analogousr23}";
+    }
   }
   .analogousr2:nth-of-type(4) {
     background: $analogousr24;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousr24);
+      // print the color info in the swatch
+      content: "#{$analogousr24}";
+    }
   }
   .analogousr2:nth-of-type(5) {
     background: $analogousr25;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($analogousr25);
+      // print the color info in the swatch
+      content: "#{$analogousr25}";
+    }
   }
   .analogousr2:nth-of-type(6) {
     background: $analogousr26;

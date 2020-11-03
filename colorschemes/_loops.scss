@@ -1,7 +1,7 @@
 //make column classes 
 @for $index from $loop-start to $loop-end {
     .col-#{$index} {
-        @include col('$color'#{$index});
+        @include get-hex-color('$color'#{$index});
     }
   }
   
