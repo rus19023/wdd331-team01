@@ -20,16 +20,15 @@ $colors: (
   color7: #7c9150,
   color8: #ac094b,
   color9: #09ac6a
-  );
-
-  
+  );  
   
 // MIXINS 
 @import 'mixins';
+
 // FUNCTIONS
 @import 'functions';
 
-@for $var from 1 to 10 {
+@for $index from 1 to 10 {
   
 }
 
