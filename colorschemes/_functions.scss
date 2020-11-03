@@ -7,3 +7,17 @@
     }
     @return $color-string;
 }
+
+
+@function light-dark($color) {  
+    @if (lightness($color)>40) {
+      @return black;
+    }
+    @else {
+      @return white;
+    }
+  }
+  
+  @function swatch() {
+    // take color param and use for background, light-dark
+  }
