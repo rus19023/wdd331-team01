@@ -1,7 +1,7 @@
 // VARIABLES
 
 // COLORS
-$brown: #3d2818;
+$brown: #532c10;
 $brown-light: mix($brown, white, 25%);
 
 $green: #09ac6a;
@@ -15,6 +15,9 @@ $yellow-light: mix($yellow, white, 20%);
 
 $pink: #bb516c;
 $pink-light: mix($pink, white, 25%);
+
+$grey: #889ba9;
+$grey-light: mix($grey, white, 25%);
 
 @mixin reverse-colors {
     
