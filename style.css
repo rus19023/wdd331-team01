@@ -1,10 +1,96 @@
+* {
+  padding: 0 0.2rem 0 0.2rem;
+}
+
+#css-zen-garden {
+  max-width: 100%;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.intro header {
+  grid-column: 1/7;
+}
+.intro .summary {
+  grid-column: 1/7;
+}
+.intro .preamble {
+  grid-column: 1/6;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.main .explanation {
+  grid-column: 2/7;
+}
+.main .participation {
+  grid-column: 1/6;
+}
+.main .benefits {
+  grid-column: 2/7;
+}
+.main .requirements {
+  grid-column: 1/6;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.wrapper .design-selection {
+  grid-column: 2/7;
+}
+.wrapper .design-archives {
+  grid-column: 1/6;
+}
+.wrapper .zen-resources {
+  grid-column: 2/7;
+}
+
+footer {
+  max-width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: -2750px;
+  left: 0;
+  align-items: center;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  font: 75% poppins 400 regular, georgia, sans-serif;
   padding: 1rem;
   background: #09ac6a;
+  color: #daf3e9;
   font-size: 1.5vw;
 }
 body :hover {
-  background: #daf3e9;
+  /*url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; */
+  background-image: url("assets/grass.jpg");
+  color: #09ac6a;
+}
+
+header {
+  text-align: center;
+  background-image: url("assets/sun.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px;
+  line-height: 135px;
+}
+header :hover {
+  background-image: url("assets/sun.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #bb516c;
 }
 
 p {
@@ -14,7 +100,6 @@ p {
 .page-wrapper {
   background: #09ac6a;
   color: #daf3e9;
-  border: 5px solid #09ac6a;
 }
 .page-wrapper h1, .page-wrapper h2 {
   color: #09ac6a;
@@ -24,27 +109,25 @@ p {
   color: #daf3e9;
 }
 .page-wrapper:hover a:visited, .page-wrapper:hover h1, .page-wrapper:hover h2 {
-  color: #daf3e9;
+  color: #532c10;
 }
 
 .intro {
   max-width: 100%;
   text-align: center;
   padding: 2.4em 1.4em 0.6em 1.4em;
-  border: 5px solid #532c10;
   color: #d4cac3;
 }
 
 .summary {
   background: #532c10;
   color: #532c10;
-  border: 5px solid #532c10;
 }
 .summary p a {
-  color: #532c10;
+  color: #bb516c;
 }
 .summary p a:visited {
-  color: #532c10;
+  color: #09ac6a;
 }
 .summary:hover {
   background: #d4cac3;
@@ -55,13 +138,12 @@ p {
 }
 
 .preamble {
-  border: 5px solid #532c10;
   background: #532c10;
   color: #d4cac3;
 }
 .preamble p {
   border-radius: 50%;
-  width: 18rem;
+  max-width: 18rem;
   text-align: center;
   padding: 2.4em 1.4em 0.6em 1.4em;
 }
@@ -71,7 +153,6 @@ p {
 }
 
 .main {
-  border: 5px solid #8a59ae;
   background: #532c10;
   color: #d4cac3;
 }
@@ -82,7 +163,6 @@ p {
 
 .explanation {
   background: #532c10;
-  border: 5px solid #ffb4da;
   color: #d4cac3;
 }
 .explanation:hover {
@@ -91,71 +171,71 @@ p {
 }
 
 .supporting {
-  border: 5px solid #404040;
+  background: #404040;
 }
 
 .participation {
-  border: 5px solid yellow;
+  background: yellow;
 }
 
 .benefits {
-  border: 5px solid #ffbc40;
+  background: #ffbc40;
 }
 
 .requirements {
-  border: 5px solid #c080c0;
+  background: #c080c0;
 }
 
 .sidebar {
-  border: 5px solid #ff4040;
+  background: #ff4040;
 }
 
 .wrapper {
-  border: 5px solid #a580c1;
+  background: #a580c1;
 }
 
 .design-selection {
-  border: 5px solid #ffff80;
+  background: #ffff80;
 }
 
 .select {
-  border: 5px solid #8080ff;
+  background: #8080ff;
 }
 
 .designer-name {
-  border: 5px solid #80c080;
+  background: #80c080;
 }
 
 .design-name {
-  border: 5px solid #c080c0;
+  background: #c080c0;
 }
 
 .design-archives {
-  border: 5px solid white;
+  background: gray;
 }
 
 .archives {
-  border: 5px solid #ffd280;
+  background: #ffd280;
 }
 
 .next {
-  border: 5px solid #80c080;
+  background: #80c080;
 }
 
 .viewall {
-  border: 5px solid #ff8080;
+  background: #ff8080;
 }
 
 .zen-resources {
-  border: 5px solid #80c080;
+  background: #80c080;
 }
 
 .view-css {
-  border: 5px solid #ffb4da;
+  background: #ffb4da;
 }
 
 .css-resources {
-  border: 5px solid #ffff80;
+  background: #ffff80;
 }
 
 /*# sourceMappingURL=style.css.map */

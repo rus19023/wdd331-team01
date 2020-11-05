@@ -8,6 +8,11 @@
   
     @return $string;
   }
+
+  @media print {
+    /* hide navigation controls when printing */
+    #navigation { display: none }
+  }
   
   // TESTS
   $test-key-color: #ac094b;
