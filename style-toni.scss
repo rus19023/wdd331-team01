@@ -1,3 +1,8 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/functions";
+@import "partials/layout";
+
 html {
 	margin: 0;
 	padding: 0;
@@ -8,27 +13,18 @@ body {
 	
 	color: black; 
 	 /*url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; */
-	 background-image: url("grass.jpg");
-}
-
-.page-wrapper {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	 background-image: url("assets/grass.jpg");
 }
 
 header {
 	text-align: center;
-	background-image: url("sun.png");
+	background-image: url("assets/sun.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 600px;
 	line-height: 135px;	
 }
 
-.intro {
-	grid-column-start:1;
-	grid-column-end:4;
-}
 
 .summary {
 	text-align: left;
@@ -39,9 +35,8 @@ header {
 .preamble, .participation, .requirements {
 	background: #EFD488;/*tan*/	
 	margin-top: -20px;
-	grid-column:1/4;
 	border-style: solid;
-	border-right-color: gray;	
+	border-right-color: #808080;	
 	border-width: 0 40px 0 0;
 }
 
@@ -64,12 +59,6 @@ header {
 	bottom: 10px;
 }*/
 
-.main {
-	grid-column: 1/4;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(5, auto);	
-}
 
 .main h3, p {
 	padding: 0 5%; 
@@ -98,20 +87,10 @@ header {
 	border-style: solid;
 	border-left-color: gray;
 	border-width: 0 0 0 40px;
-	grid-column:2/5;	
 }
 
 footer {
-	width: 100%;
-	height: 100px;
-	text-align: center;
 	background: rgb(0,204,0,.2); /*green*/
-	grid-column:1/5;
-	position: relative;
-	bottom:-700px;
-	display: flex;
-	grid-template-columns: repeat(5, 1fr);
-	align-items: center;
 }
 
 footer a {
@@ -133,26 +112,16 @@ h2 {
 	color: white;
 }
 
-.wrapper {
-	grid-column: 1/4;
-	display: grid;
-	grid-template-columns: 10% 45% 10% 35%;
-	grid-template-rows: 270px 300px 190px;	
-}
-
 .design-selection {
-	grid-area: 1/2/3/3;
 	background: #EFD488; /*tan*/
 }
 
 .design-archives {
-	grid-area: 1/4/2/5;
 	background: rgb(0,204,0,.2); /*green*/
 }
 
 .zen-resources {
 	background: #EFD488; /*tan*/
-	grid-area: 2/4/3/5;
 }
 
 .design-selection, .design-archives, .zen-resources{

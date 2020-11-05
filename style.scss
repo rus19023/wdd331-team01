@@ -1,39 +1,44 @@
-// VARIABLES
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/functions";
+@import "partials/layout";
 
-// COLORS
-$brown: #532c10;
-$brown-light: mix($brown, white, 25%);
 
-$green: #09ac6a;
-$green-light: mix($green, white, 15%);
-
-$blue: #251182;
-$blue-light: mix($blue, white, 15%);
-
-$yellow: #ffcb0c;
-$yellow-light: mix($yellow, white, 20%);
-
-$pink: #bb516c;
-$pink-light: mix($pink, white, 25%);
-
-$grey: #889ba9;
-$grey-light: mix($grey, white, 25%);
-
-@mixin reverse-colors {
-    
+html {
+	margin: 0;
+	padding: 0;
 }
 
 body {
     //display: grid;
-    //grid-template-columns: 1fr;
+    //grid-template-columns: 1fr; 
+	font: 75% poppins 400 regular, georgia, sans-serif;
     padding: 1rem;
     background: $green;
+    color: $green-light;
     & :hover {
-        background: $green-light;
-
+        /*url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; */
+        background-image: url("assets/grass.jpg");
+        color: $green;
     }
     font-size: 1.5vw;
 }
+
+header {
+	text-align: center;
+	background-image: url("assets/sun.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 600px;
+	line-height: 135px;
+    & :hover {
+        background-image: url("assets/sun.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        color: $pink;
+    }	
+}
+
 p {        
     max-width: 100%;
 }
@@ -42,7 +47,6 @@ p {
     //grid-template-columns: 1fr;
     background: $green;
     color: $green-light;
-    border: 5px solid $green;
     & h1, h2 {
         color: $green;
     }
@@ -50,7 +54,7 @@ p {
         background: $green-light;
         color: $green-light;
         & a:visited, h1, h2 {
-            color: $green-light;
+            color: $brown;
         }
     }
 }
@@ -62,26 +66,23 @@ p {
     max-width: 100%;
     text-align: center;
     padding: 2.4em 1.4em .6em 1.4em;
-    border: 5px solid $brown;
     color: $brown-light;
 }
 
 .summary {                               // A demonstration of what...
     //grid-template-columns: 1fr 1fr 1fr;
     //$size: 400px;
-    // width: $size;
+    // max-width: $size;
     // height: $size;
     // border-radius: $size / 2;
     // padding: 2rem;
     background: $brown;
     color: $brown;
-    border: 5px solid $brown;
-
     & p a {
-        color: $brown;
+        color: $pink;
 
         &:visited {
-            color: $brown;
+            color: $green;
         }
     }
 
@@ -96,13 +97,12 @@ p {
 
 .preamble {                                 // The road to enlightenment...
     //grid-template-columns: 1fr 1fr 1fr;
-    border: 5px solid $brown;
     background: $brown;
     color: $brown-light;
     & p {        
     border-radius: 50%;
     //height: 12rem;
-    width: 18rem;
+    max-width: 18rem;
     text-align: center;
     padding: 2.4em 1.4em .6em 1.4em;
     }
@@ -114,7 +114,6 @@ p {
 
 .main {                    // holds Explanation, Participation, Benefits & Requirements
     //grid-template-columns: 1fr 1fr 1fr;
-    border: 5px solid mix(indigo, white, 65%);
     background: $brown;
     color: $brown-light;
     &:hover {
@@ -125,7 +124,6 @@ p {
 
 .explanation {                                      // So what is this about?
     background: $brown;
-    border: 5px solid mix(hotpink, white, 50%);
     color: $brown-light;
     &:hover {
         background:$brown-light;
@@ -134,74 +132,74 @@ p {
 }
 
 .supporting {    
-    border: 5px solid mix(black, white, 75%);
+    background: mix(black, white, 75%);
 }
 
 .participation {
-    border: 5px solid yellow;
+    background: yellow;
 }
 
 .benefits {
-    border: 5px solid mix(orange, white, 75%);
+    background: mix(orange, white, 75%);
 }
 
 .requirements {
-    border: 5px solid mix(purple, white, 50%);
+    background: mix(purple, white, 50%);
 }
 
 .sidebar {
-    border: 5px solid mix(red, white, 75%);
+    background: mix(red, white, 75%);
 }
 
 .wrapper {
-    border: 5px solid mix(indigo, white, 50%);
+    background: mix(indigo, white, 50%);
 }
 
 .design-selection {
-    border: 5px solid mix(yellow, white, 50%);
+    background: mix(yellow, white, 50%);
 
 }
 
 .select {
-    border: 5px solid mix(blue, white, 50%);
+    background: mix(blue, white, 50%);
 }
 
 .designer-name {
-    border: 5px solid mix(green, white, 50%);
+    background: mix(green, white, 50%);
 
 }
 
 .design-name {
-    border: 5px solid mix(purple, white, 50%);
+    background: mix(purple, white, 50%);
 }
 
 .design-archives {
-    border: 5px solid mix(white, white, 50%);
+    background: mix(black, white, 50%);
 
 }
 
 .archives {
-    border: 5px solid mix(orange, white, 50%);
+    background: mix(orange, white, 50%);
 }
 
 .next {
-    border: 5px solid mix(green, white, 50%);
+    background: mix(green, white, 50%);
 }
 
 .viewall {
-    border: 5px solid mix(red, white, 50%);
+    background: mix(red, white, 50%);
 }
 
 .zen-resources {
-    border: 5px solid mix(green, white, 50%);
+    background: mix(green, white, 50%);
 }
 
 .view-css {
-    border: 5px solid mix(hotpink, white, 50%);
+    background: mix(hotpink, white, 50%);
 }
 
 .css-resources {
-    border: 5px solid mix(yellow, white, 50%);
+    background: mix(yellow, white, 50%);
 
 }
 
