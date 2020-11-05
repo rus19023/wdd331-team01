@@ -31,33 +31,33 @@ p {
   max-width: 100%;
   text-align: center;
   padding: 2.4em 1.4em 0.6em 1.4em;
-  border: 5px solid #3d2818;
-  color: #cfc9c5;
+  border: 5px solid #532c10;
+  color: #d4cac3;
 }
 
 .summary {
-  background: #3d2818;
-  color: #3d2818;
-  border: 5px solid #3d2818;
+  background: #532c10;
+  color: #532c10;
+  border: 5px solid #532c10;
 }
 .summary p a {
-  color: #3d2818;
+  color: #532c10;
 }
 .summary p a:visited {
-  color: #3d2818;
+  color: #532c10;
 }
 .summary:hover {
-  background: #cfc9c5;
-  color: #cfc9c5;
+  background: #d4cac3;
+  color: #d4cac3;
 }
 .summary:hover a:visited {
-  color: #3d2818;
+  color: #532c10;
 }
 
 .preamble {
-  border: 5px solid #3d2818;
-  background: #3d2818;
-  color: #cfc9c5;
+  border: 5px solid #532c10;
+  background: #532c10;
+  color: #d4cac3;
 }
 .preamble p {
   border-radius: 50%;
@@ -66,28 +66,28 @@ p {
   padding: 2.4em 1.4em 0.6em 1.4em;
 }
 .preamble:hover {
-  background: #cfc9c5;
-  color: #3d2818;
+  background: #d4cac3;
+  color: #532c10;
 }
 
 .main {
   border: 5px solid #8a59ae;
-  background: #3d2818;
-  color: #cfc9c5;
+  background: #532c10;
+  color: #d4cac3;
 }
 .main:hover {
-  background: #cfc9c5;
-  color: #3d2818;
+  background: #d4cac3;
+  color: #532c10;
 }
 
 .explanation {
-  background: #3d2818;
+  background: #532c10;
   border: 5px solid #ffb4da;
-  color: #cfc9c5;
+  color: #d4cac3;
 }
 .explanation:hover {
-  background: #cfc9c5;
-  color: #3d2818;
+  background: #d4cac3;
+  color: #532c10;
 }
 
 .supporting {
