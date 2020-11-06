@@ -1,11 +1,3 @@
-* {
-  padding: 0 0.2rem 0 0.2rem;
-}
-
-#css-zen-garden {
-  max-width: 100%;
-}
-
 .intro {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -52,7 +44,7 @@
 }
 
 footer {
-  max-width: 100%;
+  width: 100%;
   height: 100px;
   position: absolute;
   bottom: -2750px;
@@ -66,31 +58,29 @@ html {
 }
 
 body {
-  font: 75% poppins 400 regular, georgia, sans-serif;
+  font-family: "Poppins", "Georgia", sans-serif;
+  font-size: 55%;
+  font-weight: 400;
   padding: 1rem;
   background: #09ac6a;
-  color: #daf3e9;
-  font-size: 1.5vw;
+  color: #c2eada;
 }
 body :hover {
-  /*url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; */
   background-image: url("assets/grass.jpg");
   color: #09ac6a;
 }
 
 header {
   text-align: center;
+  max-width: 100%;
   background-image: url("assets/sun.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 600px;
-  line-height: 135px;
+  background-size: contain;
+  color: #532c10;
 }
 header :hover {
-  background-image: url("assets/sun.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #bb516c;
+  color: #09ac6a;
 }
 
 p {
@@ -99,14 +89,14 @@ p {
 
 .page-wrapper {
   background: #09ac6a;
-  color: #daf3e9;
+  color: #c2eada;
 }
 .page-wrapper h1, .page-wrapper h2 {
-  color: #09ac6a;
+  color: #532c10;
 }
 .page-wrapper:hover {
-  background: #daf3e9;
-  color: #daf3e9;
+  background: #c2eada;
+  color: #c2eada;
 }
 .page-wrapper:hover a:visited, .page-wrapper:hover h1, .page-wrapper:hover h2 {
   color: #532c10;

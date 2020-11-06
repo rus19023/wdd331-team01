@@ -1,22 +1,17 @@
-*{
-    padding: 0 0.2rem 0 0.2rem;
-}
-#css-zen-garden{
-    width: 100%;
-}
-.intro{
+.intro {
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    header{
+    & header{
         grid-column: 1/7;
     }
-    .summary{
+    & .summary{
         grid-column: 1/7;
     }
     .preamble{
         grid-column: 1/6;
     }
 }
+
 .main {
     display: grid;
     grid-template-columns: repeat(6,1fr);
