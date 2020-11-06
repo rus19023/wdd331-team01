@@ -4,17 +4,20 @@ $color-1: gray;
 html {
 	margin: 0;
 	padding: 0;
-	}
+}
+
 body { 
 	font-family: serif;	
 	color: black; 
 	 /*url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; */
 	 background-image: url("grass.jpg");
-	}
-.page-wrapper{
+}
+
+.page-wrapper {
 	display: grid;
 	grid-template-columns: $grid-12;
-}	
+}
+
 header {
 	text-align: center;
 	background-image: url("sun.png");
@@ -23,14 +26,17 @@ header {
 	background-size: 600px;
 	line-height: 135px;	
 }
-.intro{
+
+.intro {
 	grid-column:1/13;
 }
-.summary{
+
+.summary {
 	text-align: left;
 	padding: 0 5% 10px 5%;
 	margin: -15px 0px 20px 0px;
 }
+
 .preamble, .participation, .requirements {
 	background: #EFD488;/* tan*/	
 	margin-top: -20px;
@@ -41,7 +47,8 @@ header {
 	border-width: 40px 40px 0 0;
 	padding-right: 10%;
 }
-.preamble{
+
+.preamble {
 	margin: 23px 1.25% 0 1%;
 	margin-bottom: -17px;
 }
@@ -49,12 +56,14 @@ header {
 .participation, .requirements, .explanation, .benefits, footer {
 	margin: 0 17px 0 17px;
 }
-.requirements{
+
+.requirements {
 	border-style: solid;
 	border-bottom-color: $color-1;
 	border-color: $color-1;
 	border-width: 40px 40px 40px 0;
 }
+
 /*.participation:before{
 	width: 100px;
 	height: 40px;
@@ -62,16 +71,19 @@ header {
 	position: absolute;
 	bottom: 10px;
 }*/
-.main{
+
+.main {
 	grid-column:1/13;
 	display: grid;
 	grid-template-columns: $grid-12;
 	grid-template-rows: repeat(5, auto);	
 }
+
 .main h3, p {
 	padding: 0 5%; 
 }
-.sidebar{
+
+.sidebar {
 	grid-column:1/13;
 }
 .preamble h3 {

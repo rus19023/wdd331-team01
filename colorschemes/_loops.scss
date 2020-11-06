@@ -1,0 +1,13 @@
+//make column classes 
+@for $index from $loop-start to $loop-end {
+    .col-#{$index} {
+        @include get-hex-color('$color'#{$index});
+    }
+  }
+  
+  //make offset classes
+  @for $index from $loop-start to $loop-end {
+    .offset-#{$index} {
+        @include offset($index);
+    }
+  }

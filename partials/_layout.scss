@@ -1,0 +1,26 @@
+$grid-12:repeat(12,1fr);
+
+.page-wrapper {
+	display: grid;
+	grid-template-columns: $grid-12;
+}
+
+.intro {
+	grid-column:1/13;
+}
+
+.summary {
+	text-align: left;
+	padding: 0 5% 10px 5%;
+	margin: -15px 0px 20px 0px;
+}
+
+.preamble, .participation, .requirements {
+	margin-top: -20px;
+	grid-column:1/13;
+	border-style: solid;
+	border-right-color: $color-1;
+	border-top-color: $color-1;
+	border-width: 40px 40px 0 0;
+	padding-right: 10%;
+}

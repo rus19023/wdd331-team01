@@ -1,149 +1,230 @@
+.intro {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.intro header {
+  grid-column: 1/7;
+}
+.intro .summary {
+  grid-column: 1/7;
+}
+.intro .preamble {
+  grid-column: 1/6;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.main .explanation {
+  grid-column: 2/7;
+}
+.main .participation {
+  grid-column: 1/6;
+}
+.main .benefits {
+  grid-column: 2/7;
+}
+.main .requirements {
+  grid-column: 1/6;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.wrapper .design-selection {
+  grid-column: 2/7;
+}
+.wrapper .design-archives {
+  grid-column: 1/6;
+}
+.wrapper .zen-resources {
+  grid-column: 2/7;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: -2750px;
+  left: 0;
+  align-items: center;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Georgia", sans-serif;
+  font-size: 55%;
+  font-weight: 400;
+}
+
 body {
-  padding: 1rem;
+  background: #09ac6a;
+  color: #c2eada;
+}
+body :hover {
+  background-image: url("assets/grass.jpg");
+  color: #09ac6a;
+}
+
+header {
+  text-align: center;
+  max-width: 100%;
+  background-image: url("assets/sun.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #532c10;
+}
+header:hover {
+  color: #09ac6a;
+}
+
+p {
+  max-width: 100%;
 }
 
 .page-wrapper {
-  background: #251182;
-  color: #dedbec;
-  border: 5px solid #80c080;
+  background: #09ac6a;
+  color: #c2eada;
+}
+.page-wrapper h1, .page-wrapper h2 {
+  color: #532c10;
 }
 .page-wrapper:hover {
-  background: #dedbec;
-  color: #251182;
+  background: #c2eada;
+  color: #c2eada;
 }
-.page-wrapper:hover a:visited {
-  color: #251182;
+.page-wrapper:hover a:visited, .page-wrapper:hover h1, .page-wrapper:hover h2 {
+  color: #532c10;
 }
 
 .intro {
-  border-radius: 50%;
   max-width: 100%;
   text-align: center;
   padding: 2.4em 1.4em 0.6em 1.4em;
-  border: 5px solid #c080c0;
+  color: #d4cac3;
 }
 
 .summary {
-  background: #3d2818;
-  color: #3d2818;
-  border: 5px solid #8080ff;
+  background: #532c10;
+  color: #532c10;
 }
 .summary p a {
-  color: #3d2818;
+  color: #bb516c;
 }
 .summary p a:visited {
-  color: #3d2818;
+  color: #09ac6a;
 }
 .summary:hover {
-  background: #daf3e9;
-  color: #09ac6a;
+  background: #d4cac3;
+  color: #d4cac3;
 }
 .summary:hover a:visited {
-  color: #09ac6a;
+  color: #532c10;
 }
 
 .preamble {
-  border: 5px solid #bfbfbf;
-  background: #3d2818;
-  color: #cfc9c5;
+  background: #532c10;
+  color: #d4cac3;
 }
 .preamble p {
   border-radius: 50%;
-  width: 18rem;
+  max-width: 18rem;
   text-align: center;
   padding: 2.4em 1.4em 0.6em 1.4em;
 }
 .preamble:hover {
-  background: #cfc9c5;
-  color: #3d2818;
-}
-
-.explanation {
-  background: #3d2818;
-  border: 5px solid #ffb4da;
-  color: #cfc9c5;
-}
-.explanation:hover {
-  background: #cfc9c5;
-  color: #3d2818;
+  background: #d4cac3;
+  color: #532c10;
 }
 
 .main {
-  border: 5px solid #8a59ae;
-  background: #3d2818;
-  color: #cfc9c5;
+  background: #532c10;
+  color: #d4cac3;
 }
 .main:hover {
-  background: #cfc9c5;
-  color: #3d2818;
+  background: #d4cac3;
+  color: #532c10;
+}
+
+.explanation {
+  background: #532c10;
+  color: #d4cac3;
+}
+.explanation:hover {
+  background: #d4cac3;
+  color: #532c10;
 }
 
 .supporting {
-  border: 5px solid #404040;
+  background: #404040;
 }
 
 .participation {
-  border: 5px solid yellow;
+  background: yellow;
 }
 
 .benefits {
-  border: 5px solid #ffbc40;
+  background: #ffbc40;
 }
 
 .requirements {
-  border: 5px solid #c080c0;
+  background: #c080c0;
 }
 
 .sidebar {
-  border: 5px solid #ff4040;
+  background: #ff4040;
 }
 
 .wrapper {
-  border: 5px solid #a580c1;
+  background: #a580c1;
 }
 
 .design-selection {
-  border: 5px solid #ffff80;
+  background: #ffff80;
 }
 
 .select {
-  border: 5px solid #8080ff;
+  background: #8080ff;
 }
 
 .designer-name {
-  border: 5px solid #80c080;
+  background: #80c080;
 }
 
 .design-name {
-  border: 5px solid #c080c0;
+  background: #c080c0;
 }
 
 .design-archives {
-  border: 5px solid white;
+  background: gray;
 }
 
 .archives {
-  border: 5px solid #ffd280;
+  background: #ffd280;
 }
 
 .next {
-  border: 5px solid #80c080;
+  background: #80c080;
 }
 
 .viewall {
-  border: 5px solid #ff8080;
+  background: #ff8080;
 }
 
 .zen-resources {
-  border: 5px solid #80c080;
+  background: #80c080;
 }
 
 .view-css {
-  border: 5px solid #ffb4da;
+  background: #ffb4da;
 }
 
 .css-resources {
-  border: 5px solid #ffff80;
+  background: #ffff80;
 }
 
 /*# sourceMappingURL=style.css.map */
