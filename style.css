@@ -55,34 +55,31 @@ footer {
 html {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", "Georgia", sans-serif;
+  font-size: 55%;
+  font-weight: 400;
 }
 
 body {
-  font: 75% poppins 400 regular, georgia, sans-serif;
-  padding: 1rem;
   background: #09ac6a;
   color: #c2eada;
-  font-size: 1.5vw;
 }
 body :hover {
-  /*url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; */
   background-image: url("assets/grass.jpg");
   color: #09ac6a;
 }
 
 header {
   text-align: center;
+  max-width: 100%;
   background-image: url("assets/sun.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 600px;
-  line-height: 135px;
+  background-size: contain;
+  color: #532c10;
 }
-header :hover {
-  background-image: url("assets/sun.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #bb516c;
+header:hover {
+  color: #09ac6a;
 }
 
 p {
@@ -94,7 +91,7 @@ p {
   color: #c2eada;
 }
 .page-wrapper h1, .page-wrapper h2 {
-  color: #09ac6a;
+  color: #532c10;
 }
 .page-wrapper:hover {
   background: #c2eada;

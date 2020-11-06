@@ -5,15 +5,15 @@ $brown: #532c10;
 $brown-light: mix($brown, white, 25%);
 
 $green: #09ac6a;
-$green-light: mix($green, white, 15%);
+$green-light: mix($green, white, 25%);
 $green-comp: complement($green);
 $green-comp-light: mix($green-comp, white, 50%);
 
-$blue: #251182;
-$blue-light: mix($blue, white, 15%);
-
 $yellow: #ffcb0c;
 $yellow-light: mix($yellow, white, 20%);
+
+$blue: #251182;
+$blue-light: complement($yellow);
 
 $pink: #bb516c;
 $pink-light: mix($pink, white, 25%);
