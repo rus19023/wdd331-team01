@@ -55,13 +55,12 @@ footer {
 html {
   margin: 0;
   padding: 0;
-}
-
-body {
   font-family: "Poppins", "Georgia", sans-serif;
   font-size: 55%;
   font-weight: 400;
-  padding: 1rem;
+}
+
+body {
   background: #09ac6a;
   color: #c2eada;
 }
@@ -79,7 +78,7 @@ header {
   background-size: contain;
   color: #532c10;
 }
-header :hover {
+header:hover {
   color: #09ac6a;
 }
 

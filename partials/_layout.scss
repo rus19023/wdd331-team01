@@ -1,51 +1,26 @@
-.intro {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    & header{
-        grid-column: 1/7;
-    }
-    & .summary{
-        grid-column: 1/7;
-    }
-    .preamble{
-        grid-column: 1/6;
-    }
+$grid-12:repeat(12,1fr);
+
+.page-wrapper {
+	display: grid;
+	grid-template-columns: $grid-12;
 }
 
-.main {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    .explanation{
-        grid-column: 2/7;
-    }
-    .participation{
-        grid-column: 1/6;
-    }
-    .benefits{
-        grid-column: 2/7;
-    }
-    .requirements{
-        grid-column: 1/6;
-    }
+.intro {
+	grid-column:1/13;
 }
-.wrapper{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    .design-selection{
-        grid-column: 2/7;
-    }
-    .design-archives{
-        grid-column: 1/6;
-    }
-    .zen-resources{
-        grid-column: 2/7;
-    }
+
+.summary {
+	text-align: left;
+	padding: 0 5% 10px 5%;
+	margin: -15px 0px 20px 0px;
 }
-footer{
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    bottom: -2750px;
-    left: 0;
-    align-items: center;
+
+.preamble, .participation, .requirements {
+	margin-top: -20px;
+	grid-column:1/13;
+	border-style: solid;
+	border-right-color: $color-1;
+	border-top-color: $color-1;
+	border-width: 40px 40px 0 0;
+	padding-right: 10%;
 }

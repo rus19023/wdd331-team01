@@ -5,13 +5,12 @@
 html {
 	margin: 0;
 	padding: 0;
-}
-
-body {
     font-family: "Poppins", "Georgia", sans-serif;
     font-size: 55%;
     font-weight: 400;
-    padding: 1rem;
+}
+
+body {
     background: $green;
     color: $green-light;
     & :hover {
@@ -28,7 +27,7 @@ header {
     background-position: center;
     background-size: contain;
     color: $brown;
-    & :hover {
+    &:hover {
         color: $green;
     }
 }
