@@ -1,5 +1,6 @@
 @import "partials/variables";
 @import "partials/layout";
+@import "partials/animations";
 
 
 html {
@@ -13,10 +14,6 @@ html {
 body {
     background: $green;
     color: $green-light;
-    & :hover {
-        background-image: url("assets/grass.jpg");
-        color: $green;
-    }
 }
 
 header {
@@ -28,6 +25,9 @@ header {
     background-size: contain;
     color: $brown;
     &:hover {
+        & :hover {
+            animation: bg-change 5s infinite;
+        }
         color: $green;
     }
 }
@@ -43,9 +43,8 @@ p {
     & h1, h2 {
         color: $brown;
     }
-    &:hover {
-        background: $green-light;
-        color: $green-light;
+    & :hover {
+        animation: bg-change 5s infinite;
         & a:visited, h1, h2 {
             color: $brown;
         }

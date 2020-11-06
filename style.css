@@ -64,10 +64,6 @@ body {
   background: #09ac6a;
   color: #c2eada;
 }
-body :hover {
-  background-image: url("assets/grass.jpg");
-  color: #09ac6a;
-}
 
 header {
   text-align: center;
@@ -81,6 +77,9 @@ header {
 header:hover {
   color: #09ac6a;
 }
+header:hover :hover {
+  animation: bg-change 5s infinite;
+}
 
 p {
   max-width: 100%;
@@ -93,11 +92,10 @@ p {
 .page-wrapper h1, .page-wrapper h2 {
   color: #532c10;
 }
-.page-wrapper:hover {
-  background: #c2eada;
-  color: #c2eada;
+.page-wrapper :hover {
+  animation: bg-change 5s infinite;
 }
-.page-wrapper:hover a:visited, .page-wrapper:hover h1, .page-wrapper:hover h2 {
+.page-wrapper :hover a:visited, .page-wrapper :hover h1, .page-wrapper :hover h2 {
   color: #532c10;
 }
 
