@@ -1,0 +1,16 @@
+@keyframes grow {
+    0% {
+        top: 200px;
+    }
+    50% {
+        top: 50px;
+    }
+    100% {
+        top: 200px;
+    }
+}
+
+@keyframes bg-change {
+    from {background: $green;}
+    to {background-image: url("assets/grass.jpg");}
+  }

@@ -1,11 +1,14 @@
+@import "loops";
+@import "mixins";
+
 // VARIABLES
 // Colors
-$color1: #bb516C;
+$color1: #bb516c;
 $color2: #ffcb0c;
 $color3: #251182;
 $color4: #09ac6a;
 $color5: #8b4513;
-$color6: #3d2818;
+$color6: #808080;
 $color7: #7c9150;
 $color8: #ac094b;
 $color9: #532c10;
@@ -160,24 +163,6 @@ h1 {
       content: "#{$color1}";
     }
   }
-  .swatch:nth-of-type(2) {
-    background: $color2;
-    &::before {
-      // if color is light, use black text color, else use white
-      color: light-dark($color2);
-      // print the color info in the swatch
-      content: "#{$color2}";
-    }
-  }
-  .swatch:nth-of-type(3) {
-    background:$color3;
-    &::before {
-      // if color is light, use black text color, else use white
-      color: light-dark($color3);
-      // print the color info in the swatch
-      content: "#{$color3}";
-    }
-  }
   .swatch:nth-of-type(4) {
     background: $color4;
     &::before {
@@ -198,15 +183,39 @@ h1 {
   }
   .swatch:nth-of-type(6) {
     background: $color6;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($color6);
+      // print the color info in the swatch
+      content: "#{$color6}";
+    }
   }
   .swatch:nth-of-type(7) {
     background: $color7;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($color7);
+      // print the color info in the swatch
+      content: "#{$color7}";
+    }
   }
   .swatch:nth-of-type(8) {
     background: $color8;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($color8);
+      // print the color info in the swatch
+      content: "#{$color8}";
+    }
   }
   .swatch:nth-of-type(9) {
     background: $color9;
+    &::before {
+      // if color is light, use black text color, else use white
+      color: light-dark($color9);
+      // print the color info in the swatch
+      content: "#{$color9}";
+    }
   }  
   
   .lighter1 {
