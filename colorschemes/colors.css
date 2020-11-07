@@ -1,3 +1,67 @@
+.swatch:nth-of-type(1) {
+  background: "$color1";
+}
+.swatch:nth-of-type(1)::before {
+  color: light-dark("$color1");
+  content: get-hex-code("$color1");
+}
+
+.swatch:nth-of-type(2) {
+  background: "$color2";
+}
+.swatch:nth-of-type(2)::before {
+  color: light-dark("$color2");
+  content: get-hex-code("$color2");
+}
+
+.swatch:nth-of-type(3) {
+  background: "$color3";
+}
+.swatch:nth-of-type(3)::before {
+  color: light-dark("$color3");
+  content: get-hex-code("$color3");
+}
+
+.swatch:nth-of-type(4) {
+  background: "$color4";
+}
+.swatch:nth-of-type(4)::before {
+  color: light-dark("$color4");
+  content: get-hex-code("$color4");
+}
+
+.swatch:nth-of-type(5) {
+  background: "$color5";
+}
+.swatch:nth-of-type(5)::before {
+  color: light-dark("$color5");
+  content: get-hex-code("$color5");
+}
+
+.swatch:nth-of-type(6) {
+  background: "$color6";
+}
+.swatch:nth-of-type(6)::before {
+  color: light-dark("$color6");
+  content: get-hex-code("$color6");
+}
+
+.swatch:nth-of-type(7) {
+  background: "$color7";
+}
+.swatch:nth-of-type(7)::before {
+  color: light-dark("$color7");
+  content: get-hex-code("$color7");
+}
+
+.swatch:nth-of-type(8) {
+  background: "$color8";
+}
+.swatch:nth-of-type(8)::before {
+  color: light-dark("$color8");
+  content: get-hex-code("$color8");
+}
+
 html {
   line-height: 0.25rem;
 }
@@ -19,27 +83,11 @@ p {
   height: 4rem;
   border: 2px solid #000;
   display: inline-block;
-  background: #bb516C;
+  background: #bb516c;
 }
 .swatch::before {
   color: black;
-  content: "#bb516C";
-}
-
-.swatch:nth-of-type(2) {
-  background: #ffcb0c;
-}
-.swatch:nth-of-type(2)::before {
-  color: black;
-  content: "#ffcb0c";
-}
-
-.swatch:nth-of-type(3) {
-  background: #251182;
-}
-.swatch:nth-of-type(3)::before {
-  color: white;
-  content: "#251182";
+  content: "#bb516c";
 }
 
 .swatch:nth-of-type(4) {
@@ -51,27 +99,43 @@ p {
 }
 
 .swatch:nth-of-type(5) {
-  background: #532c10;
+  background: #8b4513;
 }
 .swatch:nth-of-type(5)::before {
   color: white;
-  content: "#532c10";
+  content: "#8b4513";
 }
 
 .swatch:nth-of-type(6) {
-  background: #3d2818;
+  background: #808080;
+}
+.swatch:nth-of-type(6)::before {
+  color: black;
+  content: "#808080";
 }
 
 .swatch:nth-of-type(7) {
   background: #7c9150;
 }
+.swatch:nth-of-type(7)::before {
+  color: black;
+  content: "#7c9150";
+}
 
 .swatch:nth-of-type(8) {
   background: #ac094b;
 }
+.swatch:nth-of-type(8)::before {
+  color: white;
+  content: "#ac094b";
+}
 
 .swatch:nth-of-type(9) {
-  background: #8b4513;
+  background: #532c10;
+}
+.swatch:nth-of-type(9)::before {
+  color: white;
+  content: "#532c10";
 }
 
 .lighter1 {
@@ -111,19 +175,19 @@ p {
 }
 
 .lighter1:nth-of-type(5) {
-  background: #a99688;
+  background: #c5a289;
 }
 .lighter1:nth-of-type(5)::before {
   color: black;
-  content: "#a99688";
+  content: "#c5a289";
 }
 
 .lighter1:nth-of-type(6) {
-  background: #9e948c;
+  background: silver;
 }
 .lighter1:nth-of-type(6)::before {
   color: black;
-  content: "#9e948c";
+  content: "silver";
 }
 
 .lighter1:nth-of-type(7) {
@@ -143,11 +207,11 @@ p {
 }
 
 .lighter1:nth-of-type(9) {
-  background: #c5a289;
+  background: #a99688;
 }
 .lighter1:nth-of-type(9)::before {
   color: black;
-  content: "#c5a289";
+  content: "#a99688";
 }
 
 .lighter2 {
@@ -187,19 +251,19 @@ p {
 }
 
 .lighter2:nth-of-type(5) {
-  background: #d4cac3;
+  background: #e2d1c4;
 }
 .lighter2:nth-of-type(5)::before {
   color: black;
-  content: "#d4cac3";
+  content: "#e2d1c4";
 }
 
 .lighter2:nth-of-type(6) {
-  background: #cfc9c5;
+  background: #dfdfdf;
 }
 .lighter2:nth-of-type(6)::before {
   color: black;
-  content: "#cfc9c5";
+  content: "#dfdfdf";
 }
 
 .lighter2:nth-of-type(7) {
@@ -219,11 +283,11 @@ p {
 }
 
 .lighter2:nth-of-type(9) {
-  background: #e2d1c4;
+  background: #d4cac3;
 }
 .lighter2:nth-of-type(9)::before {
   color: black;
-  content: "#e2d1c4";
+  content: "#d4cac3";
 }
 
 .comp1 {
@@ -263,15 +327,15 @@ p {
 }
 
 .comp1:nth-of-type(5) {
-  background: #103753;
+  background: #13598b;
 }
 .comp1:nth-of-type(5)::before {
   color: white;
-  content: "#103753";
+  content: "#13598b";
 }
 
 .comp1:nth-of-type(6) {
-  background: #182d3d;
+  background: gray;
 }
 
 .comp1:nth-of-type(7) {
@@ -283,7 +347,7 @@ p {
 }
 
 .comp1:nth-of-type(9) {
-  background: #13598b;
+  background: #103753;
 }
 
 .comp2 {
@@ -323,19 +387,19 @@ p {
 }
 
 .comp2:nth-of-type(5) {
-  background: #889ba9;
+  background: #89acc5;
 }
 .comp2:nth-of-type(5)::before {
   color: black;
-  content: "#889ba9";
+  content: "#89acc5";
 }
 
 .comp2:nth-of-type(6) {
-  background: #8c969e;
+  background: silver;
 }
 .comp2:nth-of-type(6)::before {
   color: black;
-  content: "#8c969e";
+  content: "silver";
 }
 
 .comp2:nth-of-type(7) {
@@ -355,11 +419,11 @@ p {
 }
 
 .comp2:nth-of-type(9) {
-  background: #89acc5;
+  background: #889ba9;
 }
 .comp2:nth-of-type(9)::before {
   color: black;
-  content: "#89acc5";
+  content: "#889ba9";
 }
 
 .comp3 {
@@ -399,15 +463,15 @@ p {
 }
 
 .comp3:nth-of-type(5) {
-  background: #c3cdd4;
+  background: #c4d6e2;
 }
 .comp3:nth-of-type(5)::before {
   color: black;
-  content: "#c3cdd4";
+  content: "#c4d6e2";
 }
 
 .comp3:nth-of-type(6) {
-  background: #c5cbcf;
+  background: #dfdfdf;
 }
 
 .comp3:nth-of-type(7) {
@@ -419,7 +483,7 @@ p {
 }
 
 .comp3:nth-of-type(9) {
-  background: #c4d6e2;
+  background: #c3cdd4;
 }
 
 .analogousl {
@@ -459,15 +523,15 @@ p {
 }
 
 .analogousl:nth-of-type(5) {
-  background: #534e10;
+  background: #8b8113;
 }
 .analogousl:nth-of-type(5)::before {
   color: white;
-  content: "#534e10";
+  content: "#8b8113";
 }
 
 .analogousl:nth-of-type(6) {
-  background: #3d3b18;
+  background: gray;
 }
 
 .analogousl:nth-of-type(7) {
@@ -479,7 +543,7 @@ p {
 }
 
 .analogousl:nth-of-type(9) {
-  background: #8b8113;
+  background: #534e10;
 }
 
 .analogousr {
@@ -519,15 +583,15 @@ p {
 }
 
 .analogousr:nth-of-type(5) {
-  background: #531016;
+  background: #8b131d;
 }
 .analogousr:nth-of-type(5)::before {
   color: white;
-  content: "#531016";
+  content: "#8b131d";
 }
 
 .analogousr:nth-of-type(6) {
-  background: #3d181b;
+  background: gray;
 }
 
 .analogousr:nth-of-type(7) {
@@ -539,7 +603,7 @@ p {
 }
 
 .analogousr:nth-of-type(9) {
-  background: #8b131d;
+  background: #531016;
 }
 
 .analogousl2 {
@@ -579,15 +643,15 @@ p {
 }
 
 .analogousl2:nth-of-type(5) {
-  background: #d4d3c3;
+  background: #e2e0c4;
 }
 .analogousl2:nth-of-type(5)::before {
   color: black;
-  content: "#d4d3c3";
+  content: "#e2e0c4";
 }
 
 .analogousl2:nth-of-type(6) {
-  background: #cfcec5;
+  background: #dfdfdf;
 }
 
 .analogousl2:nth-of-type(7) {
@@ -599,7 +663,7 @@ p {
 }
 
 .analogousl2:nth-of-type(9) {
-  background: #e2e0c4;
+  background: #d4d3c3;
 }
 
 .analogousr2 {
@@ -639,15 +703,15 @@ p {
 }
 
 .analogousr2:nth-of-type(5) {
-  background: #d4c3c5;
+  background: #e2c4c7;
 }
 .analogousr2:nth-of-type(5)::before {
   color: black;
-  content: "#d4c3c5";
+  content: "#e2c4c7";
 }
 
 .analogousr2:nth-of-type(6) {
-  background: #cfc5c6;
+  background: #dfdfdf;
 }
 
 .analogousr2:nth-of-type(7) {
@@ -659,7 +723,7 @@ p {
 }
 
 .analogousr2:nth-of-type(9) {
-  background: #e2c4c7;
+  background: #d4c3c5;
 }
 
 .title {
