@@ -1,3 +1,9 @@
+// GENERAL VARIABLES
+
+$grid-12: repeat(12, 1fr);
+$font-main: "Poppins", "Georgia", sans-serif;
+
+
 // COLORS
 
 $brown: #532c10;
@@ -17,10 +23,5 @@ $blue-light: complement($yellow);
 $pink: #bb516c;
 $pink-light: mix($pink, white, 25%);
 
-$grey: grey;
+$grey: #808080;
 $grey-light: mix($grey, white, 25%);
-
-// GENERAL VARIABLES
-
-$grid-12: repeat(12, 1fr);
-$font-main: "Poppins", "Georgia", sans-serif;
