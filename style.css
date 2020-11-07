@@ -1,18 +1,218 @@
-/* Error: Undefined variable.
- *    ,
- * 22 |     border-right-color: $color-1;
- *    |                         ^^^^^^^^
- *    '
- *   partials\_layout.scss 22:22  @import
- *   style.scss 2:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 22 \2502      border-right-color: $color-1;\d\a    \2502                          ^^^^^^^^\a    \2575 \a   partials\\_layout.scss 22:22  @import\a   style.scss 2:9               root stylesheet";
+.page-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
+
+.intro {
+  grid-column: 1/13;
+}
+
+.summary {
+  text-align: left;
+  padding: 0 5% 10px 5%;
+  margin: -15px 0px 20px 0px;
+}
+
+.preamble, .participation, .requirements {
+  margin-top: -20px;
+  grid-column: 1/13;
+  border-style: solid;
+  border-right-color: #808080;
+  border-top-color: #808080;
+  border-width: 40px 40px 0 0;
+  padding-right: 10%;
+}
+
+@keyframes grow {
+  0% {
+    top: 200px;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+@keyframes bg-change {
+  from {
+    background: #09ac6a;
+  }
+  to {
+    background-image: url("assets/grass.jpg");
+  }
+}
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Georgia", sans-serif;
+  font-size: 55%;
+  font-weight: 400;
+}
+
+body {
+  background: #09ac6a;
+  color: #c2eada;
+}
+
+header {
+  text-align: center;
+  max-width: 100%;
+  background-image: url("assets/sun.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #8b4513;
+}
+header:hover {
+  color: #09ac6a;
+}
+header:hover :hover {
+  animation: bg-change 5s infinite;
+}
+
+p {
+  max-width: 100%;
+}
+
+.page-wrapper {
+  background: #09ac6a;
+  color: #c2eada;
+}
+.page-wrapper h1, .page-wrapper h2 {
+  color: #8b4513;
+}
+.page-wrapper :hover {
+  animation: bg-change 5s infinite;
+}
+.page-wrapper :hover a:visited, .page-wrapper :hover h1, .page-wrapper :hover h2 {
+  color: #8b4513;
+}
+
+.intro {
+  max-width: 100%;
+  text-align: center;
+  padding: 2.4em 1.4em 0.6em 1.4em;
+  color: #e2d1c4;
+}
+
+.summary {
+  background: #8b4513;
+  color: #8b4513;
+}
+.summary p a {
+  color: #bb516c;
+}
+.summary p a:visited {
+  color: #09ac6a;
+}
+.summary:hover {
+  background: #e2d1c4;
+  color: #e2d1c4;
+}
+.summary:hover a:visited {
+  color: #8b4513;
+}
+
+.preamble {
+  background: #8b4513;
+  color: #e2d1c4;
+}
+.preamble p {
+  border-radius: 50%;
+  max-width: 18rem;
+  text-align: center;
+  padding: 2.4em 1.4em 0.6em 1.4em;
+}
+.preamble:hover {
+  background: #e2d1c4;
+  color: #8b4513;
+}
+
+.main {
+  background: #8b4513;
+  color: #e2d1c4;
+}
+.main:hover {
+  background: #e2d1c4;
+  color: #8b4513;
+}
+
+.explanation {
+  background: #8b4513;
+  color: #e2d1c4;
+}
+.explanation:hover {
+  background: #e2d1c4;
+  color: #8b4513;
+}
+
+.supporting {
+  background: #404040;
+}
+
+.participation {
+  background: yellow;
+}
+
+.benefits {
+  background: #ffbc40;
+}
+
+.requirements {
+  background: #c080c0;
+}
+
+.sidebar {
+  background: #ff4040;
+}
+
+.wrapper {
+  background: #a580c1;
+}
+
+.design-selection {
+  background: #ffff80;
+}
+
+.select {
+  background: #8080ff;
+}
+
+.designer-name {
+  background: #80c080;
+}
+
+.design-name {
+  background: #c080c0;
+}
+
+.design-archives {
+  background: gray;
+}
+
+.archives {
+  background: #ffd280;
+}
+
+.next {
+  background: #80c080;
+}
+
+.viewall {
+  background: #ff8080;
+}
+
+.zen-resources {
+  background: #80c080;
+}
+
+.view-css {
+  background: #ffb4da;
+}
+
+.css-resources {
+  background: #ffff80;
+}
+
+/*# sourceMappingURL=style.css.map */
