@@ -1037,10 +1037,10 @@ img {
 body {
   font-family: "BYUI Open Sans", Georgia, sans-serif;
   color: #056cb6;
-  max-width: 96%;
 }
 
 .site-banner {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   background: #056cb6;
@@ -1048,14 +1048,22 @@ body {
 
 .site-banner__left {
   grid-column: 1/2;
-  font-size: 1em;
+}
+.site-banner__left a {
+  text-decoration: none;
 }
 
 .site-banner__right {
   grid-column: 8/13;
   grid-template-columns: repeat(autofit(minmax(200px, 1fr)));
   justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  font-weight: bold;
   border: solid 5px greenyellow;
+}
+.site-banner__right a {
+  text-decoration: none;
 }
 
 .white-text {
@@ -1064,8 +1072,7 @@ body {
 
 .icon-byui-logo {
   background: #020202;
-  padding: 2%;
-  height: 2vh;
+  text-decoration: none;
 }
 
 main {

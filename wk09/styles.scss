@@ -8,7 +8,9 @@ $link-blue: #0076b6; //why do we have both of these blues?
 $byui-blue: #056cb6;
 
 @import 'typography';
+
 @import 'icons';
+
 // Utility classes
 *,
 *:before,
@@ -36,10 +38,10 @@ img {
 body {
   font-family: 'BYUI Open Sans', Georgia, sans-serif;
   color: $byui-blue;
-  max-width: 96%;
 }
 
 .site-banner {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   background: $byui-blue;
@@ -47,7 +49,9 @@ body {
 
 .site-banner__left {  
   grid-column: 1/2;
-  font-size: 1em;
+  & a {
+    text-decoration: none;
+  }
   //border: solid 5px hotpink;
 }
 
@@ -55,10 +59,13 @@ body {
   grid-column: 8/13;
   grid-template-columns: repeat(autofit(minmax(200px, 1fr)));
   justify-content: space-evenly;
-  border: solid 5px greenyellow;
+  align-items: center;
+  padding: 1rem;
+  font-weight: bold;
   & a {
     text-decoration: none;
   }
+  border: solid 5px greenyellow;
 }
 
 .white-text {
@@ -67,8 +74,6 @@ body {
 
 .icon-byui-logo {
   background: $body-font;
-  padding: 2%;
-  height: 2vh;
   text-decoration: none;
 }
 
