@@ -1,0 +1,63 @@
+* {
+  padding: 0 0.2rem 0 0.2rem;
+}
+
+#css-zen-garden {
+  width: 100%;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.intro header {
+  grid-column: 1/7;
+}
+.intro .summary {
+  grid-column: 1/7;
+}
+.intro .preamble {
+  grid-column: 1/6;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.main .explanation {
+  grid-column: 2/7;
+}
+.main .participation {
+  grid-column: 1/6;
+}
+.main .benefits {
+  grid-column: 2/7;
+}
+.main .requirements {
+  grid-column: 1/6;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.wrapper .design-selection {
+  grid-column: 2/7;
+}
+.wrapper .design-archives {
+  grid-column: 1/6;
+}
+.wrapper .zen-resources {
+  grid-column: 2/7;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: -2750px;
+  left: 0;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
