@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="textInCircle.css">
+</head>
+<body>
+    <svg viewBox="0 0 100 100" >
+        <circle r="48" cx="50" cy="50"/>
+        <foreignObject id="text" width="100" height="100">
+            <div class="shape shape-left"></div>
+            <div class="shape shape-right"></div>
+            <div class="text">
+                <h1 contenteditable>Flowing text inside a shape</h1>
+                <p contenteditable>This technique uses two shapes set as shape-outside to flow text within a shape, mimicking the functionality of the shape-inside property. It's implemented in an SVG foreignObject tag so it's scalable. Edit the text and notice how it stays within its bounds.</p>  
+            </div> 
+        </foreignObject>
+    </svg>
+</body>
+</html>

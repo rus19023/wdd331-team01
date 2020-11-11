@@ -1,0 +1,804 @@
+html {
+  line-height: 0.25rem;
+}
+
+div {
+  line-height: 1rem;
+}
+
+h1 {
+  padding: 1rem;
+}
+
+p {
+  padding: 0.4rem;
+}
+
+.swatch {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #004756;
+}
+.swatch::before {
+  color: white;
+  content: "#004756";
+}
+
+.swatch:nth-of-type(2) {
+  background: #009fb2;
+}
+.swatch:nth-of-type(2)::before {
+  color: white;
+  content: "#009fb2";
+}
+
+.swatch:nth-of-type(3) {
+  background: #fff;
+}
+.swatch:nth-of-type(3)::before {
+  color: black;
+  content: "#fff";
+}
+
+.swatch:nth-of-type(4) {
+  background: #000;
+}
+.swatch:nth-of-type(4)::before {
+  color: white;
+  content: "#000";
+}
+
+.swatch:nth-of-type(5) {
+  background: #fff;
+}
+.swatch:nth-of-type(5)::before {
+  color: black;
+  content: "#fff";
+}
+
+.swatch:nth-of-type(6) {
+  background: #fff;
+}
+.swatch:nth-of-type(6)::before {
+  color: black;
+  content: "#fff";
+}
+
+.swatch:nth-of-type(7) {
+  background: #fff;
+}
+.swatch:nth-of-type(7)::before {
+  color: black;
+  content: "#fff";
+}
+
+.swatch:nth-of-type(8) {
+  background: #fff;
+}
+.swatch:nth-of-type(8)::before {
+  color: black;
+  content: "#fff";
+}
+
+.swatch:nth-of-type(9) {
+  background: #fff;
+}
+.swatch:nth-of-type(9)::before {
+  color: black;
+  content: "#fff";
+}
+
+.lighter1 {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #80a3ab;
+}
+.lighter1::before {
+  color: black;
+  content: "#80a3ab";
+}
+
+.lighter1:nth-of-type(2) {
+  background: #80cfd9;
+}
+.lighter1:nth-of-type(2)::before {
+  color: black;
+  content: "#80cfd9";
+}
+
+.lighter1:nth-of-type(3) {
+  background: white;
+}
+.lighter1:nth-of-type(3)::before {
+  color: black;
+  content: "white";
+}
+
+.lighter1:nth-of-type(4) {
+  background: gray;
+}
+.lighter1:nth-of-type(4)::before {
+  color: black;
+  content: "gray";
+}
+
+.lighter1:nth-of-type(5) {
+  background: white;
+}
+.lighter1:nth-of-type(5)::before {
+  color: black;
+  content: "white";
+}
+
+.lighter1:nth-of-type(6) {
+  background: white;
+}
+.lighter1:nth-of-type(6)::before {
+  color: black;
+  content: "white";
+}
+
+.lighter1:nth-of-type(7) {
+  background: white;
+}
+.lighter1:nth-of-type(7)::before {
+  color: black;
+  content: "white";
+}
+
+.lighter1:nth-of-type(8) {
+  background: white;
+}
+.lighter1:nth-of-type(8)::before {
+  color: black;
+  content: "white";
+}
+
+.lighter1:nth-of-type(9) {
+  background: white;
+}
+.lighter1:nth-of-type(9)::before {
+  color: black;
+  content: "white";
+}
+
+.lighter2 {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #bfd1d5;
+}
+.lighter2::before {
+  color: black;
+  content: "#bfd1d5";
+}
+
+.lighter2:nth-of-type(2) {
+  background: #bfe7ec;
+}
+.lighter2:nth-of-type(2)::before {
+  color: black;
+  content: "#bfe7ec";
+}
+
+.lighter2:nth-of-type(3) {
+  background: white;
+}
+.lighter2:nth-of-type(3)::before {
+  color: black;
+  content: "white";
+}
+
+.lighter2:nth-of-type(4) {
+  background: #bfbfbf;
+}
+.lighter2:nth-of-type(4)::before {
+  color: black;
+  content: "#bfbfbf";
+}
+
+.lighter2:nth-of-type(5) {
+  background: white;
+}
+.lighter2:nth-of-type(5)::before {
+  color: black;
+  content: "white";
+}
+
+.lighter2:nth-of-type(6) {
+  background: white;
+}
+.lighter2:nth-of-type(6)::before {
+  color: black;
+  content: "white";
+}
+
+.lighter2:nth-of-type(7) {
+  background: white;
+}
+.lighter2:nth-of-type(7)::before {
+  color: black;
+  content: "white";
+}
+
+.lighter2:nth-of-type(8) {
+  background: white;
+}
+.lighter2:nth-of-type(8)::before {
+  color: black;
+  content: "white";
+}
+
+.lighter2:nth-of-type(9) {
+  background: white;
+}
+.lighter2:nth-of-type(9)::before {
+  color: black;
+  content: "white";
+}
+
+.comp1 {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #560f00;
+}
+.comp1::before {
+  color: white;
+  content: "#560f00";
+}
+
+.comp1:nth-of-type(2) {
+  background: #b21300;
+}
+.comp1:nth-of-type(2)::before {
+  color: white;
+  content: "#b21300";
+}
+
+.comp1:nth-of-type(3) {
+  background: white;
+}
+.comp1:nth-of-type(3)::before {
+  color: black;
+  content: "white";
+}
+
+.comp1:nth-of-type(4) {
+  background: black;
+}
+.comp1:nth-of-type(4)::before {
+  color: white;
+  content: "black";
+}
+
+.comp1:nth-of-type(5) {
+  background: white;
+}
+.comp1:nth-of-type(5)::before {
+  color: black;
+  content: "white";
+}
+
+.comp1:nth-of-type(6) {
+  background: white;
+}
+.comp1:nth-of-type(6)::before {
+  color: black;
+  content: "white";
+}
+
+.comp1:nth-of-type(7) {
+  background: white;
+}
+.comp1:nth-of-type(7)::before {
+  color: black;
+  content: "white";
+}
+
+.comp1:nth-of-type(8) {
+  background: white;
+}
+.comp1:nth-of-type(8)::before {
+  color: black;
+  content: "white";
+}
+
+.comp1:nth-of-type(9) {
+  background: white;
+}
+.comp1:nth-of-type(9)::before {
+  color: black;
+  content: "white";
+}
+
+.comp2 {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #ab8780;
+}
+.comp2::before {
+  color: black;
+  content: "#ab8780";
+}
+
+.comp2:nth-of-type(2) {
+  background: #d98980;
+}
+.comp2:nth-of-type(2)::before {
+  color: black;
+  content: "#d98980";
+}
+
+.comp2:nth-of-type(3) {
+  background: white;
+}
+.comp2:nth-of-type(3)::before {
+  color: black;
+  content: "white";
+}
+
+.comp2:nth-of-type(4) {
+  background: gray;
+}
+.comp2:nth-of-type(4)::before {
+  color: black;
+  content: "gray";
+}
+
+.comp2:nth-of-type(5) {
+  background: white;
+}
+.comp2:nth-of-type(5)::before {
+  color: black;
+  content: "white";
+}
+
+.comp2:nth-of-type(6) {
+  background: white;
+}
+.comp2:nth-of-type(6)::before {
+  color: black;
+  content: "white";
+}
+
+.comp2:nth-of-type(7) {
+  background: white;
+}
+.comp2:nth-of-type(7)::before {
+  color: black;
+  content: "white";
+}
+
+.comp2:nth-of-type(8) {
+  background: white;
+}
+.comp2:nth-of-type(8)::before {
+  color: black;
+  content: "white";
+}
+
+.comp2:nth-of-type(9) {
+  background: white;
+}
+.comp2:nth-of-type(9)::before {
+  color: black;
+  content: "white";
+}
+
+.comp3 {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #d5c3bf;
+}
+.comp3::before {
+  color: black;
+  content: "#d5c3bf";
+}
+
+.comp3:nth-of-type(2) {
+  background: #ecc4bf;
+}
+.comp3:nth-of-type(2)::before {
+  color: black;
+  content: "#ecc4bf";
+}
+
+.comp3:nth-of-type(3) {
+  background: white;
+}
+.comp3:nth-of-type(3)::before {
+  color: black;
+  content: "white";
+}
+
+.comp3:nth-of-type(4) {
+  background: #bfbfbf;
+}
+.comp3:nth-of-type(4)::before {
+  color: black;
+  content: "#bfbfbf";
+}
+
+.comp3:nth-of-type(5) {
+  background: white;
+}
+.comp3:nth-of-type(5)::before {
+  color: black;
+  content: "white";
+}
+
+.comp3:nth-of-type(6) {
+  background: white;
+}
+.comp3:nth-of-type(6)::before {
+  color: black;
+  content: "white";
+}
+
+.comp3:nth-of-type(7) {
+  background: white;
+}
+.comp3:nth-of-type(7)::before {
+  color: black;
+  content: "white";
+}
+
+.comp3:nth-of-type(8) {
+  background: white;
+}
+.comp3:nth-of-type(8)::before {
+  color: black;
+  content: "white";
+}
+
+.comp3:nth-of-type(9) {
+  background: white;
+}
+.comp3:nth-of-type(9)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousl {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #001c56;
+}
+.analogousl::before {
+  color: white;
+  content: "#001c56";
+}
+
+.analogousl:nth-of-type(2) {
+  background: #0046b2;
+}
+.analogousl:nth-of-type(2)::before {
+  color: white;
+  content: "#0046b2";
+}
+
+.analogousl:nth-of-type(3) {
+  background: white;
+}
+.analogousl:nth-of-type(3)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousl:nth-of-type(4) {
+  background: black;
+}
+.analogousl:nth-of-type(4)::before {
+  color: white;
+  content: "black";
+}
+
+.analogousl:nth-of-type(5) {
+  background: white;
+}
+.analogousl:nth-of-type(5)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousl:nth-of-type(6) {
+  background: white;
+}
+.analogousl:nth-of-type(6)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousl:nth-of-type(7) {
+  background: white;
+}
+.analogousl:nth-of-type(7)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousl:nth-of-type(8) {
+  background: white;
+}
+.analogousl:nth-of-type(8)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousl:nth-of-type(9) {
+  background: white;
+}
+.analogousl:nth-of-type(9)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousr {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #00563a;
+}
+.analogousr::before {
+  color: white;
+  content: "#00563a";
+}
+
+.analogousr:nth-of-type(2) {
+  background: #00b26c;
+}
+.analogousr:nth-of-type(2)::before {
+  color: white;
+  content: "#00b26c";
+}
+
+.analogousr:nth-of-type(3) {
+  background: white;
+}
+.analogousr:nth-of-type(3)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousr:nth-of-type(4) {
+  background: black;
+}
+.analogousr:nth-of-type(4)::before {
+  color: white;
+  content: "black";
+}
+
+.analogousr:nth-of-type(5) {
+  background: white;
+}
+.analogousr:nth-of-type(5)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousr:nth-of-type(6) {
+  background: white;
+}
+.analogousr:nth-of-type(6)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousr:nth-of-type(7) {
+  background: white;
+}
+.analogousr:nth-of-type(7)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousr:nth-of-type(8) {
+  background: white;
+}
+.analogousr:nth-of-type(8)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousr:nth-of-type(9) {
+  background: white;
+}
+.analogousr:nth-of-type(9)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousl2 {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #bfc6d5;
+}
+.analogousl2::before {
+  color: black;
+  content: "#bfc6d5";
+}
+
+.analogousl2:nth-of-type(2) {
+  background: #bfd1ec;
+}
+.analogousl2:nth-of-type(2)::before {
+  color: black;
+  content: "#bfd1ec";
+}
+
+.analogousl2:nth-of-type(3) {
+  background: white;
+}
+.analogousl2:nth-of-type(3)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousl2:nth-of-type(4) {
+  background: #bfbfbf;
+}
+.analogousl2:nth-of-type(4)::before {
+  color: black;
+  content: "#bfbfbf";
+}
+
+.analogousl2:nth-of-type(5) {
+  background: white;
+}
+.analogousl2:nth-of-type(5)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousl2:nth-of-type(6) {
+  background: white;
+}
+.analogousl2:nth-of-type(6)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousl2:nth-of-type(7) {
+  background: white;
+}
+.analogousl2:nth-of-type(7)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousl2:nth-of-type(8) {
+  background: white;
+}
+.analogousl2:nth-of-type(8)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousl2:nth-of-type(9) {
+  background: white;
+}
+.analogousl2:nth-of-type(9)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousr2 {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #bfd5ce;
+}
+.analogousr2::before {
+  color: black;
+  content: "#bfd5ce";
+}
+
+.analogousr2:nth-of-type(2) {
+  background: #bfecda;
+}
+.analogousr2:nth-of-type(2)::before {
+  color: black;
+  content: "#bfecda";
+}
+
+.analogousr2:nth-of-type(3) {
+  background: white;
+}
+.analogousr2:nth-of-type(3)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousr2:nth-of-type(4) {
+  background: #bfbfbf;
+}
+.analogousr2:nth-of-type(4)::before {
+  color: black;
+  content: "#bfbfbf";
+}
+
+.analogousr2:nth-of-type(5) {
+  background: white;
+}
+.analogousr2:nth-of-type(5)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousr2:nth-of-type(6) {
+  background: white;
+}
+.analogousr2:nth-of-type(6)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousr2:nth-of-type(7) {
+  background: white;
+}
+.analogousr2:nth-of-type(7)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousr2:nth-of-type(8) {
+  background: white;
+}
+.analogousr2:nth-of-type(8)::before {
+  color: black;
+  content: "white";
+}
+
+.analogousr2:nth-of-type(9) {
+  background: white;
+}
+.analogousr2:nth-of-type(9)::before {
+  color: black;
+  content: "white";
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1;
+  grid-gap: 1rem;
+}
+
+.grid1 {
+  display: grid;
+}
+
+.grid2 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/*# sourceMappingURL=icon-colors.css.map */
+
+/*# sourceMappingURL=zencolors.css.map */

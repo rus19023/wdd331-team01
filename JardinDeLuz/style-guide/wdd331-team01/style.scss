@@ -1,0 +1,227 @@
+// VARIABES
+
+// COLORS
+$brown: #3d2818;
+$brown-light: mix($brown, white, 25%);
+
+$green: #09ac6a;
+$green-light: mix($green, white, 15%);
+
+$blue: #251182;
+$blue-light: mix($blue, white, 15%);
+
+$yellow: #ffcb0c;
+$yellow-light: mix($yellow, white, 20%);
+
+$pink: #bb516c;
+$pink-light: mix($pink, white, 25%);
+
+@mixin reverse-colors {
+    
+}
+
+body {
+    //display: grid;
+    //grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+.page-wrapper { 
+    //grid-template-columns: 1fr;
+    background:$blue;
+    color:$blue-light;
+    border: 5px solid mix(green, white, 50%);
+
+    &:hover {
+        background: $blue-light;
+        color: $blue;
+        & a:visited {
+            color: $blue;
+        }
+    }
+}
+
+.intro {
+    //grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 50%;
+    //height: 12rem;
+    max-width: 100%;
+    text-align: center;
+    padding: 2.4em 1.4em .6em 1.4em;
+    border: 5px solid mix(purple, white, 50%);
+}
+
+.summary {
+    //grid-template-columns: 1fr 1fr 1fr;
+    //$size: 400px;
+    // width: $size;
+    // height: $size;
+    // border-radius: $size / 2;
+    // padding: 2rem;
+    background: $brown;
+    color: $brown;
+    border: 5px solid mix(blue, white, 50%);
+
+    & p a {
+        color: $brown;
+
+        &:visited {
+            color: $brown;
+        }
+    }
+
+    &:hover {
+        background: $green-light;
+        color: $green;
+        & a:visited {
+            color: $green;
+        }
+    }
+}
+
+.preamble {
+    //grid-template-columns: 1fr 1fr 1fr;
+    border: 5px solid mix(black, white, 25%);
+    background:$brown;
+    color:$brown-light;
+    & p {        
+    border-radius: 50%;
+    //height: 12rem;
+    width: 18rem;
+    text-align: center;
+    padding: 2.4em 1.4em .6em 1.4em;
+    }
+    &:hover {
+        background:$brown-light;
+        color:$brown;
+    }
+}
+
+.explanation {
+    background: $brown;
+    border: 5px solid mix(hotpink, white, 50%);
+    color: $brown-light;
+    &:hover {
+        background:$brown-light;
+        color:$brown;
+    }
+}
+
+.main {
+    //grid-template-columns: 1fr 1fr 1fr;
+    border: 5px solid mix(indigo, white, 65%);
+    background: $brown;
+    color: $brown-light;
+    &:hover {
+        background:$brown-light;
+        color:$brown;
+    }
+}
+
+.supporting {    
+    border: 5px solid mix(black, white, 75%);
+}
+
+.participation {
+    border: 5px solid yellow;
+}
+
+.benefits {
+    border: 5px solid mix(orange, white, 75%);
+}
+
+.requirements {
+    border: 5px solid mix(purple, white, 50%);
+}
+
+.sidebar {
+    border: 5px solid mix(red, white, 75%);
+}
+
+.wrapper {
+    border: 5px solid mix(indigo, white, 50%);
+}
+
+.design-selection {
+    border: 5px solid mix(yellow, white, 50%);
+
+}
+
+.select {
+    border: 5px solid mix(blue, white, 50%);
+}
+
+.designer-name {
+    border: 5px solid mix(green, white, 50%);
+
+}
+
+.design-name {
+    border: 5px solid mix(purple, white, 50%);
+}
+
+.design-archives {
+    border: 5px solid mix(white, white, 50%);
+
+}
+
+.archives {
+    border: 5px solid mix(orange, white, 50%);
+}
+
+.next {
+    border: 5px solid mix(green, white, 50%);
+}
+
+.viewall {
+    border: 5px solid mix(red, white, 50%);
+}
+
+.zen-resources {
+    border: 5px solid mix(green, white, 50%);
+}
+
+.view-css {
+    border: 5px solid mix(hotpink, white, 50%);
+}
+
+.css-resources {
+    border: 5px solid mix(yellow, white, 50%);
+
+}
+
+.zen-faq {
+
+}
+
+.zen-submit {
+
+}
+
+.zen-translations {
+
+}
+
+.zen-validate-html {
+
+}
+
+.zen-validate-css {
+
+}
+
+.zen-license {
+
+}
+
+.zen-accessibility {
+
+}
+
+.zen-github {
+
+}
+
+.indicator {
+
+}

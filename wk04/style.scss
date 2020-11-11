@@ -1,4 +1,16 @@
+// VARIABES
+
+// COLORS
+$header-font: #ac094b;
+$border-green: #7c9150;
+$background-grey: #c7c4b3;
+$text-font: #000;
+
 body {
     display: grid;
     grid-template-columns: repeat(3);
+}
+
+section, div {
+    border: 3px solid black;
 }

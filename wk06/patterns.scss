@@ -1,0 +1,73 @@
+//variables to setup basic size and shape of the card and pips
+$card-width: 100em;
+$card-height: $card-width * 1.4;
+$font-size-number: $card-width * 0.1;
+$icon-size: $card-width / 5;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//styles to draw a basic outline of a card
+.cards {
+  border: 1px solid grey;
+  height: $card-height;
+  width: $card-width;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 2px 2px 4px darkslategrey;
+  stroke: white;
+  stroke-width: 10;
+}
+
+.dot {
+  fill: skyblue;
+  stroke: hotpink;
+}
+
+.box {
+  fill: slategray;
+  stroke: black;
+}
+
+//set icon size
+.icon {
+  width: $icon-size;
+  height: $icon-size;
+}
+
+.number {
+  text-align: center;
+  font-size: $font-size-number;
+  //an icon that is part of a number should be half the normal size
+  & > .icon {
+    width: $icon-size * 0.5;
+    height: $icon-size * 0.5;
+  }
+}
+
+//rotate bottom pips 180deg
+.rotate {
+  transform: rotate(180deg);
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.diamond-petal {
+  fill: yellowgreen;
+  stroke: black;
+  stroke-width: 1;
+}
+
+circle {
+  fill: hotpink;
+  stroke: purple;
+  stroke-width: 1;
+}

@@ -1,0 +1,70 @@
+h1 {
+  padding: 2rem;
+}
+
+div {
+  display: flex;
+}
+
+.sunflower {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: #004756;
+  background: #004756;
+}
+.sunflower::before {
+  color: white;
+  content: "#004756";
+}
+.sunflower:nth-of-type(2) {
+  background: #009fb2;
+}
+.sunflower:nth-of-type(2)::before {
+  color: white;
+  content: "#009fb2";
+}
+.sunflower:nth-of-type(3) {
+  background: #ccecf0;
+}
+.sunflower:nth-of-type(3)::before {
+  color: black;
+  content: "#ccecf0";
+}
+.sunflower:nth-of-type(4) {
+  background: #fff;
+}
+.sunflower:nth-of-type(4)::before {
+  color: black;
+  content: "#fff";
+}
+.sunflower:nth-of-type(5) {
+  background: #F2C48D;
+}
+.sunflower:nth-of-type(5)::before {
+  color: black;
+  content: "#F2C48D";
+}
+.sunflower:nth-of-type(6) {
+  background: #D96E30;
+}
+.sunflower:nth-of-type(6)::before {
+  color: black;
+  content: "#D96E30";
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid1 {
+  display: grid;
+}
+
+.grid2 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/*# sourceMappingURL=magazinecolors.css.map */
