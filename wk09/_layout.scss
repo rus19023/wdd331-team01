@@ -1,0 +1,72 @@
+.site-banner {  // banner container
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 4fr 5fr;
+    grid-template-rows: 2em;
+    grid-template-areas: "logo blank icons"; 
+    &.site-banner__left {  
+      grid-area: logo;
+    }
+    &.site-banner__right { 
+        grid-area: icons; 
+        grid-template-columns: 1fr 1fr 1fr;
+        //grid-template-rows: 100px;
+        grid-template-areas: 
+        "search audience menu";
+        //grid-template-columns: repeat(autofit(minmax(200px, 1fr)));
+        justify-content: space-evenly;
+        align-items: center;
+        &.icon-search {
+            grid-area: search;
+        }
+        &.icon-audience {
+            grid-area: audience;
+        }
+        &.icon-menu {
+            grid-area: menu;
+        }
+    }
+}
+      
+.site-title {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-areas: "blank greybanner";    
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "covid"
+      "hero"
+      "cards"
+      "getinfo"
+      "resources"
+      "dates"
+      "news"
+      "button"
+      "giveaway"
+      "whitespace"
+      "college"
+      "greyblank"
+      "bluelinks"
+      "greylinks"
+      "footerrow1"
+      "footerrow2"
+      ;
+  }
+  
+  .covid {
+    grid-area: covid;
+    grid-template-columns: 1fr;
+  }  
+
+  .hero {
+    grid-area: hero; 
+  }
+  
+  .dropdown {
+    grid-area: getinfo;
+  }

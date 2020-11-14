@@ -1,4 +1,58 @@
 @charset "UTF-8";
+.site-banner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 4fr 5fr;
+  grid-template-rows: 2em;
+  grid-template-areas: "logo blank icons";
+}
+.site-banner.site-banner__left {
+  grid-area: logo;
+}
+.site-banner.site-banner__right {
+  grid-area: icons;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "search audience menu";
+  justify-content: space-evenly;
+  align-items: center;
+}
+.site-banner.site-banner__right.icon-search {
+  grid-area: search;
+}
+.site-banner.site-banner__right.icon-audience {
+  grid-area: audience;
+}
+.site-banner.site-banner__right.icon-menu {
+  grid-area: menu;
+}
+
+.site-title {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas: "blank greybanner";
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px auto;
+  grid-row-gap: 20px;
+  grid-template-areas: "covid" "hero" "cards" "getinfo" "resources" "dates" "news" "button" "giveaway" "whitespace" "college" "greyblank" "bluelinks" "greylinks" "footerrow1" "footerrow2";
+}
+
+.covid {
+  grid-area: covid;
+  grid-template-columns: 1fr;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.dropdown {
+  grid-area: getinfo;
+}
+
 @font-face {
   font-family: "BYUI Open Sans";
   font-style: normal;
@@ -1023,6 +1077,12 @@ img {
   max-width: 100%;
 }
 
+a {
+  color: #0076b6;
+  font-family: "Open Sans Light", Helvetica, sans-serif;
+  text-decoration: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1037,48 +1097,167 @@ img {
 body {
   font-family: "BYUI Open Sans", Georgia, sans-serif;
   color: #056cb6;
+  max-width: 100%;
 }
 
 .site-banner {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   background: #056cb6;
+  height: 4em;
 }
 
-.site-banner__left {
-  grid-column: 1/2;
-}
-.site-banner__left a {
-  text-decoration: none;
-}
-
-.site-banner__right {
-  grid-column: 8/13;
-  grid-template-columns: repeat(autofit(minmax(200px, 1fr)));
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 1rem;
+.site-banner__left, .site-banner__right {
+  padding-top: 1em;
   font-weight: bold;
-  border: solid 5px greenyellow;
-}
-.site-banner__right a {
-  text-decoration: none;
-}
-
-.white-text {
-  color: white;
 }
 
 .icon-byui-logo {
   background: #020202;
-  text-decoration: none;
+  padding: 0.5em;
+  font-size: 2em;
 }
 
-main {
+.icon-search, .icon-audience, .icon-menu {
+  font-size: 2em;
+}
+
+.white-text {
+  color: #eaeaea;
+}
+
+.site-title {
+  border-bottom: 1px solid #727272;
+}
+
+.site-title-font {
+  max-width: 100%;
+  font-family: "BYUI Open Sans", "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
+  font-size: 0.75em;
+  color: #727272;
+  font-weight: 100;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0.25em;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-column: 1/7;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px auto;
+  grid-row-gap: 20px;
+  grid-template-areas: "covid" "hero" "cards" "getinfo" "resources" "dates" "news" "button" "giveaway" "whitespace" "college" "greyblank" "bluelinks" "greylinks" "footerrow1" "footerrow2";
+}
+
+.covid {
+  grid-area: covid;
+  grid-template-columns: 1fr;
+  background: #020202;
+  color: #eaeaea;
+  text-align: center;
+}
+
+.buttons {
+  background: #056cb6;
+  color: #eaeaea;
+  width: 150px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  padding: 0.25em;
+  text-align: center;
+}
+
+.hero {
+  grid-area: hero;
+  width: 100%;
+}
+
+.dropdown {
+  grid-area: getinfo;
+  height: 25px;
+  background: #eaeaea;
+  color: #020202;
+  padding: 0.25em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.cards {
+  grid-area: cards;
+}
+
+.resources {
+  grid-area: resources;
+}
+.resources h3 {
+  background: #727272;
+  color: #eaeaea;
+}
+
+.important-dates {
+  grid-area: dates;
+}
+
+.news-items {
+  grid-area: news;
+  border-top: 1px solid #727272;
+}
+
+.news-button {
+  grid-area: button;
+  background: #056cb6;
+  color: #eaeaea;
+}
+
+.news-img {
+  width: 75px;
+  height: 50px;
+}
+
+.news-title {
+  font-family: "Open Sans Light", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.5em;
+}
+
+.news-p {
+  color: #020202;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+}
+
+.blue-footer {
+  grid-area: bluelinks;
+}
+
+.grey-footer {
+  grid-area: greylinks;
+}
+
+.footer1 {
+  grid-area: footerrow1;
+}
+
+.footer2 {
+  grid-area: footerrow2;
+}
+
+@media only screen and (min-width: 30em) {
+  .container {
+    grid-template-columns: minmax(300px, 2fr) minmax(200px, 1fr);
+    grid-template-areas: "left right";
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+  }
+
+  .left-col {
+    grid-area: left;
+    grid-template-columns: 1fr;
+    grid-template-areas: "covid" "hero" "cards" "news";
+  }
+
+  .right-col {
+    grid-area: right;
+    grid-template-columns: 1fr;
+    grid-template-areas: "getinfo" "resources" "dates";
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
