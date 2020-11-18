@@ -1,27 +1,26 @@
 .site-banner {  // banner container
     width: 100%;
     display: grid;
-    grid-template-columns: 3fr 4fr 5fr;
+    grid-template-columns: 3fr 1.5fr 6.5fr;
     grid-template-rows: 2em;
-    grid-template-areas: "logo blank icons"; 
+    grid-template-areas: "logo ... icons"; 
     &.site-banner__left {  
       grid-area: logo;
     }
     &.site-banner__right { 
         grid-area: icons; 
         grid-template-columns: 1fr 1fr 1fr;
-        //grid-template-rows: 100px;
         grid-template-areas: 
         "search audience menu";
-        //grid-template-columns: repeat(autofit(minmax(200px, 1fr)));
-        justify-content: space-evenly;
-        align-items: center;
+        
         &.icon-search {
             grid-area: search;
         }
+
         &.icon-audience {
             grid-area: audience;
         }
+
         &.icon-menu {
             grid-area: menu;
         }
@@ -31,42 +30,140 @@
 .site-title {
     display: grid;
     grid-template-columns: 2fr 10fr;
-    grid-template-areas: "blank greybanner";    
+    grid-template-areas: "... greybanner";    
 }
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px auto;
-    grid-row-gap: 20px;
-    grid-template-areas:
-      "covid"
-      "hero"
-      "cards"
-      "getinfo"
-      "resources"
-      "dates"
-      "news"
-      "button"
-      "giveaway"
-      "whitespace"
-      "college"
-      "greyblank"
-      "bluelinks"
-      "greylinks"
-      "footerrow1"
-      "footerrow2"
-      ;
-  }
-  
-  .covid {
-    grid-area: covid;
-    grid-template-columns: 1fr;
-  }  
 
-  .hero {
-    grid-area: hero; 
+.covid-title {grid-area: covid-title;}  
+.covid-button {grid-area: covid-button;}
+.hero {grid-area: hero;}
+.cards-grid {grid-area: cards-grid;} 
+
+.news-grid {grid-area: news-grid;}
+.date {grid-area: date;}
+.dash {grid-area: dash;}
+.text {grid-area: date-text;}
+.news-button {grid-area: news-button;}
+
+.list-text {grid-area: list-text;}
+.arrow {grid-area: arrow;}
+
+.footer-graphic {grid-area: greyblank;}
+.footer1 {grid-area: footer-row1;}
+.footer2 {
+  grid-area: footer-row2;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(200px, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  grid-template-areas:
+  "container"
+  "sidebar"
+  "greyblank"
+  "footer1"
+  "footer2";
+}
+
+.container {
+  grid-area: container;
+  grid-template-columns: 1fr;
+  grid-template-areas: none
+    "covid"
+    "hero"
+    "cards-grid"
+    "news-grid";
+}
+  
+.covid {
+  grid-area: covid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "covid-title"
+  "covid-button";
+}
+
+.cards, .resource-item, .dropdown { 
+  grid-template-columns: 1fr;
+  & .card {
+    grid-template-columns: 11fr 1fr;
+    grid-template-areas: "list-text arrow";
+  }
+}
+
+.sidebar {
+  grid-area: sidebar;
+  grid-template-columns: 1fr;
+  grid-template-areas:  
+    "getinfo"
+    "resources"
+    "dates-grid";
+}
+
+.dropdown-grid {grid-area: getinfo;}
+
+.resources-grid {
+  grid-area: resources; 
+  grid-template-columns: 1fr; 
+  grid-area: "resource-item";
+}
+
+.dates-grid {grid-area: dates;}
+
+.date-item, .resource-item {
+  grid-template-columns: 1fr;
+  & .card {
+    display: grid;
+    grid-template-columns: 3fr 1fr 8fr;
+    grid-template-areas: "date dash date-text";
+  }  
+}
+
+.news {
+  grid-area: news;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "news-item"
+  "news-button";
+}
+
+.pre-footer {grid-area: greyblank;}
+.footer1 {grid-area: footer1;}
+.footer2 {grid-area: footer2;}
+
+@media only screen and (min-width: $lg-break) {
+  
+  main {
+    grid-template-columns: 67% 33%;
+    grid-template-areas: "container sidebar";
+    padding-right: none;
+  }
+
+  .covid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "covid-title covid-button";
+  }
+
+  .cards-grid {
+    grid-area: cards-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "one two three";
   }
   
-  .dropdown {
-    grid-area: getinfo;
+  .card:nth-child(1) {
+    grid-area: one;
   }
+
+  .card:nth-child(2) {
+    grid-column: two;
+  }
+
+  .card:nth-child(3) {
+    grid-area: three;
+  }  // nth children     
+  
+    
+} // lg screen media query  

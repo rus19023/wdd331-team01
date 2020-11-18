@@ -1,72 +1,53 @@
+$color1: #c46321;
+$color2: mix($color1, white, 50%);
+$color3: complement($color1);
+$color4: adjust-color($color1, $hue: 30);
+$color5: adjust-color($color1, $hue: -30);
 
-html {
-  padding: 1rem;
+@function light-dark($color) {  
+  @if (lightness($color)>45) {
+    @return black;
+  }
+  @else {
+    @return white;
+  }
 }
-.sunflower {
+
+@mixin swatches($color) {
+  font-size: .75rem;
+  padding: .25rem;
   width: 4rem;
   height: 4rem;
   border: 2px solid #000;
   display: inline-block;
-  background: #9C6E00;    
+  background: $color;
+  &::before {
+    color: light-dark($color);
+    content: "#{$color}";
+  }    
+}
+
+html {
+  padding: 1rem;
+}
+
+.swatch {
+  @include swatches($color1);    
   &:nth-of-type(2) {
-    background: #F3D900;
+    @include swatches($color2); 
   }
   &:nth-of-type(3) {
-    background: #E19235;
+    @include swatches($color3); 
+  }
+  &:nth-of-type(4) {
+    @include swatches($color4); 
+  }
+  &:nth-of-type(5) {
+    @include swatches($color5); 
   }
 }
 
-.lotus {
-    width: 4rem;
-    height: 4rem;
-    border: 2px solid #000;
-    display: inline-block;
-    background: #BB516C;    
-    &:nth-of-type(2) {
-      background: #CEA4AE;
-    }
-    &:nth-of-type(3) {
-      background: #F1F5F6;
-    }
-    &:nth-of-type(4) {
-      background: #F4E642;
-    }
-  }
 
-  .pansy {
-    width: 4rem;
-    height: 4rem;
-    border: 2px solid #000;
-    display: inline-block;
-    background: #EEE600;    
-    &:nth-of-type(2) {
-      background: #FECA01;
-    }
-    &:nth-of-type(3) {
-      background: #251182;
-    }
-  }
-
-  .forgetmenot {
-    width: 4rem;
-    height: 4rem;
-    border: 2px solid #000;
-    display: inline-block;
-    background: #527BE5;    
-    &:nth-of-type(2) {
-      background: #C6B90B;
-    }
-    &:nth-of-type(3) {
-      background: #7D9D14;
-    }
-    &:nth-of-type(4) {
-      background: #F3F8FF;
-    }
-  }
-  .title {
-    display: flex;
-    flex-direction: row;
-  }
   .grid1 {
     display: grid;
   }

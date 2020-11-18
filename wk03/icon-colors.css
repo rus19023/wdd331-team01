@@ -2,71 +2,70 @@ html {
   padding: 1rem;
 }
 
-.sunflower {
+.swatch {
+  font-size: 0.75rem;
+  padding: 0.25rem;
   width: 4rem;
   height: 4rem;
   border: 2px solid #000;
   display: inline-block;
-  background: #9C6E00;
+  background: #c46321;
 }
-.sunflower:nth-of-type(2) {
-  background: #F3D900;
+.swatch::before {
+  color: white;
+  content: "#c46321";
 }
-.sunflower:nth-of-type(3) {
-  background: #E19235;
-}
-
-.lotus {
+.swatch:nth-of-type(2) {
+  font-size: 0.75rem;
+  padding: 0.25rem;
   width: 4rem;
   height: 4rem;
   border: 2px solid #000;
   display: inline-block;
-  background: #BB516C;
+  background: #e2b190;
 }
-.lotus:nth-of-type(2) {
-  background: #CEA4AE;
+.swatch:nth-of-type(2)::before {
+  color: black;
+  content: "#e2b190";
 }
-.lotus:nth-of-type(3) {
-  background: #F1F5F6;
-}
-.lotus:nth-of-type(4) {
-  background: #F4E642;
-}
-
-.pansy {
+.swatch:nth-of-type(3) {
+  font-size: 0.75rem;
+  padding: 0.25rem;
   width: 4rem;
   height: 4rem;
   border: 2px solid #000;
   display: inline-block;
-  background: #EEE600;
+  background: #2182c4;
 }
-.pansy:nth-of-type(2) {
-  background: #FECA01;
+.swatch:nth-of-type(3)::before {
+  color: white;
+  content: "#2182c4";
 }
-.pansy:nth-of-type(3) {
-  background: #251182;
-}
-
-.forgetmenot {
+.swatch:nth-of-type(4) {
+  font-size: 0.75rem;
+  padding: 0.25rem;
   width: 4rem;
   height: 4rem;
   border: 2px solid #000;
   display: inline-block;
-  background: #527BE5;
+  background: #c4b521;
 }
-.forgetmenot:nth-of-type(2) {
-  background: #C6B90B;
+.swatch:nth-of-type(4)::before {
+  color: white;
+  content: "#c4b521";
 }
-.forgetmenot:nth-of-type(3) {
-  background: #7D9D14;
+.swatch:nth-of-type(5) {
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: #c42131;
 }
-.forgetmenot:nth-of-type(4) {
-  background: #F3F8FF;
-}
-
-.title {
-  display: flex;
-  flex-direction: row;
+.swatch:nth-of-type(5)::before {
+  color: white;
+  content: "#c42131";
 }
 
 .grid1 {

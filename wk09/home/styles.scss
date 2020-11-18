@@ -68,9 +68,9 @@ img {max-width: 100%;}
 
 .icon-byui-logo {
   background: $body-font;
-  padding: .4em;
-  font-size: 30px;
-  //border-bottom: 3px solid $body-font;
+  padding: .5em;
+  font-size: 2em;
+  border-bottom: 3px solid $body-font;
 }
 
 .icon-search, .icon-audience, .icon-menu {
@@ -85,9 +85,8 @@ img {max-width: 100%;}
 .site-title {
   border-bottom: $box-border;
   background: $light-gray;
-  font-size: 1em;
+  font-size: .9em;
   line-height: 1.25em;
-  padding: 15px 0;
 }
   
 .site-title-font {
@@ -96,8 +95,6 @@ img {max-width: 100%;}
   color: $dark-gray;
   font-weight: 100;
 }
-
-.sidebar {height: 0;}
 
 .container {
   max-width: 100%;
@@ -109,29 +106,25 @@ img {max-width: 100%;}
 .covid {
   grid-area: covid;
   background: $body-font;
+  color: #fff;
   text-align: center;
   font-size: 2em;
   font-weight: 100;
   justify-content: center;
 }
 
-.covid-title {
-  color: #fff;
-  font-size: 22px;
-  padding: .5em;
-  margin: 0;
-}
+.covid-title {align-self: center;}
 
 .covid-button {
-  padding-bottom: .5em;
+  margin: 0; 
   align-self: center;
 }
 
 .buttons {
-  width: 150px;
   background: $link-blue;
   color: #fff;
   font-size: .5em;
+  width: 150px;
   font-weight: bold;
   border: none;
   border-radius: 4px;
@@ -162,7 +155,7 @@ img {max-width: 100%;}
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.resources, .dates-grid {
+.resources, .important-date-grid {
   color: #fff;
   margin: 0;
   border: none;
@@ -184,7 +177,7 @@ img {max-width: 100%;}
   font-weight: normal;
 }
 
-.dates-grid {
+.important-date-grid {
   background: $link-blue;
   & h3 {
       margin: 0;
@@ -286,16 +279,17 @@ img {max-width: 100%;}
   padding: 1em;
   text-align: center;
   font-family: "BYUI Open Sans","Open Sans","Lucida Sans Unicode","Lucida Grande",Verdana,sans-serif;
-  & a {color: #fff;}
+  & a {
+    color: #fff;
+  }
 }
 
-.hidden-sm {display: none;}
-.hidden-lg {display: block;}
+.hidden-sm {
+  display: none;
+}
 
 @media only screen and (min-width: $lg-break) {
-  .container {padding: 10%;}
-  .covid {grid-template-columns: 1fr 1fr; grid-template-areas: "covid-title covid-button";}
-  h2.covid-title {font-size: 1.5em;}
-  .hidden-lg {display: none;}
-  .hidden-sm {display: grid;}
+  .hidden-lg {
+    display: none;
+  }
 }

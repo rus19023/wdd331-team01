@@ -1,0 +1,150 @@
+.site-banner {  // banner container
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr .5fr 6.5fr;
+    grid-template-rows: 2em;
+    grid-template-areas: "logo blank icons"; 
+    &.site-banner__left {  
+      grid-area: logo;
+    }
+    &.site-banner__right { 
+        grid-area: icons; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "search audience menu";
+        
+        &.icon-search {
+            grid-area: search;
+        }
+
+        &.icon-audience {
+            grid-area: audience;
+        }
+
+        &.icon-menu {
+            grid-area: menu;
+        }
+    }
+}
+      
+.site-title {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-areas: "blank greybanner";    
+}
+
+.container {
+	display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  grid-template-areas:
+    "covid"
+    "hero"
+    "cards"
+    "getinfo"
+    "resources"
+    "dates"
+    "news"
+    "button"
+    "greyblank"
+    "footerrow1"
+    "footerrow2"
+  ;
+}
+  
+.covid {
+  grid-area: covid;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "title"
+  "button";
+}
+
+.covid-title {grid-area: title;}  
+.covid-button {grid-area: button;}
+
+.hero {grid-area: hero;}
+
+.cards-grid {grid-area: cards;} 
+.dropdown-grid {grid-area: getinfo;}
+.resources-grid {grid-area: resources;}
+.important-dates-grid {grid-area: dates;}
+
+.cards, .resource-item, .dropdown { 
+  grid-template-columns: 1fr;
+  & .card {
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    grid-template-areas: "list-text arrow";
+  }
+}
+
+.date-item {
+  grid-template-columns: 1fr;
+  & .card {
+    display: grid;
+    grid-template-columns: 3fr 1fr 8fr;
+    grid-template-areas: "list-text dash arrow";
+  }  
+}
+
+.list-text {grid-area: list-text;}
+.arrow {grid-area: arrow;}
+
+.news-grid {
+  grid-area: news;
+}
+
+.news-button {
+  grid-area: button;
+  grid-template-columns: 1fr;
+} 
+
+.footer-graphic {grid-area: greyblank;}
+
+.footer1 {  
+	grid-area: footerrow1;
+}
+
+.footer2 {  
+	grid-area: footerrow2;
+}
+
+
+@media only screen and (min-width: $lg-break) {
+  .container {    
+    grid-template-columns:  minmax(300px, 2fr) minmax(200px, 1fr);
+    grid-template-areas:
+    "left right";  	
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+  }
+
+  .left-col {
+    grid-area: left;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "covid"
+    "hero"
+    "cards"
+    "news";
+  }
+
+  .right-col {
+    grid-area: right;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "getinfo"
+    "resources"
+    "dates"
+    ;
+  }
+  
+  .cards {
+    grid-area: cards;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
