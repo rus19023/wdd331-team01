@@ -1,0 +1,36 @@
+h1 {
+  padding: 2rem;
+}
+
+.sunflower {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: #004756;    
+  &:nth-of-type(2) {
+    background: #009fb2;
+  }
+  &:nth-of-type(3) {
+    background: mix(#009fb2, white, 20%);
+  }
+  &:nth-of-type(4) {
+    background: #251182;
+  }
+  &:nth-of-type(5) {
+    background: #F1F5F6;
+  }
+  &:nth-of-type(6) {
+    background: #5B480E;
+  }
+}
+  .title {
+    display: flex;
+    flex-direction: row;
+  }
+  .grid1 {
+    display: grid;
+  }
+  .grid2 {    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }

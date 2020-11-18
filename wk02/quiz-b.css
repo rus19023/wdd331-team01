@@ -1,0 +1,12 @@
+span .help
+{
+    color: blue;    
+}
+
+span.help::before { content: "("; }
+
+span.help::after { content: ")"; }
+
+fieldset[title=fieldset2] > p + p {
+    color: hotpink;
+}

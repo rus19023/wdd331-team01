@@ -1,0 +1,79 @@
+html {
+  padding: 1rem;
+}
+
+.swatch {
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: #c46321;
+}
+.swatch::before {
+  color: white;
+  content: "#c46321";
+}
+.swatch:nth-of-type(2) {
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: #e2b190;
+}
+.swatch:nth-of-type(2)::before {
+  color: black;
+  content: "#e2b190";
+}
+.swatch:nth-of-type(3) {
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: #2182c4;
+}
+.swatch:nth-of-type(3)::before {
+  color: white;
+  content: "#2182c4";
+}
+.swatch:nth-of-type(4) {
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: #c4b521;
+}
+.swatch:nth-of-type(4)::before {
+  color: white;
+  content: "#c4b521";
+}
+.swatch:nth-of-type(5) {
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: #c42131;
+}
+.swatch:nth-of-type(5)::before {
+  color: white;
+  content: "#c42131";
+}
+
+.grid1 {
+  display: grid;
+}
+
+.grid2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+/*# sourceMappingURL=icon-colors.css.map */

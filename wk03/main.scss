@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+@import "mixins";
+
+// VARIABLES
+$font-stack: Helvetica, Arial, sans-serif;
+$font-header: 'Lora', Arial, Helvetica, sans-serif;
+$font-size: 1.2em;
+$color-background: #6495ED;
+$color-font:  #FAEBD7;
+$color-active: #DEB887;
+$no: none;
+$img-width: 250px;
+$img-height: 300px;
+
+//set breakpoint sizes
+$break-small: 30em;
+$break-medium: 60em;
+$break-large: 75em;
+
+body {
+    font-family: $font-stack;
+    } 
+
+a {
+    color: $color-background;
+    text-decoration: $no;
+    & :hover {
+        text-decoration: underline;
+    }
+    &:active {
+        color:$color-active;
+    }
+} 
+
+h1, h2 {font-family: $font-header;}
+h1 {font-size: $font-size * 1.5;}
+
+header {
+    background: $color-background;
+    color: $color-font;
+    text-align: right;
+    padding: 2em;
+    line-height: 2em;
+    & a {color: $color-font; }
+    & a:hover {color: white; text-decoration: underline;}
+    & a:active {color:$color-active;}
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+main {
+    background: $color-font;
+    padding: .5em 1em;
+}
+
+
+.post-date {
+    color: grey;
+    max-width: 100%;
+    padding: 0;
+    margin-top: 1em;
+}  
+
+div {
+    display: grid;
+    & article {            
+        background: white;  
+        margin: 3em;
+        padding: 1em 2em;
+        &.post-content {
+            font-weight: bold;
+        }
+            & figure {
+            margin-top: 2em;
+            & img {
+                width: $img-width;
+                height: $img-height;
+            }        
+        }
+        & h2 {
+            margin-bottom: 5em;
+            font-size: 2em;
+        }
+        & h2 a {
+            color: black;
+            background: chartreuse;
+        }
+        & h2 a:hover {color: $color-background;}
+        & h2 a:active {
+            color: $color-active;
+        }
+        & p {
+            font-weight: bold;
+            padding: 2em;
+            overflow: hidden;
+        }
+        & figure1 {            
+            text-align: center;
+        }
+    } 
+    @include breakpoint(medium) { 
+        grid-template-columns: 30% 70%;
+        & figure img {
+                width: $img-width + 100;
+                height: $img-height + 150;
+            }
+        }               
+    }

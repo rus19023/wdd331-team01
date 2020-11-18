@@ -1,0 +1,149 @@
+body {
+  padding: 1rem;
+}
+
+.page-wrapper {
+  background: #251182;
+  color: #dedbec;
+  border: 5px solid #80c080;
+}
+.page-wrapper:hover {
+  background: #dedbec;
+  color: #251182;
+}
+.page-wrapper:hover a:visited {
+  color: #251182;
+}
+
+.intro {
+  border-radius: 50%;
+  max-width: 100%;
+  text-align: center;
+  padding: 2.4em 1.4em 0.6em 1.4em;
+  border: 5px solid #c080c0;
+}
+
+.summary {
+  background: #3d2818;
+  color: #3d2818;
+  border: 5px solid #8080ff;
+}
+.summary p a {
+  color: #3d2818;
+}
+.summary p a:visited {
+  color: #3d2818;
+}
+.summary:hover {
+  background: #daf3e9;
+  color: #09ac6a;
+}
+.summary:hover a:visited {
+  color: #09ac6a;
+}
+
+.preamble {
+  border: 5px solid #bfbfbf;
+  background: #3d2818;
+  color: #cfc9c5;
+}
+.preamble p {
+  border-radius: 50%;
+  width: 18rem;
+  text-align: center;
+  padding: 2.4em 1.4em 0.6em 1.4em;
+}
+.preamble:hover {
+  background: #cfc9c5;
+  color: #3d2818;
+}
+
+.explanation {
+  background: #3d2818;
+  border: 5px solid #ffb4da;
+  color: #cfc9c5;
+}
+.explanation:hover {
+  background: #cfc9c5;
+  color: #3d2818;
+}
+
+.main {
+  border: 5px solid #8a59ae;
+  background: #3d2818;
+  color: #cfc9c5;
+}
+.main:hover {
+  background: #cfc9c5;
+  color: #3d2818;
+}
+
+.supporting {
+  border: 5px solid #404040;
+}
+
+.participation {
+  border: 5px solid yellow;
+}
+
+.benefits {
+  border: 5px solid #ffbc40;
+}
+
+.requirements {
+  border: 5px solid #c080c0;
+}
+
+.sidebar {
+  border: 5px solid #ff4040;
+}
+
+.wrapper {
+  border: 5px solid #a580c1;
+}
+
+.design-selection {
+  border: 5px solid #ffff80;
+}
+
+.select {
+  border: 5px solid #8080ff;
+}
+
+.designer-name {
+  border: 5px solid #80c080;
+}
+
+.design-name {
+  border: 5px solid #c080c0;
+}
+
+.design-archives {
+  border: 5px solid white;
+}
+
+.archives {
+  border: 5px solid #ffd280;
+}
+
+.next {
+  border: 5px solid #80c080;
+}
+
+.viewall {
+  border: 5px solid #ff8080;
+}
+
+.zen-resources {
+  border: 5px solid #80c080;
+}
+
+.view-css {
+  border: 5px solid #ffb4da;
+}
+
+.css-resources {
+  border: 5px solid #ffff80;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+#triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid red;
+    border-left: 100px solid transparent;
+  }
+
+ h1 {
+      background: black;
+      color: white;
+      mix-blend-mode: multiply;
+      border: 10px solid purple;
+      padding: .25em;
+  }  
+
+  h2 {
+    background: white;
+    color: black;
+    mix-blend-mode: screen;
+    border: 10px solid greenyellow;
+}
+
+body {
+    background: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">\
+    <circle r="20" cx="50" cy="50" fill="red"/>\
+    <style @keyframes dance {to {transform: rotate(-20deg);}}</style>\
+    <text y="1em" font-size="90" style="animation: dance 1s infinite alternate">:unicorn:</text>\
+    </svg>'
+    );
+    background-size: 100px 100px;
+}

@@ -1,0 +1,161 @@
+@use "sass:color";
+// base color variables
+$crimson: #a51c30;
+// Other color variables
+$leather: #904d01;
+$color2: pink;
+
+$color-base: $crimson;
+$color-rgba: rgba(red($color-base), green($color-base), blue($color-base), alpha($color-base));
+$color-hsla: hsla(hue($color-base),saturation($color-base), lightness($color-base), alpha($color-base));
+$color-greyscale: grayscale($color-base);
+$color-analogous-base: color.adjust($color-base, $hue: 30deg);
+$color-analogous2-base: color.adjust($color-base, $hue: -30deg);
+$color-complementary-base: complement($color-base);
+$tint: 10%;
+$shade: 10%;
+$mix: 10%;
+$light-dark: 30%;
+$accent-highlight: 20%;
+
+// TODO add if statement to toggle font color for dark/light background color
+$color-light: lighten($color-base, $light-dark);
+$color-dark: darken($color-base, $light-dark);
+$color-accent: saturate($color-base, $accent-highlight);
+$color-highlight: lighten($color-base, $accent-highlight);
+$color-shade: mix($color-base, #000, $shade);
+$color-tint: mix($color-base, #fff, $tint);
+$color-mix: mix($color-base, $color2, $mix);
+.top {
+  font-size: 1em;
+  padding: 1em;
+}
+
+@mixin set-color{
+
+}
+
+// Monochrome
+// TODO add ::before/::after each color: hex code, color name, rgb, sat, hue, lightness
+.chip {
+  margin: 3em;
+  & p.colorname:after {
+  content: "$color-base";
+  font-size: 42px;
+  color: black;
+}
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: $color-base;
+  &:nth-of-type(2) {
+    background: $color-light;
+  }
+  &:nth-of-type(3) {
+    background: $color-dark;
+  }
+  &:nth-of-type(4) {
+    background: $color-accent;
+  }
+  &:nth-of-type(5) {
+    background: $color-shade;
+  }
+  &:nth-of-type(6) {
+    background: $color-tint;
+  }}
+
+
+
+
+/*
+// analogous
+$color-analogous-light: $color-analogous-base;// lighten($color-analogous-base, 40%);
+$color-analogous-dark: $color-analogous2-base; // darken($color-analogous-base, 20%);
+$color-analogous-accent: saturate(
+  adjust($color-analogous-base, $hue: 30%),
+  20%
+);
+$color-analogous-highlight: lighten(
+  saturate(adjust($color-base, $hue: 300), $accent-highlight), $light-dark);
+$color-analogous-shade: mix($color-analogous-base, #000, 30%);
+$color-analogous-tint: mix($color-analogous-base, #fff, 30%);
+
+// complementary
+$color-complementary-light: lighten($color-complementary-base, 30%);
+$color-complementary-dark: darken($color-complementary-base, 20%);
+$color-complementary-accent: saturate(
+  adjust($color-complementary-base, $hue: 180),
+  20%
+);
+$color-complementary-shade: mix($color-complementary-base, #000, 30%);
+$color-complementary-tint: mix($color-complementary-base, #fff, 30%);
+
+*/
+
+/*
+// analogous
+.analogous {
+  .chip {
+    background: $color-analogous-base;
+    &:nth-of-type(2) {
+      background: $color-analogous2-base;
+    }
+    &:nth-of-type(3) {
+      background: $color-analogous-dark;
+    }
+    &:nth-of-type(4) {
+      background: $color-analogous-accent;
+    }
+    &:nth-of-type(5) {
+      background: $color-analogous-highlight;
+    }
+  }
+}
+
+// complementary
+.complementary {
+  .chip {
+    background: $color-complementary-base;
+    &:nth-of-type(2) {
+      background: $color-complementary-light;
+    }
+    &:nth-of-type(3) {
+      background: $color-complementary-dark;
+    }
+    &:nth-of-type(4) {
+      background: $color-complementary-accent;
+    }
+    &:nth-of-type(5) {
+      background: $color-complementary-shade;
+    }
+    &:nth-of-type(6) { 
+      background: $color-complementary-tint;
+    }
+  }
+}
+*/
+
+/*
+
+@function set-color-theme(
+$primary,
+$secondary: darken($primary, 10%),
+$tertiary: lighten($primary, 10%)
+) {
+// Do something
+}
+$color-theme: set-color-theme(hotpink, $tertiary: pink);
+
+$base-color: red;
+
+@debug lightness($base-color);
+// 40%
+
+@debug saturation($base-color);
+// 50%;
+
+
+adjust-color($base-color, $hue: 120deg, $saturation: 30, $lightness: 10)
+
+*/

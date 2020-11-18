@@ -1,0 +1,57 @@
+$color1: #c46321;
+$color2: mix($color1, white, 50%);
+$color3: complement($color1);
+$color4: adjust-color($color1, $hue: 30);
+$color5: adjust-color($color1, $hue: -30);
+
+@function light-dark($color) {  
+  @if (lightness($color)>45) {
+    @return black;
+  }
+  @else {
+    @return white;
+  }
+}
+
+@mixin swatches($color) {
+  font-size: .75rem;
+  padding: .25rem;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: $color;
+  &::before {
+    color: light-dark($color);
+    content: "#{$color}";
+  }    
+}
+
+html {
+  padding: 1rem;
+}
+
+.swatch {
+  @include swatches($color1);    
+  &:nth-of-type(2) {
+    @include swatches($color2); 
+  }
+  &:nth-of-type(3) {
+    @include swatches($color3); 
+  }
+  &:nth-of-type(4) {
+    @include swatches($color4); 
+  }
+  &:nth-of-type(5) {
+    @include swatches($color5); 
+  }
+}
+
+
+  .grid1 {
+    display: grid;
+  }
+  .grid2 {
+    
+    grid-template-columns: 1fr 1fr;
+  }
