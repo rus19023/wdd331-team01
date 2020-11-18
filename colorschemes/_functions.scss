@@ -10,7 +10,7 @@
 
 
 @function light-dark($color) {  
-    @if (lightness($color)>40) {
+    @if (lightness($color)>45) {
       @return black;
     }
     @else {
