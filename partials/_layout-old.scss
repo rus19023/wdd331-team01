@@ -1,14 +1,28 @@
-.intro {
+body {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-    & header{
-        grid-column: 1/7;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "intro"
+    "main"
+    "wrapper"
+    "footer";
+}
+
+
+.intro {
+    grid-area: intro;
+    grid-template-areas: 
+    "header1"
+    "summary"
+    "preamble";
+    & header {
+        grid-area: header1;
     }
-    & .summary{
-        grid-column: 1/7;
+    & .summary {
+        grid-area: summary;
     }
-    .preamble{
-        grid-column: 1/6;
+    .preamble {
+        grid-area: preamble;
     }
 }
 
