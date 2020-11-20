@@ -71,7 +71,6 @@ header {
     }
 }
 
-<<<<<<< HEAD
 .preamble, .participation, .requirements {
 	background: #EFD488;/* tan*/	
 	margin-top: -20px;
@@ -99,7 +98,7 @@ header {
 	border-width: 40px 40px 40px 0;
 }
 
-/*.participation:before{
+/*.participation:before {
 	width: 100px;
 	height: 40px;
 	background:$grey;
@@ -108,7 +107,7 @@ header {
 }*/
 
 .main {
-	grid-column:1/13;
+	grid-column: 1/13;
 	display: grid;
 	grid-template-columns: $grid-12;
 	grid-template-rows: repeat(5, auto);	
@@ -140,18 +139,18 @@ header {
 	padding-left: 10%;
 }
 
-/*.preamble h3::before{
+/*.preamble h3::before {
   
-  position:absolute;
+  position: absolute;
   bottom: 12em;
   left: 25.8em;
   background: #09AC6A;  
   width: 10px;
   height: 40px;   
-  content:"";  
+  content: "";  
 }
-.preamble h3::after{
-  position:absolute;
+.preamble h3::after {
+  position: absolute;
   bottom: 14em;
   left: 25em;
   background: #bb516c;  
@@ -169,17 +168,14 @@ header {
 	height: 52px;	
 }
 
-=======
->>>>>>> main
 footer {
 	width: 100%;
 	height: 100px;
 	text-align: center;
-<<<<<<< HEAD
 	background: rgb(0,204,0,.2);/*green*/
 	grid-column:1/13;
 	position: relative;
-	bottom:-420px;
+	bottom: -420px;
 	display: flex;
 	grid-columns: repeat(5, 1fr);
 	align-items: center;
@@ -325,12 +321,10 @@ h2 {
 	ul li {
 		padding-bottom: 4%;
 	}
-=======
 	grid-column:1/5;
 	position: relative;
 	bottom:-700px;
 	display: flex;
 	grid-template-columns: repeat(5, 1fr);
 	align-items: center;
->>>>>>> main
 }
