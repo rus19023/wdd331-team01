@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
   line-height: 0.25rem;
 }
@@ -1372,3 +1373,23 @@ p {
 }
 
 /*# sourceMappingURL=colors.css.map */
+=======
+/* Error: Undefined variable.
+ *   ,
+ * 2 | @for $index from $loop-start to $loop-end {
+ *   |                  ^^^^^^^^^^^
+ *   '
+ *   _loops.scss 2:18  @import
+ *   colors.scss 1:9   root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 2 \2502  @for $index from $loop-start to $loop-end {\d\a   \2502                   ^^^^^^^^^^^\a   \2575 \a   _loops.scss 2:18  @import\a   colors.scss 1:9   root stylesheet";
+}
+>>>>>>> main

@@ -2,6 +2,8 @@
 @import "partials/mixins";
 @import "partials/functions";
 @import "partials/layout";
+@import "partials/shapes";
+@import "partials/svg";
 
 html {
 	margin: 0;
@@ -34,17 +36,20 @@ header {
 
 .preamble, .participation, .requirements {
 	background: #EFD488;/*tan*/	
-	margin-top: -20px;
+    margin-top: -20px;
+    /*
 	border-style: solid;
 	border-right-color: #808080;	
-	border-width: 0 40px 0 0;
+	border-width: 0 40px 0 0;*/
 }
 
 .preamble {
+    /*
 	border-top-color: gray;
 	border-right-color: gray;
-	border-style: solid;
-	border-width: 40px 40px 0 0;
+    border-style: solid;
+    
+	border-width: 40px 40px 0 0;*/
 }
 
 .participation, .requirements, .explanation, .benefits, footer {

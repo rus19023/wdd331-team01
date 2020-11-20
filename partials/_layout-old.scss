@@ -1,22 +1,31 @@
-*{
-    padding: 0 0.2rem 0 0.2rem;
-}
-#css-zen-garden{
-    width: 100%;
-}
-.intro{
+body {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-    header{
-        grid-column: 1/7;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "intro"
+    "main"
+    "wrapper"
+    "footer";
+}
+
+
+.intro {
+    grid-area: intro;
+    grid-template-areas: 
+    "header1"
+    "summary"
+    "preamble";
+    & header {
+        grid-area: header1;
     }
-    .summary{
-        grid-column: 1/7;
+    & .summary {
+        grid-area: summary;
     }
-    .preamble{
-        grid-column: 1/6;
+    .preamble {
+        grid-area: preamble;
     }
 }
+
 .main {
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -33,6 +42,7 @@
         grid-column: 1/6;
     }
 }
+
 .wrapper{
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -46,14 +56,11 @@
         grid-column: 2/7;
     }
 }
-footer {
-	width: 100%;
-	height: 100px;
-	text-align: center;
-	grid-column:1/5;
-	position: relative;
-	bottom:-700px;
-	display: flex;
-	grid-template-columns: repeat(5, 1fr);
-	align-items: center;
+footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: -2750px;
+    left: 0;
+    align-items: center;
 }
