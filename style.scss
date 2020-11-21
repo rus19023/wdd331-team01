@@ -11,7 +11,9 @@ html {
 }
 
 body { 
-	font: 75% poppins 400 regular, georgia, sans-serif;
+	font-family: "Poppins", georgia, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
 	
 	color: black; 
 	 /*url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; */
@@ -23,7 +25,7 @@ header {
 	//background-image: url("assets/sun.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 600px; 
+	background-size: 600px;
 	line-height: 135px;	
 }
 
@@ -43,13 +45,17 @@ header {
 	border-width: 0 40px 0 0;*/
 }
 
-.preamble {
+.preamble {  // "The Road to Enlightenment..."
     /*
 	border-top-color: gray;
 	border-right-color: gray;
     border-style: solid;
     
 	border-width: 40px 40px 0 0;*/
+}
+
+.explanation { // "So what is this about?"
+
 }
 
 .participation, .requirements, .explanation, .benefits, footer {
