@@ -112,17 +112,18 @@ header {
   width: 10px;
   height: 40px;   
   content:"";  
-}
-.preamble h3::after{
-  position:absolute;
+}*/
+.preamble h3::after {
+  position: absolute;
   bottom: 14em;
   left: 25em;
-  background: #bb516c;  
+  background: #bb516c;
   width: 40px;
   height: 40px;
-  border-radius: 50%; 
-  content:"";   
-}*/
+  border-radius: 50%;
+  content: "";
+}
+
 .explanation h3 {
   background-image: url("Flower6.svg");
   background-repeat: no-repeat;
