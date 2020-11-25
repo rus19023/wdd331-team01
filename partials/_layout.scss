@@ -16,7 +16,11 @@ body {
 
 header {
 	text-align: center;
+<<<<<<< HEAD
+	//background-image: url("sun.png");
+=======
 	background-image: url("sun.png");
+>>>>>>> 4f455344dc181b71243428a25c11ca7c08988c11
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 600px;
@@ -110,7 +114,7 @@ header {
   width: 10px;
   height: 40px;   
   content:"";  
-}
+}*/
 .preamble h3::after{
   position:absolute;
   bottom: 14em;
@@ -120,7 +124,7 @@ header {
   height: 40px;
   border-radius: 50%; 
   content:"";   
-}*/
+}
 
 .explanation h3 {
 	background-image: url("Flower6.svg");
@@ -244,7 +248,7 @@ h2 {
 	.preamble h3 {
 		background-image: url("blue5.svg");
 		background-repeat: no-repeat;
-		background-position: center center;
+		background-position: center;
 		background-size: 35%;
 		height: 40px;
 	}
@@ -256,6 +260,7 @@ h2 {
 		bottom:-1px;
 		margin-left: -30px;
 	}
+
 	.wrapper {
 		grid-column:1/6;
 		grid-template-columns: 100%;
