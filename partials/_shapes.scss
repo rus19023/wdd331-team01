@@ -15,6 +15,7 @@ $topv:100px;
     z-index: -1;
     transition: transform 2s ease-in-out;  
   }
+<<<<<<< HEAD
 
   $a:-90;
   
@@ -26,11 +27,25 @@ $topv:100px;
         transform: translate(-$letfv, -$topv) rotate(#{$a}deg);
     }
     .extra#{$i}::before {
+=======
+  $a:-90;
+@for $i from 1 to 4 {
+    .extra#{$i}, .extra#{$i}::before, .extra#{$i}::after{
+        @include template();
+    }
+    .extra#{$i}{
+        transform: translate(-$letfv, -$topv) rotate(#{$a}deg);
+    }
+    .extra#{$i}::before{
+>>>>>>> 4f455344dc181b71243428a25c11ca7c08988c11
         transform: translate(-$letfv, -$topv) rotate(22.5deg);
     }
     .extra#{$i}::after{
         transform: translate(-$letfv, -$topv) rotate(45deg);
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4f455344dc181b71243428a25c11ca7c08988c11
     $a:$a+67.5;
 }
