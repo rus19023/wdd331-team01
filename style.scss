@@ -1,231 +1,139 @@
 @import "partials/variables";
+@import "partials/mixins";
+@import "partials/functions";
 @import "partials/layout";
-@import "partials/animations";
-
+@import "partials/shapes";
+//@import "partials/svg";
 
 html {
 	margin: 0;
 	padding: 0;
-    font-family: "Poppins", "Georgia", sans-serif;
-    font-size: 55%;
-    font-weight: 400;
 }
 
-body {
-    background: $green;
-    color: $green-light;
+body { 
+	font-family: "Poppins", georgia, sans-serif;
+	font-size: 13px;
+	font-weight: normal;	
+	color: black;
+	background-image: url("assets/grass.jpg");
 }
 
 header {
-    text-align: center;
-    max-width: 100%;
-    background-image: url("assets/sun.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    color: $brown;
-    &:hover {
-        & :hover {
-            animation: bg-change 5s infinite;
-        }
-        color: $green;
-    }
+	text-align: center;
+	//background-image: url("assets/sun.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 600px;
+	line-height: 135px;	
 }
 
-p {        
-    max-width: 100%;
+.summary {
+	text-align: left;
+	padding: 0 5% 10px 5%;
+	margin: -15px 0px 20px 0px;
 }
 
-.page-wrapper { 
-    //grid-template-columns: 1fr;
-    background: $green;
-    color: $green-light;
-    & h1, h2 {
-        color: $brown;
-    }
-    & :hover {
-        animation: bg-change 5s infinite;
-        & a:visited, h1, h2 {
-            color: $brown;
-        }
-    }
+.preamble, .participation, .requirements {
+	background: #EFD488; /*tan*/	
+    margin-top: -20px;
+    /*
+	border-style: solid;
+	border-right-color: #808080;	
+	border-width: 0 40px 0 0;*/
 }
 
-.intro {                                // container for 'main' section
-    //grid-template-columns: 1fr 1fr 1fr;
-    // border-radius: 50%;
-    //height: 12rem;
-    max-width: 100%;
-    text-align: center;
-    padding: 2.4em 1.4em .6em 1.4em;
-    color: $brown-light;
+.preamble {  // "The Road to Enlightenment..."
+    /*
+	border-top-color: gray;
+	border-right-color: gray;
+    border-style: solid;
+    
+	border-width: 40px 40px 0 0;*/
 }
 
-.summary {                               // A demonstration of what...
-    //grid-template-columns: 1fr 1fr 1fr;
-    //$size: 400px;
-    // max-width: $size;
-    // height: $size;
-    // border-radius: $size / 2;
-    // padding: 2rem;
-    background: $brown;
-    color: $brown;
-    & p a {
-        color: $pink;
-        &:visited {
-            color: $green;
-        }
-    }
+.explanation { // "So what is this about?"
 
-    &:hover {
-        background: $brown-light;
-        color: $brown-light;
-        & a:visited {
-            color: $brown;
-        }
-    }
 }
 
-.preamble {                                 // The road to enlightenment...
-    //grid-template-columns: 1fr 1fr 1fr;
-    background: $brown;
-    color: $brown-light;
-    & p {        
-    border-radius: 50%;
-    //height: 12rem;
-    max-width: 18rem;
-    text-align: center;
-    padding: 2.4em 1.4em .6em 1.4em;
-    }
-    &:hover {
-        background:$brown-light;
-        color:$brown;
-    }
+.participation, .requirements, .explanation, .benefits, footer {
+	margin: 20px;
 }
 
-.main {                    // holds Explanation, Participation, Benefits & Requirements
-    //grid-template-columns: 1fr 1fr 1fr;
-    background: $brown;
-    color: $brown-light;
-    &:hover {
-        background:$brown-light;
-        color:$brown;
-    }
+.participation:before {
+	width: 100px;
+	height: 40px;
+	/*background:gray;*/
+	position: absolute;
+	bottom: 10px;
 }
 
-.explanation {                                      // So what is this about?
-    background: $brown;
-    color: $brown-light;
-    &:hover {
-        background:$brown-light;
-        color:$brown;
-    }
+
+.main h3, p {
+	padding: 0 5%; 
 }
 
-.supporting {    
-    background: mix(black, white, 75%);
+.preamble h3 {
+	padding: 25px 5% 0 5%;	
 }
 
-.participation {
-    background: yellow;
+.preamble p:last-child {
+	padding-bottom: 25px;
 }
 
-.benefits {
-    background: mix(orange, white, 75%);
+/*.preamble h3::before {
+	content:'';
+	background: gray;
+	display: block;
+	width: 110%;
+	height: 40px;
+	position: relative:
+	top: 20px;	
+}*/
+
+.explanation, .benefits {
+	background: rgb(0,204,0,.2); /*green*/
+	//border-style: solid;
+	//border-left-color: gray;
+	//border-width: 0 0 0 40px;
 }
 
-.requirements {
-    background: mix(purple, white, 50%);
+footer {
+	background: rgb(0,204,0,.2); /*green*/
 }
 
-.sidebar {
-    background: mix(red, white, 75%);
+footer a {
+	padding: 25px;
 }
 
-.wrapper {
-    background: mix(indigo, white, 50%);
+footer a:first-child {
+	padding-left: 40%;
+}
+
+h1 {
+	font-family: arial, serif;
+	font-size: 45px;
+	position: relative;
+	top: 95px;	
+}
+
+h2 {
+	color: white;
 }
 
 .design-selection {
-    background: mix(yellow, white, 50%);
-
-}
-
-.select {
-    background: mix(blue, white, 50%);
-}
-
-.designer-name {
-    background: mix(green, white, 50%);
-
-}
-
-.design-name {
-    background: mix(purple, white, 50%);
+	background: #EFD488; /*tan*/
 }
 
 .design-archives {
-    background: mix(black, white, 50%);
-
-}
-
-.archives {
-    background: mix(orange, white, 50%);
-}
-
-.next {
-    background: mix(green, white, 50%);
-}
-
-.viewall {
-    background: mix(red, white, 50%);
+	background: rgb(0,204,0,.2); /*green*/
 }
 
 .zen-resources {
-    background: mix(green, white, 50%);
+	background: #EFD488; /*tan*/
 }
 
-.view-css {
-    background: mix(hotpink, white, 50%);
+.design-selection, .design-archives, .zen-resources{
+	padding: 15px 5%;
 }
 
-.css-resources {
-    background: mix(yellow, white, 50%);
-
-}
-
-.zen-faq {
-
-}
-
-.zen-submit {
-
-}
-
-.zen-translations {
-
-}
-
-.zen-validate-html {
-
-}
-
-.zen-validate-css {
-
-}
-
-.zen-license {
-
-}
-
-.zen-accessibility {
-
-}
-
-.zen-github {
-
-}
-
-.indicator {
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap');
