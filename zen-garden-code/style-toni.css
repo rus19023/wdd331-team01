@@ -96,6 +96,9 @@ header {
   border-right-color: gray;
   border-style: solid;
   border-width: 40px 40px 0 0;
+  background: url("assets/flowerbox-mirror.svg") no-repeat;
+  background-size: contain;
+  height: 100vh;
 }
 
 .participation, .requirements, .explanation, .benefits, footer {

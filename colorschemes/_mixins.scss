@@ -15,6 +15,22 @@
     $dark: mix($base-color, black, 40%);
 }
 
+
+@mixin swatches($color) {
+  font-size: .75rem;
+  margin: .25rem;
+  padding: .25rem;
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #000;
+  display: inline-block;
+  background: $color;
+  &::before {
+    color: light-dark($color);
+    content: "#{$color}";
+  }    
+}
+
 @mixin colorname ($base-color) {
 
 }
