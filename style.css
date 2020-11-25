@@ -393,7 +393,6 @@ body {
   font-size: 13px;
   font-weight: normal;
   color: black;
-  /*url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; */
   background-image: url("assets/grass.jpg");
 }
 
@@ -465,9 +464,6 @@ header {
 .explanation, .benefits {
   background: rgba(0, 204, 0, 0.2);
   /*green*/
-  border-style: solid;
-  border-left-color: gray;
-  border-width: 0 0 0 40px;
 }
 
 footer {

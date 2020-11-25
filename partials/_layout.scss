@@ -244,7 +244,7 @@ h2 {
 	.preamble h3 {
 		background-image: url("blue5.svg");
 		background-repeat: no-repeat;
-		background-position: center center;
+		background-position: center;
 		background-size: 35%;
 		height: 40px;
 	}
@@ -256,6 +256,7 @@ h2 {
 		bottom:-1px;
 		margin-left: -30px;
 	}
+
 	.wrapper {
 		grid-column:1/6;
 		grid-template-columns: 100%;
