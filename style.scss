@@ -1,9 +1,16 @@
 @import "partials/variables";
 @import "partials/mixins";
-@import "partials/functions";
 @import "partials/layout";
 @import "partials/shapes";
 @import "partials/svg";
+
+*{
+    padding: 0 0.2rem 0 0.2rem;
+}
+
+#css-zen-garden {
+    width: 100%;
+}
 
 html {
 	margin: 0;
