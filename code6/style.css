@@ -84,6 +84,7 @@
   height: 350px;
 }
 
+/*color of path*/
 html {
   margin: 0;
   padding: 0;
@@ -97,11 +98,13 @@ body {
   background-color: #C3E4D7;
 }
 
+/*first grid*/
 .page-wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
+/*centers the text in the header*/
 header {
   text-align: center;
   background-position: center;
@@ -109,16 +112,19 @@ header {
   line-height: 135px;
 }
 
+/*second grid for next level down*/
 .intro {
   grid-column: 1/13;
 }
 
+/*first paragraph styling in the top section*/
 .summary {
   text-align: left;
   padding: 0 5% 10px 5%;
   margin: -15px 0px 20px 0px;
 }
 
+/*styling for the second paragraph in the top section and two paragraphs in the main div*/
 .preamble, .participation, .requirements {
   background: #EFD488;
   /* tan*/
@@ -131,6 +137,7 @@ header {
   padding-right: 10%;
 }
 
+/*styling for the second paragraph in the top section*/
 .preamble {
   margin: 20px 1.25% -10px 1%;
 }
@@ -143,6 +150,7 @@ header {
   padding-bottom: 25px;
 }
 
+/*styling for the main div below the top section*/
 .participation, .requirements, .explanation, .benefits, footer {
   margin: 0 17px 0 17px;
 }
@@ -153,6 +161,7 @@ header {
   border-width: 40px 40px 0 0;
 }
 
+/*third grid*/
 .main {
   grid-column: 1/13;
   display: grid;
@@ -165,10 +174,12 @@ header {
   padding: 0 5%;
 }
 
+/*forth grid for the sidebar*/
 .sidebar {
   grid-column: 1/13;
 }
 
+/*styling for the main div with green background below the top section*/
 .explanation, .benefits {
   background: rgba(0, 204, 0, 0.2);
   /*green*/
@@ -180,14 +191,35 @@ header {
   padding-left: 10%;
 }
 
-.explanation h3 {
-  background-image: url("Flower6.svg");
+/*adding svg images in sections*/
+.explanation h3, .participation h3, .benefits h3 {
   background-repeat: no-repeat;
   background-size: 50px 50px;
   background-position: top center;
-  height: 70px;
+  height: 63px;
 }
 
+.preamble h3 {
+  background-image: url("blue5.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 25%;
+  height: 45px;
+}
+
+.explanation h3 {
+  background-image: url("Flower6.svg");
+}
+
+.participation h3 {
+  background-image: url("lotus3.svg");
+}
+
+.benefits h3 {
+  background-image: url("pansy2.svg");
+}
+
+/*styling for the footer*/
 footer {
   max-width: 100%;
   height: 100px;
@@ -221,10 +253,7 @@ h1 {
   top: 95px;
 }
 
-h2 {
-  color: white;
-}
-
+/*fifth grid for section below the sidebar class*/
 .wrapper {
   grid-column: 1/13;
   display: grid;
@@ -234,6 +263,7 @@ h2 {
   margin-top: -140px;
 }
 
+/*styling individual sections in the sidebar section*/
 .design-selection {
   grid-area: 1/1/6/4;
   background: #EFD488;
@@ -262,6 +292,7 @@ h2 {
   padding: 15px 5%;
 }
 
+/*border changes for small device*/
 @media (max-width: 959px) {
   .requirements {
     border-style: solid;
@@ -269,6 +300,7 @@ h2 {
     border-width: 40px 40px 40px 0;
   }
 }
+/*styling changes for the desk top version*/
 @media (min-width: 960px) {
   .page-wrapper {
     grid-template-rows: 35% 45%;
@@ -306,14 +338,6 @@ h2 {
   .sidebar {
     grid-column: 10/13;
     grid-row: 2/4;
-  }
-
-  .preamble h3 {
-    background-image: url("blue5.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 35%;
-    height: 40px;
   }
 
   footer {
