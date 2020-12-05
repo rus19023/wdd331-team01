@@ -9,7 +9,7 @@
   transform-origin: bottom center;
   background: #000;
   border-radius: 100% 100%;
-  background-color: rgba(255, 255, 0, 0.2);
+  background-color: rgba(255, 255, 0, 0.4);
   z-index: -1;
   transition: transform 2s ease-in-out;
 }
@@ -36,7 +36,7 @@
   transform-origin: bottom center;
   background: #000;
   border-radius: 100% 100%;
-  background-color: rgba(255, 255, 0, 0.2);
+  background-color: rgba(255, 255, 0, 0.4);
   z-index: -1;
   transition: transform 2s ease-in-out;
 }
@@ -63,7 +63,7 @@
   transform-origin: bottom center;
   background: #000;
   border-radius: 100% 100%;
-  background-color: rgba(255, 255, 0, 0.2);
+  background-color: rgba(255, 255, 0, 0.4);
   z-index: -1;
   transition: transform 2s ease-in-out;
 }
@@ -112,6 +112,16 @@ header {
   line-height: 135px;
 }
 
+/*color for CSS Zen Garden and Headers of each section*/
+h1, h3 {
+  color: #251182;
+}
+
+/*color for The Beauty of CSS Design*/
+h2 {
+  color: #ac094b;
+}
+
 /*second grid for next level down*/
 .intro {
   grid-column: 1/13;
@@ -142,8 +152,20 @@ header {
   margin: 20px 1.25% -10px 1%;
 }
 
+/*animation for flowers in the preamble*/
 .preamble h3 {
   padding: 25px 5% 0 5%;
+  background-image: url("lotus5.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 25%;
+  height: 45px;
+  transition: 3000ms background-size ease-out, 3000ms background-position;
+}
+
+.preamble h3:hover {
+  background-size: 35%;
+  background-position: top right;
 }
 
 .preamble p:last-child {
@@ -197,14 +219,6 @@ header {
   background-size: 50px 50px;
   background-position: top center;
   height: 63px;
-}
-
-.preamble h3 {
-  background-image: url("blue5.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 25%;
-  height: 45px;
 }
 
 .explanation h3 {
