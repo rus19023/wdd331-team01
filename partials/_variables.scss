@@ -1,21 +1,21 @@
 // VARIABLES
 $grid-12: repeat(12, 1fr);
-$font-main: "Poppins", "Georgia", sans-serif;
+$font-primary: "Poppins", Georgia, sans-serif;
 
 // Colors - Dark mode
-$color1: #bb516C;
-$color2: #ffcb0c;
-$color3: #251182;
-$color4: #09ac6a;
-$color5: #532c10;
+$brown: #8b4513;
+$brown2: #532c10;
+$green: #09ac6a;
 
 // Colors - Garden of Light mode
-// COLORS
-$brown: #8b4513;
+$color6: #EFD488; //tan
+
+
 $brown-light: mix($brown, white, 25%);
 
-$green: #09ac6a;
+
 $green-light: mix($green, white, 25%);
+
 $green-comp: complement($green);
 $green-comp-light: mix($green-comp, white, 50%);
 

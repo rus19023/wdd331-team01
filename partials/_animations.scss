@@ -12,5 +12,16 @@
 
 @keyframes bg-change {
     from {background: $green;}
-    to {background-image: url("assets/grass.jpg");}
+    to {background-image: $green-light;}
+  }
+
+  @keyframes sunrise {
+      // start with no sun, make dark sky turn skyblue and sun grows bigger and colors change from mostly pink to orange to yellow?
+      0% {
+          background: $blue;
+
+      }
+      50% {
+          background: $blue-light;
+      }
   }

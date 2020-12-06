@@ -1,12 +1,13 @@
-$colorb: rgba(255, 255, 0, 0.2);
-$letfv:50%;
-$topv:100px;
-@mixin template() {
+$colorb: linear-gradient(to right, rgba(255,0,0,.2), rgba(255,0,0,1)); //rgba(255, 255, 0, 0.4);
+$leftv:50%;
+$topv:100vh;
+
+@mixin template {
     content: '';
     position: absolute;
     width: 100px;
     height: 300px;
-    left: $letfv;
+    left: $leftv;
     top: $topv;
     transform-origin: bottom center;
     background: #000;
@@ -15,7 +16,6 @@ $topv:100px;
     z-index: -1;
     transition: transform 2s ease-in-out;  
   }
-<<<<<<< HEAD
 
   $a:-90;
   
@@ -24,28 +24,13 @@ $topv:100px;
         @include template();
     }
     .extra#{$i} {
-        transform: translate(-$letfv, -$topv) rotate(#{$a}deg);
+        transform: translate(-$leftv, -$topv) rotate(#{$a}deg);
     }
     .extra#{$i}::before {
-=======
-  $a:-90;
-@for $i from 1 to 4 {
-    .extra#{$i}, .extra#{$i}::before, .extra#{$i}::after{
-        @include template();
+        transform: translate(-$leftv, -$topv) rotate(22.5deg);
     }
-    .extra#{$i}{
-        transform: translate(-$letfv, -$topv) rotate(#{$a}deg);
+    .extra#{$i}::after {
+        transform: translate(-$leftv, -$topv) rotate(45deg);
     }
-    .extra#{$i}::before{
->>>>>>> 4f455344dc181b71243428a25c11ca7c08988c11
-        transform: translate(-$letfv, -$topv) rotate(22.5deg);
-    }
-    .extra#{$i}::after{
-        transform: translate(-$letfv, -$topv) rotate(45deg);
-    }
-<<<<<<< HEAD
-
-=======
->>>>>>> 4f455344dc181b71243428a25c11ca7c08988c11
-    $a:$a+67.5;
+    $a: $a + 67.5;
 }
