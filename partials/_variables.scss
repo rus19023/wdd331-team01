@@ -19,13 +19,13 @@ $green-light: mix($green, white, 25%);
 $green-comp: complement($green);
 $green-comp-light: mix($green-comp, white, 50%);
 
-$yellow: #ffcb0c;
+$yellow: rgb(255, 203, 12);
 $yellow-light: mix($yellow, white, 20%);
 
 $blue: #251182;
 $blue-light: complement($yellow);
 
-$pink: #bb516c;
+$pink: rgb(187, 81, 108);
 $pink-light: mix($pink, white, 25%);
 
 $grey: #808080;

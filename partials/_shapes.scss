@@ -1,4 +1,5 @@
-$colorb: linear-gradient(to right, rgba(255,0,0,.2), rgba(255,0,0,1)); //rgba(255, 255, 0, 0.4);
+$colorb: linear-gradient(to top, rgba(187, 81, 108, .4),  rgba(255, 203, 12, .6), 
+rgba(255, 255, 0, .8));
 $leftv:50%;
 $topv:100vh;
 
@@ -10,9 +11,8 @@ $topv:100vh;
     left: $leftv;
     top: $topv;
     transform-origin: bottom center;
-    background: #000;
+    background: $colorb;
     border-radius: 100% 100%;
-    background-color: $colorb;
     z-index: -1;
     transition: transform 2s ease-in-out;  
   }
