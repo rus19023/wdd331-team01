@@ -1,0 +1,14 @@
+@mixin template() {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  left: $leftv;
+  top: $topv;
+  transform-origin: bottom center;
+  border-radius: 100% 100%;
+  background-color: $colorb;
+  z-index: -1;
+  transition: transform 3s linear; 
+
+}

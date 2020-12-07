@@ -1,0 +1,232 @@
+@import "partials/variables";
+@import "partials/layout";
+@import "partials/animations";
+
+
+html {
+	margin: 0;
+	padding: 0;
+    font-family: "Poppins", "Georgia", sans-serif;
+    font-size: 55%;
+    font-weight: 400;
+}
+
+body {
+    background: $green;
+    color: $green-light;
+}
+
+header {
+    text-align: center;
+    max-width: 100%;
+    background-image: url("assets/sun.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: $brown;
+    &:hover {
+        & :hover {
+            animation: bg-change 5s infinite;
+        }
+        color: $green;
+    }
+}
+
+p {        
+    max-width: 100%;
+}
+
+.page-wrapper { 
+    //grid-template-columns: 1fr;
+    background: $green;
+    color: $green-light;
+    & h1, h2 {
+        color: $brown;
+    }
+    & :hover {
+        animation: bg-change 5s infinite;
+        & a:visited, h1, h2 {
+            color: $brown;
+        }
+    }
+}
+
+.intro {                                // container for 'main' section
+    //grid-template-columns: 1fr 1fr 1fr;
+    // border-radius: 50%;
+    //height: 12rem;
+    max-width: 100%;
+    text-align: center;
+    padding: 2.4em 1.4em .6em 1.4em;
+    color: $brown-light;
+}
+
+.summary {                               // A demonstration of what...
+    //grid-template-columns: 1fr 1fr 1fr;
+    //$size: 400px;
+    // max-width: $size;
+    // height: $size;
+    // border-radius: $size / 2;
+    // padding: 2rem;
+    background: $brown;
+    color: $brown;
+    & p a {
+        color: $pink;
+
+        &:visited {
+            color: $green;
+        }
+    }
+
+    &:hover {
+        background: $brown-light;
+        color: $brown-light;
+        & a:visited {
+            color: $brown;
+        }
+    }
+}
+
+.preamble {                                 // The road to enlightenment...
+    //grid-template-columns: 1fr 1fr 1fr;
+    background: $brown;
+    color: $brown-light;
+    & p {        
+    border-radius: 50%;
+    //height: 12rem;
+    max-width: 18rem;
+    text-align: center;
+    padding: 2.4em 1.4em .6em 1.4em;
+    }
+    &:hover {
+        background:$brown-light;
+        color:$brown;
+    }
+}
+
+.main {                    // holds Explanation, Participation, Benefits & Requirements
+    //grid-template-columns: 1fr 1fr 1fr;
+    background: $brown;
+    color: $brown-light;
+    &:hover {
+        background:$brown-light;
+        color:$brown;
+    }
+}
+
+.explanation {                                      // So what is this about?
+    background: $brown;
+    color: $brown-light;
+    &:hover {
+        background:$brown-light;
+        color:$brown;
+    }
+}
+
+.supporting {    
+    background: mix(black, white, 75%);
+}
+
+.participation {
+    background: yellow;
+}
+
+.benefits {
+    background: mix(orange, white, 75%);
+}
+
+.requirements {
+    background: mix(purple, white, 50%);
+}
+
+.sidebar {
+    background: mix(red, white, 75%);
+}
+
+.wrapper {
+    background: mix(indigo, white, 50%);
+}
+
+.design-selection {
+    background: mix(yellow, white, 50%);
+
+}
+
+.select {
+    background: mix(blue, white, 50%);
+}
+
+.designer-name {
+    background: mix(green, white, 50%);
+
+}
+
+.design-name {
+    background: mix(purple, white, 50%);
+}
+
+.design-archives {
+    background: mix(black, white, 50%);
+
+}
+
+.archives {
+    background: mix(orange, white, 50%);
+}
+
+.next {
+    background: mix(green, white, 50%);
+}
+
+.viewall {
+    background: mix(red, white, 50%);
+}
+
+.zen-resources {
+    background: mix(green, white, 50%);
+}
+
+.view-css {
+    background: mix(hotpink, white, 50%);
+}
+
+.css-resources {
+    background: mix(yellow, white, 50%);
+
+}
+
+.zen-faq {
+
+}
+
+.zen-submit {
+
+}
+
+.zen-translations {
+
+}
+
+.zen-validate-html {
+
+}
+
+.zen-validate-css {
+
+}
+
+.zen-license {
+
+}
+
+.zen-accessibility {
+
+}
+
+.zen-github {
+
+}
+
+.indicator {
+
+}
