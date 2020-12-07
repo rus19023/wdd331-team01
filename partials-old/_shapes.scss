@@ -1,0 +1,19 @@
+
+
+  $a:-90;
+  
+@for $i from 1 to 4 {
+    .extra#{$i}, .extra#{$i}::before, .extra#{$i}::after {
+        @include template();
+    }
+    .extra#{$i} {
+        transform: translate(-$leftv, -$topv) rotate(#{$a}deg);
+    }
+    .extra#{$i}::before {
+        transform: translate(-$leftv, -$topv) rotate(22.5deg);
+    }
+    .extra#{$i}::after {
+        transform: translate(-$leftv, -$topv) rotate(45deg);
+    }
+    $a: $a + 67.5;
+}

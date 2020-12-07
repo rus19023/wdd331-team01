@@ -1,6 +1,4 @@
-
-
-@mixin template {
+@mixin template() {
     content: '';
     position: absolute;
     width: 100px;
@@ -8,26 +6,24 @@
     left: $leftv;
     top: $topv;
     transform-origin: bottom center;
-    background: $colorb;
     border-radius: 100% 100%;
+    background: $colorb;
     z-index: -1;
-    transition: transform 2s ease-in-out;  
+    transition: transform 3s linear;  
   }
-
   $a:-90;
-  
 @for $i from 1 to 4 {
-    .extra#{$i}, .extra#{$i}::before, .extra#{$i}::after {
+    .extra#{$i}, .extra#{$i}::before, .extra#{$i}::after{
         @include template();
     }
-    .extra#{$i} {
+    .extra#{$i}{
         transform: translate(-$leftv, -$topv) rotate(#{$a}deg);
     }
-    .extra#{$i}::before {
+    .extra#{$i}::before{
         transform: translate(-$leftv, -$topv) rotate(22.5deg);
     }
-    .extra#{$i}::after {
+    .extra#{$i}::after{
         transform: translate(-$leftv, -$topv) rotate(45deg);
     }
-    $a: $a + 67.5;
+    $a:$a+67.5;
 }
