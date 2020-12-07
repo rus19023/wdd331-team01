@@ -10,18 +10,13 @@
     }
 }
 
-@keyframes bg-change {
+@keyframes grass {
     from {background: $green;}
-    to {background-image: $green-light;}
+    to {background: $green-light;}
   }
 
-  @keyframes sunrise {
-      // start with no sun, make dark sky turn skyblue and sun grows bigger and colors change from mostly pink to orange to yellow?
-      0% {
-          background: $blue;
-
-      }
-      50% {
-          background: $blue-light;
-      }
+  @keyframes let-there-be-light {
+      // start with no sun, make dark sky turn skyblue
+      0% {background: $blue;}
+      100% {background: $blue-light;}
   }
