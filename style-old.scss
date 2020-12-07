@@ -1,36 +1,39 @@
-
 @import "partials/variables";
+@import "partials/animations";
+@import "partials/mixins";
 @import "partials/layout";
 @import "partials/shapes";
 @import "partials/svg";
-@import "partials/animations";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap');
 
 body { 
-	font-family: $font-text;	
+	font-family: $font-text;
+	width: 100%;
+	font-size: 13px;
+	font-weight: normal;	
 	color: black;
 	background: $blue;
-	font-size: 13px;
 	animation: let-there-be-light 2s forwards linear;
 }
 
-/*centers the text in the header*/	
+/*centers the text in the header*/
 header {
 	text-align: center;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 600px;
 	line-height: 135px;	
 }
 
-/*color for CSS Zen Garden and Headers of each section*/
-h1, h3{
-	color: white;
-}
-
-/*color for The Beauty of CSS Design*/
+/*color for "The Beauty of CSS Design"*/
 h2 {
 	color: $blue;
+}
+
+/*color for CSS Zen Garden and Headers of each section*/
+h1, h3 {
+	color: white;
 }
 
 /*first paragraph styling in the top section*/	
@@ -42,9 +45,9 @@ h2 {
 
 /*styling for the second paragraph in the top section and two paragraphs in the main div*/	
 .preamble, .participation, .requirements {
-	background: $tan;/* tan*/	
+	background: #EFD488;/* tan*/	
 	margin-top: -20px;
-	grid-column:1/13;
+	grid-column: 1/13;
 	border-style: solid;
 	border-right-color: $grey;
 	border-top-color: $grey;
@@ -53,7 +56,7 @@ h2 {
 }
 
 /*styling for the second paragraph in the top section*/	
-.preamble {
+.preamble {  // "The Road to Enlightenment..."
 	margin: 20px 1.25% -10px 1%;
 }
 
@@ -69,12 +72,24 @@ h2 {
 }
 
 .preamble h3:hover{
-	background-size: 35%;
+	background-size:35%;
 	background-position: top right;
 }
 
-.preamble p:last-child {
+.preamble p:last-child{
 	padding-bottom: 25px;	
+}
+
+.main h3, p {
+	padding: 0 5%; 
+}
+
+.preamble h3 {
+	padding: 25px 5% 0 5%;	
+}
+
+.preamble p:last-child {
+	padding-bottom: 25px;
 }
 
 /*styling for the main div below the top section*/	
@@ -91,9 +106,8 @@ h2 {
 .main h3, p {
 	padding: 0 5%; 
 }
-
-/*fourth grid for the sidebar*/	
-.sidebar {
+/*forth grid for the sidebar*/	
+.sidebar{
 	grid-column:1/13;
 }
 
@@ -292,4 +306,74 @@ h1 {
 	}
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.explanation, .benefits {
+	background: rgb(0,204,0,.2); /*green*/
+	border-style: solid;
+	border-left-color: $grey;
+	border-width: 0 0 0 40px;
+}
+
+footer {
+	background: rgb(0,204,0,.2); /*green*/
+}
+
+footer a {
+	padding: 25px;
+}
+
+footer a:first-child {
+	padding-left: 40%;
+}
+
+h1 {
+	font-family: arial, serif;
+	font-size: 45px;
+	position: relative;
+	top: 95px;	
+}
+
+.design-selection {
+	background: #EFD488; /*tan*/
+}
+
+.design-archives {
+	background: rgb(0,204,0,.2); /*green*/
+}
+
+.zen-resources {
+	background: #EFD488; /*tan*/
+}
+
+.design-selection, .design-archives, .zen-resources{
+	padding: 15px 5%;
+}
+
+.explanation { // "So what is this about?"
+
+}
+
+.participation, .requirements, .explanation, .benefits, footer {
+	margin: 20px;
+}
+
+.participation:before {
+	width: 100px;
+	height: 40px;
+	background:$grey;
+	position: absolute;
+	bottom: 10px;
+}

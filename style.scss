@@ -1,40 +1,37 @@
+
 @import "partials/variables";
-@import "partials/animations";
 @import "partials/mixins";
 @import "partials/layout";
 @import "partials/shapes";
 @import "partials/svg";
+@import "partials/animations";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap');
 
 body { 
-	font-family: $font-text;
-	width: 100%;
-	font-size: 13px;
-	font-weight: normal;	
+	font-family: $font-text;	
 	color: black;
 	background: $blue;
-	animation: let-there-be-light 5s forwards linear;
+	font-size: 13px;
+	animation: let-there-be-light 2s forwards linear;
 }
 
-/*centers the text in the header*/
+/*centers the text in the header*/	
 header {
 	text-align: center;
-	background-repeat: no-repeat;
 	background-position: center;
 	line-height: 135px;	
 }
 
-/*color for "The Beauty of CSS Design"*/
-h2 {
-	color: $blue;
+/*color for CSS Zen Garden and Headers of each section*/
+h1, h3{
+	color: white;
 	font-family: $font-header;
 }
 
-/*color for CSS Zen Garden and Headers of each section*/
-h1, h3 {
-	color: white;
-	font-family: $font-header;
+/*color for The Beauty of CSS Design*/
+h2 {
+	color: $blue;
 }
 
 /*first paragraph styling in the top section*/	
@@ -47,9 +44,9 @@ h1, h3 {
 
 /*styling for the second paragraph in the top section and two paragraphs in the main div*/	
 .preamble, .participation, .requirements {
-	background: #EFD488;/* tan*/	
+	background: $tan;/* tan*/	
 	margin-top: -20px;
-	grid-column: 1/13;
+	grid-column:1/13;
 	border-style: solid;
 	border-right-color: $grey;
 	border-top-color: $grey;
@@ -59,7 +56,7 @@ h1, h3 {
 }
 
 /*styling for the second paragraph in the top section*/	
-.preamble {  // "The Road to Enlightenment..."
+.preamble {
 	margin: 20px 1.25% -10px 1%;
 }
 
@@ -75,24 +72,12 @@ h1, h3 {
 }
 
 .preamble h3:hover{
-	background-size:35%;
+	background-size: 35%;
 	background-position: top right;
 }
 
-.preamble p:last-child{
-	padding-bottom: 25px;	
-}
-
-.main h3, p {
-	padding: 0 5%; 
-}
-
-.preamble h3 {
-	padding: 25px 5% 0 5%;	
-}
-
 .preamble p:last-child {
-	padding-bottom: 25px;
+	padding-bottom: 25px;	
 }
 
 /*styling for the main div below the top section*/	
@@ -109,7 +94,8 @@ h1, h3 {
 .main h3, p {
 	padding: 0 5%; 
 }
-/*forth grid for the sidebar*/	
+
+/*fourth grid for the sidebar*/	
 .sidebar {
 	grid-column:1/13;
 }

@@ -1,0 +1,67 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "intro"
+    "main"
+    "wrapper"
+    "footer";
+}
+
+
+.intro {
+    grid-area: intro;
+    display: grid;
+    grid-template-areas: 
+    "header1"
+    "summary"
+    "preamble";
+    & header {
+        grid-area: header1;
+    }
+    & .summary {
+        grid-area: summary;
+    }
+    .preamble {
+        grid-area: preamble;
+    }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    .explanation{
+        grid-column: 2/7;
+    }
+    .participation{
+        grid-column: 1/6;
+    }
+    .benefits{
+        grid-column: 2/7;
+    }
+    .requirements{
+        grid-column: 1/6;
+    }
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    .design-selection{
+        grid-column: 2/7;
+    }
+    .design-archives{
+        grid-column: 1/6;
+    }
+    .zen-resources{
+        grid-column: 2/7;
+    }
+}
+footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: -2750px;
+    left: 0;
+    align-items: center;
+}

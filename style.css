@@ -1,5 +1,111 @@
 /*color of path*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  padding: 0 0.2rem 0 0.2rem;
+}
+
+#css-zen-garden {
+  width: 100%;
+}
+
+.extra1, .extra1::before, .extra1::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  left: 50%;
+  top: 100vh;
+  transform-origin: bottom center;
+  border-radius: 100% 100%;
+  background: linear-gradient(to bottom, rgba(187, 81, 108, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
+  z-index: -1;
+<<<<<<< HEAD
+  transition: transform 5s linear;
+=======
+  transition: transform 3s linear;
+>>>>>>> toni
+}
+
+.extra1 {
+  transform: translate(-50%, -100vh) rotate(-90deg);
+}
+
+.extra1::before {
+  transform: translate(-50%, -100vh) rotate(22.5deg);
+}
+
+.extra1::after {
+  transform: translate(-50%, -100vh) rotate(45deg);
+}
+
+.extra2, .extra2::before, .extra2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  left: 50%;
+  top: 100vh;
+  transform-origin: bottom center;
+  border-radius: 100% 100%;
+  background: linear-gradient(to bottom, rgba(187, 81, 108, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
+  z-index: -1;
+<<<<<<< HEAD
+  transition: transform 5s linear;
+=======
+  transition: transform 3s linear;
+>>>>>>> toni
+}
+
+.extra2 {
+  transform: translate(-50%, -100vh) rotate(-22.5deg);
+}
+
+.extra2::before {
+  transform: translate(-50%, -100vh) rotate(22.5deg);
+}
+
+.extra2::after {
+  transform: translate(-50%, -100vh) rotate(45deg);
+}
+
+.extra3, .extra3::before, .extra3::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  left: 50%;
+  top: 100vh;
+  transform-origin: bottom center;
+  border-radius: 100% 100%;
+  background: linear-gradient(to bottom, rgba(187, 81, 108, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
+  z-index: -1;
+<<<<<<< HEAD
+  transition: transform 5s linear;
+=======
+  transition: transform 3s linear;
+>>>>>>> toni
+}
+
+.extra3 {
+  transform: translate(-50%, -100vh) rotate(45deg);
+}
+
+.extra3::before {
+  transform: translate(-50%, -100vh) rotate(22.5deg);
+}
+
+.extra3::after {
+  transform: translate(-50%, -100vh) rotate(45deg);
+}
+
+.preamble {
+  height: 350px;
+}
+
 @keyframes grow {
   0% {
     top: 200px;
@@ -27,208 +133,43 @@
     background: #86a0ff;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: content-box;
-  padding: 0 0.2rem 0 0.2rem;
-}
-
-#css-zen-garden {
-  width: 100%;
-}
-
-/*second grid for next level down*/
-.intro {
-  grid-column: 1/13;
-}
-
-.intro {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-}
-.intro header {
-  grid-column: 1/7;
-}
-.intro .summary {
-  grid-column: 1/7;
-}
-.intro .preamble {
-  grid-column: 1/6;
-}
-
-.main {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-}
-.main .explanation {
-  grid-column: 2/7;
-}
-.main .participation {
-  grid-column: 1/6;
-}
-.main .benefits {
-  grid-column: 2/7;
-}
-.main .requirements {
-  grid-column: 1/6;
-}
-
-/*third grid*/
-.main {
-  grid-column: 1/13;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(5, auto);
-  margin-top: 1rem;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-}
-.wrapper .design-selection {
-  grid-column: 2/7;
-}
-.wrapper .design-archives {
-  grid-column: 1/6;
-}
-.wrapper .zen-resources {
-  grid-column: 2/7;
-}
-
-footer {
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  grid-column: 1/5;
-  position: relative;
-  bottom: -700px;
-  display: flex;
-  grid-template-columns: repeat(5, 1fr);
-  align-items: center;
-}
-
-.extra1, .extra1::before, .extra1::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 300px;
-  left: 50%;
-  top: 100vh;
-  transform-origin: bottom center;
-  background: linear-gradient(to bottom, rgba(187, 81, 108, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
-  border-radius: 100% 100%;
-  z-index: -1;
-  transition: transform 5s linear;
-}
-
-.extra1 {
-  transform: translate(-50%, -100vh) rotate(-90deg);
-}
-
-.extra1::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
-}
-
-.extra1::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
-
-.extra2, .extra2::before, .extra2::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 300px;
-  left: 50%;
-  top: 100vh;
-  transform-origin: bottom center;
-  background: linear-gradient(to bottom, rgba(187, 81, 108, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
-  border-radius: 100% 100%;
-  z-index: -1;
-  transition: transform 5s linear;
-}
-
-.extra2 {
-  transform: translate(-50%, -100vh) rotate(-22.5deg);
-}
-
-.extra2::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
-}
-
-.extra2::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
-
-.extra3, .extra3::before, .extra3::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 300px;
-  left: 50%;
-  top: 100vh;
-  transform-origin: bottom center;
-  background: linear-gradient(to bottom, rgba(187, 81, 108, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
-  border-radius: 100% 100%;
-  z-index: -1;
-  transition: transform 5s linear;
-}
-
-.extra3 {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
-
-.extra3::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
-}
-
-.extra3::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
-
-.preamble {
-  height: 350px;
-}
-
-.preamble:after {
-  content: "";
-  position: relative;
-  top: -50%;
-  left: 100%;
-  display: flex;
-  width: 100px;
-  height: 250px;
-}
-
 body {
   font-family: "Poppins", Georgia, sans-serif;
-  width: 100%;
-  font-size: 13px;
-  font-weight: normal;
   color: black;
   background: #251182;
+<<<<<<< HEAD
   animation: let-there-be-light 5s forwards linear;
+=======
+  font-size: 13px;
+  animation: let-there-be-light 2s forwards linear;
+>>>>>>> toni
 }
 
 /*centers the text in the header*/
 header {
   text-align: center;
-  background-repeat: no-repeat;
   background-position: center;
   line-height: 135px;
 }
 
+<<<<<<< HEAD
 /*color for "The Beauty of CSS Design"*/
 h2 {
   color: #251182;
   font-family: "Lemonada", cursive;
 }
 
+=======
+>>>>>>> toni
 /*color for CSS Zen Garden and Headers of each section*/
 h1, h3 {
   color: white;
   font-family: "Lemonada", cursive;
+}
+
+/*color for The Beauty of CSS Design*/
+h2 {
+  color: #251182;
 }
 
 /*first paragraph styling in the top section*/
@@ -277,18 +218,6 @@ h1, h3 {
   padding-bottom: 25px;
 }
 
-.main h3, p {
-  padding: 0 5%;
-}
-
-.preamble h3 {
-  padding: 25px 5% 0 5%;
-}
-
-.preamble p:last-child {
-  padding-bottom: 25px;
-}
-
 /*styling for the main div below the top section*/
 .participation, .requirements, .explanation, .benefits, footer {
   margin: 0 17px 0 17px;
@@ -304,7 +233,7 @@ h1, h3 {
   padding: 0 5%;
 }
 
-/*forth grid for the sidebar*/
+/*fourth grid for the sidebar*/
 .sidebar {
   grid-column: 1/13;
 }
