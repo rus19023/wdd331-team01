@@ -16,7 +16,7 @@
   }
 
   @keyframes let-there-be-light {
-      // start with no sun, make dark sky turn skyblue
+      // make dark sky turn skyblue, works in tandem with sunrise transition of Lotus sun
       0% {background: $blue;}
       100% {background: $blue-light;}
   }

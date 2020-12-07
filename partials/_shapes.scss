@@ -1,21 +1,5 @@
-@mixin template() {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 300px;
-    left: $leftv;
-    top: $topv;
-    transform-origin: bottom center;
-    border-radius: 100% 100%;
-    background: $colorb;
-    z-index: -1;
-<<<<<<< HEAD
-    transition: transform 5s linear;  
-=======
-    transition: transform 3s linear;  
->>>>>>> toni
-  }
-  $a:-90;
+$a:-90;
+
 @for $i from 1 to 4 {
     .extra#{$i}, .extra#{$i}::before, .extra#{$i}::after{
         @include template();
