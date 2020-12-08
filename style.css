@@ -100,6 +100,14 @@
     top: 200px;
   }
 }
+@keyframes let-there-be-light {
+  0% {
+    background: #251182;
+  }
+  100% {
+    background: #86a0ff;
+  }
+}
 @keyframes grass {
   from {
     background: #09ac6a;
@@ -108,12 +116,20 @@
     background: #c2eada;
   }
 }
-@keyframes let-there-be-light {
-  0% {
-    background: #251182;
+@keyframes dirt {
+  from {
+    background: #532c10;
   }
-  100% {
-    background: #86a0ff;
+  to {
+    background: #d4cac3;
+  }
+}
+@keyframes tan {
+  from {
+    background: #8b4513;
+  }
+  to {
+    background: #EFD488;
   }
 }
 body {
@@ -152,7 +168,7 @@ h2 {
 
 /*styling for the second paragraph in the top section and two paragraphs in the main div*/
 .preamble, .participation, .requirements {
-  background: #8b4513;
+  background: #532c10;
   margin-top: -20px;
   grid-column: 1/13;
   border-style: solid;

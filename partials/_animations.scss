@@ -10,13 +10,23 @@
     }
 }
 
+@keyframes let-there-be-light {
+    // make dark sky turn skyblue, works in tandem with sunrise transition of Lotus sun
+    0% {background: $blue;}
+    100% {background: $blue-light;}
+}
+
 @keyframes grass {
     from {background: $green;}
     to {background: $green-light;}
-  }
+}
 
-  @keyframes let-there-be-light {
-      // make dark sky turn skyblue, works in tandem with sunrise transition of Lotus sun
-      0% {background: $blue;}
-      100% {background: $blue-light;}
-  }
+@keyframes dirt {
+    from {background: $brown;}
+    to {background: $brown-light;}
+}
+
+@keyframes tan {
+    from {background: $tan;}
+    to {background: $tan-light;}
+}
