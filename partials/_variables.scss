@@ -20,8 +20,8 @@ $pink: #bb516c;
 $cranberry: #ac094b;
 
 // Colors - Garden of Light mode
-$brown-light: mix($brown, white, 25%);
-$green-light: mix($green, white, 25%);
+$brown-light: mix($brown, white, 50%);
+$green-light: mix($green, white, 50%);
 $green-comp: complement($green);
 $green-comp-light: mix($green-comp, white, 30%);
 $yellow: rgb(255, 203, 12);

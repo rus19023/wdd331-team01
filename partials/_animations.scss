@@ -30,3 +30,23 @@
     from {background: $tan;}
     to {background: $tan-light;}
 }
+
+@keyframes dirt-font {
+    from { color: $brown-light; }
+    to { color: $brown; }
+}
+
+@keyframes grass-font {
+    from { color: $green-light; }
+    to { color: $green; }
+}
+
+@keyframes h1-font {
+    from { color: transparent; }
+    to { color: white; }
+}
+
+@keyframes h2-font {
+    from { color: transparent; }
+    to { color: $blue; }
+}

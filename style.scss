@@ -9,7 +9,7 @@
 
 body { 
 	font-family: $font-text;
-		
+
 	color: black;
 	background: $blue;
 	font-size: 13px;
@@ -25,13 +25,16 @@ header {
 
 /*color for CSS Zen Garden and Headers of each section*/
 h1, h3{
-	color: white;
+	padding-top: 2rem; 
+	color: transparent;
 	font-family: $font-header;
+	animation: h1-font 3s linear forwards;
 }
 
 /*color for The Beauty of CSS Design*/
 h2 {
 	color: $blue;
+	font-family: $font-header;
 }
 
 /*first paragraph styling in the top section*/	
@@ -40,7 +43,6 @@ h2 {
 	width: 50%;
 	padding: 0 5% 10px 5%;
 	margin: -15px 0px 20px 0px;
-	//background-image: url("assets/.png");
 }
 
 /*styling for the second paragraph in the top section and two paragraphs in the main div*/	
@@ -55,6 +57,9 @@ h2 {
 	padding-right: 10%;
 	width: 100%;
 	animation: dirt 3s forwards linear;
+	& h3 {		
+	animation: dirt-font 3s forwards linear;
+	}
 }
 
 /*styling for the second paragraph in the top section*/	
@@ -65,7 +70,7 @@ h2 {
 /*animation for flowers in the preamble*/
 .preamble h3 {
 	padding: 25px 5% 0 5%;
-	background-image: url("lotus5.svg");
+	background-image: url("./assets/lotus5.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 25%;

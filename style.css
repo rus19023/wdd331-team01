@@ -113,7 +113,7 @@
     background: #09ac6a;
   }
   to {
-    background: #c2eada;
+    background: #84d6b5;
   }
 }
 @keyframes dirt {
@@ -121,7 +121,7 @@
     background: #532c10;
   }
   to {
-    background: #d4cac3;
+    background: #a99688;
   }
 }
 @keyframes tan {
@@ -130,6 +130,38 @@
   }
   to {
     background: #EFD488;
+  }
+}
+@keyframes dirt-font {
+  from {
+    color: #a99688;
+  }
+  to {
+    color: #532c10;
+  }
+}
+@keyframes grass-font {
+  from {
+    color: #84d6b5;
+  }
+  to {
+    color: #09ac6a;
+  }
+}
+@keyframes h1-font {
+  from {
+    color: transparent;
+  }
+  to {
+    color: white;
+  }
+}
+@keyframes h2-font {
+  from {
+    color: transparent;
+  }
+  to {
+    color: #251182;
   }
 }
 body {
@@ -149,13 +181,16 @@ header {
 
 /*color for CSS Zen Garden and Headers of each section*/
 h1, h3 {
-  color: white;
+  padding-top: 2rem;
+  color: transparent;
   font-family: "Lemonada", cursive;
+  animation: h1-font 3s linear forwards;
 }
 
 /*color for The Beauty of CSS Design*/
 h2 {
   color: #251182;
+  font-family: "Lemonada", cursive;
 }
 
 /*first paragraph styling in the top section*/
@@ -179,6 +214,9 @@ h2 {
   width: 100%;
   animation: dirt 3s forwards linear;
 }
+.preamble h3, .participation h3, .requirements h3 {
+  animation: dirt-font 3s forwards linear;
+}
 
 /*styling for the second paragraph in the top section*/
 .preamble {
@@ -188,7 +226,7 @@ h2 {
 /*animation for flowers in the preamble*/
 .preamble h3 {
   padding: 25px 5% 0 5%;
-  background-image: url("lotus5.svg");
+  background-image: url("./assets/lotus5.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 25%;
