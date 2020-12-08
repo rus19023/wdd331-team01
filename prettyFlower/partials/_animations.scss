@@ -1,0 +1,22 @@
+@keyframes grow {
+    0% {
+        top: 200px;
+    }
+    50% {
+        top: 50px;
+    }
+    100% {
+        top: 200px;
+    }
+}
+
+@keyframes grass {
+    from {background: $green;}
+    to {background: $green-light;}
+  }
+
+  @keyframes let-there-be-light {
+      // make dark sky turn skyblue, works in tandem with sunrise transition of Lotus sun
+      0% {background: $blue;}
+      100% {background: $blue-light;}
+  }

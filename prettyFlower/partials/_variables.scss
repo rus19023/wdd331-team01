@@ -6,7 +6,8 @@ $font-header: "Lemonada", cursive;
 
 
 // "Lotus" sun
-$colorb: linear-gradient(to bottom, rgba(134, 160, 255, .8), rgba(196, 130, 235, 0.6), rgba(172, 9, 75, .6), rgba(255, 203, 12, .6), rgba(255, 255, 0, .8));
+$colorb: linear-gradient(to bottom, rgba(187, 81, 108, .6), rgba(172, 9, 75, .6), rgba(255, 203, 12, .6), 
+rgba(255, 255, 0, .8));
 $leftv:50%;
 $topv:100vh;
 
@@ -27,6 +28,6 @@ $green-comp: complement($green);
 $green-comp-light: mix($green-comp, white, 30%);
 $yellow: rgb(255, 203, 12);
 $yellow-light: mix($yellow, white, 20%);
-$blue-light: #86a0ff; // skyblue: mix(complement($yellow), white, 50%);
+$blue-light: mix(complement($yellow), white, 50%);
 $pink-light: mix($pink, white, 25%);
 $grey-light: mix($grey, white, 25%);

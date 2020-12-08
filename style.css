@@ -20,7 +20,7 @@
   top: 100vh;
   transform-origin: bottom center;
   border-radius: 100% 100%;
-  background-color: linear-gradient(to bottom, rgba(187, 81, 108, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
+  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), rgba(196, 130, 235, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
   z-index: -1;
   transition: transform 3s linear;
 }
@@ -46,7 +46,7 @@
   top: 100vh;
   transform-origin: bottom center;
   border-radius: 100% 100%;
-  background-color: linear-gradient(to bottom, rgba(187, 81, 108, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
+  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), rgba(196, 130, 235, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
   z-index: -1;
   transition: transform 3s linear;
 }
@@ -72,7 +72,7 @@
   top: 100vh;
   transform-origin: bottom center;
   border-radius: 100% 100%;
-  background-color: linear-gradient(to bottom, rgba(187, 81, 108, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
+  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), rgba(196, 130, 235, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
   z-index: -1;
   transition: transform 3s linear;
 }
@@ -87,10 +87,6 @@
 
 .extra3::after {
   transform: translate(-50%, -100vh) rotate(45deg);
-}
-
-.preamble {
-  height: 350px;
 }
 
 @keyframes grow {
@@ -149,6 +145,7 @@ h2 {
 /*first paragraph styling in the top section*/
 .summary {
   text-align: left;
+  width: 50%;
   padding: 0 5% 10px 5%;
   margin: -15px 0px 20px 0px;
 }
@@ -214,8 +211,7 @@ h2 {
 
 /*styling for the main div with green background below the top section*/
 .explanation, .benefits {
-  background: rgba(0, 204, 0, 0.2);
-  /*green*/
+  background: #09ac6a;
   border-style: solid;
   border-left-color: #808080;
   border-top-color: #808080;
