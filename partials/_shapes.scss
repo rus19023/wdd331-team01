@@ -1,17 +1,33 @@
-$a:-90;
-
+$colorb: rgba(255, 203, 12, 0.4);
+$letfv:50%;
+$topv:100px;
+@mixin template() {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 300px;
+    left: $letfv;
+    top: $topv;
+    transform-origin: bottom center;
+    background: #000;
+    border-radius: 100% 100%;
+    background-color: $colorb;
+    z-index: -1;
+    transition: transform 1s ease-in-out;  
+  }
+  $a:-90;
 @for $i from 1 to 4 {
     .extra#{$i}, .extra#{$i}::before, .extra#{$i}::after{
-        @include template;
+        @include template();
     }
-    .extra#{$i} {
-        transform: translate(-$leftv, -$topv) rotate(#{$a}deg);
+    .extra#{$i}{
+        transform: translate(-$letfv, -$topv) rotate(#{$a}deg);
     }
-    .extra#{$i}::before {
-        transform: translate(-$leftv, -$topv) rotate(22.5deg);
+    .extra#{$i}::before{
+        transform: translate(-$letfv, -$topv) rotate(22.5deg);
     }
-    .extra#{$i}::after {
-        transform: translate(-$leftv, -$topv) rotate(45deg);
+    .extra#{$i}::after{
+        transform: translate(-$letfv, -$topv) rotate(45deg);
     }
-    $a: $a + 67.5;
+    $a:$a+67.5;
 }
