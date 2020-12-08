@@ -8,3 +8,28 @@
 #css-zen-garden {
     width: 100%;
 }
+
+/*first grid*/	
+.page-wrapper {
+	display: grid;
+	grid-template-columns: $grid-12;
+}
+
+/*second grid for next level down*/	
+.intro {
+	grid-column: 1/13;
+}
+
+/*third grid*/	
+.main {
+	grid-column: 1/13;
+	display: grid;
+	grid-template-columns: $grid-12;
+	grid-template-rows: repeat(5, auto);
+	margin-top: 1rem;
+}
+
+/*fourth grid for the sidebar*/	
+.sidebar {
+	grid-column: 1/13;
+}
