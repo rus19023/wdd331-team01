@@ -1,5 +1,94 @@
 /*color of path*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  padding: 0 0.2rem 0 0.2rem;
+}
+
+#css-zen-garden {
+  width: 100%;
+}
+
+.extra1, .extra1::before, .extra1::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  left: 50%;
+  top: 100vh;
+  transform-origin: bottom center;
+  border-radius: 100% 100%;
+  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.2), rgba(196, 130, 235, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.6));
+  z-index: -1;
+  transition: transform 3s linear;
+}
+
+.extra1 {
+  transform: translate(-50%, -100vh) rotate(-90deg);
+}
+
+.extra1::before {
+  transform: translate(-50%, -100vh) rotate(22.5deg);
+}
+
+.extra1::after {
+  transform: translate(-50%, -100vh) rotate(45deg);
+}
+
+.extra2, .extra2::before, .extra2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  left: 50%;
+  top: 100vh;
+  transform-origin: bottom center;
+  border-radius: 100% 100%;
+  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.2), rgba(196, 130, 235, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.6));
+  z-index: -1;
+  transition: transform 3s linear;
+}
+
+.extra2 {
+  transform: translate(-50%, -100vh) rotate(-22.5deg);
+}
+
+.extra2::before {
+  transform: translate(-50%, -100vh) rotate(22.5deg);
+}
+
+.extra2::after {
+  transform: translate(-50%, -100vh) rotate(45deg);
+}
+
+.extra3, .extra3::before, .extra3::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  left: 50%;
+  top: 100vh;
+  transform-origin: bottom center;
+  border-radius: 100% 100%;
+  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.2), rgba(196, 130, 235, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.6));
+  z-index: -1;
+  transition: transform 3s linear;
+}
+
+.extra3 {
+  transform: translate(-50%, -100vh) rotate(45deg);
+}
+
+.extra3::before {
+  transform: translate(-50%, -100vh) rotate(22.5deg);
+}
+
+.extra3::after {
+  transform: translate(-50%, -100vh) rotate(45deg);
+}
+
 @keyframes grow {
   0% {
     top: 200px;
@@ -27,95 +116,6 @@
     background: #86a0ff;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: content-box;
-  padding: 0 0.2rem 0 0.2rem;
-}
-
-#css-zen-garden {
-  width: 100%;
-}
-
-.extra1, .extra1::before, .extra1::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 300px;
-  left: 50%;
-  top: 100vh;
-  transform-origin: bottom center;
-  border-radius: 100% 100%;
-  background-color: linear-gradient(to bottom, rgba(187, 81, 108, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
-  z-index: -1;
-  transition: transform 3s linear;
-}
-
-.extra1 {
-  transform: translate(-50%, -100vh) rotate(-90deg);
-}
-
-.extra1::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
-}
-
-.extra1::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
-
-.extra2, .extra2::before, .extra2::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 300px;
-  left: 50%;
-  top: 100vh;
-  transform-origin: bottom center;
-  border-radius: 100% 100%;
-  background-color: linear-gradient(to bottom, rgba(187, 81, 108, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
-  z-index: -1;
-  transition: transform 3s linear;
-}
-
-.extra2 {
-  transform: translate(-50%, -100vh) rotate(-22.5deg);
-}
-
-.extra2::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
-}
-
-.extra2::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
-
-.extra3, .extra3::before, .extra3::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 300px;
-  left: 50%;
-  top: 100vh;
-  transform-origin: bottom center;
-  border-radius: 100% 100%;
-  background-color: linear-gradient(to bottom, rgba(187, 81, 108, 0.6), rgba(172, 9, 75, 0.6), rgba(255, 203, 12, 0.6), rgba(255, 255, 0, 0.8));
-  z-index: -1;
-  transition: transform 3s linear;
-}
-
-.extra3 {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
-
-.extra3::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
-}
-
-.extra3::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
-
 body {
   font-family: "Poppins", Georgia, sans-serif;
   color: black;

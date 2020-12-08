@@ -1,4 +1,4 @@
-@mixin template {
+@mixin template() {
   content: '';
   position: absolute;
   width: 100px;
@@ -7,7 +7,7 @@
   top: $topv;
   transform-origin: bottom center;
   border-radius: 100% 100%;
-  background: $colorb;
+  background-color: $colorb;
   z-index: -1;
   transition: transform 3s linear; 
 
