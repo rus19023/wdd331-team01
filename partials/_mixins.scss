@@ -1,20 +1,14 @@
-@mixin hex() {
-    .hex::before {
-      content: "Color code:";
-    }
-  }
-
-  @mixin color-variations ($base-color) {
-    $comp: complement($base-color);
-    $comp2: mix(complement($base-color), white, 25%);
-    $comp3: mix(complement($base-color), white, 50%);
-    $accent: mix($comp2, black, 20%);
-    $highlight: mix($base-color, black, 20%);
-    $light: mix($base-color, white, 25%);
-    $light2: mix($base-color, white, 50%);
-    $dark: mix($base-color, black, 40%);
-}
-
-@mixin colorname ($base-color) {
-
+@mixin template {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  left: $leftv;
+  top: $topv;
+  transform-origin: bottom center;
+  background: #000;
+  border-radius: 100% 100%;
+  background: $colorb;
+  z-index: -1;
+  transition: transform 3s ease-in-out;  
 }

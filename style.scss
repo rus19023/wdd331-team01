@@ -1,65 +1,75 @@
-@import "partials/shapes";
-@import "partials/svg";
 
-$grid-12:repeat(12,1fr);
-$color-1: #251182; /*color of path*/
+@import "partials/variables"; 
+@import "partials/mixins";
+@import "partials/animations";
+@import "partials/layout";
+@import "partials/shapes"; 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap');
 
 html {
 	margin: 0;
 	padding: 0;
-	}
-body { 
-	font-family: 75% poppins 400 regular, georgia, sans-serif;	
-	color: black; 
-	 /*url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; */
-	 /*background-image: url("grass2.svg");*/
-	 background-color: #C3E4D7;
-	}
-/*first grid*/	
-.page-wrapper{
-	display: grid;
-	grid-template-columns: $grid-12;
 }
+
+body { 
+	font-family: $font-text;	
+	color: black;
+	font-size: 14px;
+	background: $blue;
+	animation: let-there-be-light 3s forwards linear;
+}
+
 /*centers the text in the header*/	
 header {
 	text-align: center;
 	background-position: center;
 	background-size: 600px;
-	line-height: 135px;	
+	line-height: 135px;
 }
+
+h1 {
+	font-size: 45px;
+	position: relative;
+	top: 35px;	
+}
+
 /*color for CSS Zen Garden and Headers of each section*/
-h1,h3{
-	color: #251182;
+h1, h3 {
+	color: white;
+	font-family: $font-header;
 }
+
 /*color for The Beauty of CSS Design*/
-h2{
-	color: #ac094b;
+h2 {
+	color: $blue;
+	font-family: $font-header;
 }
-/*second grid for next level down*/	
-.intro{
-	grid-column:1/13;
-}
+
 /*first paragraph styling in the top section*/	
-.summary{
+.summary {
 	text-align: left;
 	padding: 0 5% 10px 5%;
 	margin: -15px 0px 20px 0px;
 }
+
 /*styling for the second paragraph in the top section and two paragraphs in the main div*/	
 .preamble, .participation, .requirements {
-	background: #EFD488;/* tan*/	
 	margin-top: -20px;
-	grid-column:1/13;
 	border-style: solid;
-	border-right-color: $color-1;
-	border-top-color: $color-1;
+	border-right-color: $blue;
+	border-top-color: $blue;
 	border-width: 40px 40px 0 0;
 	padding-right: 10%;
+	background: $brown;	
+	animation: dirt 3s forwards linear;
 }
+
 /*styling for the second paragraph in the top section*/	
-.preamble{
+.preamble {
 	margin: 20px 1.25% -10px 1%;
 }
+
 /*animation for flowers in the preamble*/
 .preamble h3 {
 	padding: 25px 5% 0 5%;
@@ -67,149 +77,143 @@ h2{
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-size: 6%;
+	animation: dirt-font 3s forwards linear;
+	//transition: .5ms background-size ease-out, 3ms background-position;
+}
 
-	transition: 500ms background-size ease-out, 3000ms background-position;
-	}
-.preamble h3:hover{
+.preamble h3:hover {
 	background-image: url("lotus5.svg");
 	background-size:25%;
 }
+
 .preamble p:last-child{
 	padding-bottom: 25px;	
 }
+
 /*styling for the main div below the top section*/	
 .participation, .requirements, .explanation, .benefits, footer {
 	margin: 0 17px 0 17px;
 }
+
 .requirements{
 	border-style: solid;
-	border-color: $color-1;
+	border-color: $blue;
 	border-width: 40px 40px 0 0;
 }
-/*third grid*/	
-.main{
-	grid-column:1/13;
-	display: grid;
-	grid-template-columns: $grid-12;
-	grid-template-rows: repeat(5, auto);
-	margin-top: 1rem;
-}
+
 .main h3, p {
 	padding: 0 5%; 
 }
-/*forth grid for the sidebar*/	
-.sidebar{
-	grid-column:1/13;
-}
+
 /*styling for the main div with green background below the top section*/
-.explanation, .benefits{
-	background: rgb(0,204,0,.2);/*green*/
+.explanation, .benefits {
 	border-style: solid;
-	border-left-color: $color-1;
-	border-top-color: $color-1;
+	border-left-color: $blue;
+	border-top-color: $blue;
 	border-width: 40px 0 0 35px;
-	grid-column:1/13;
 	padding-left: 10%;
+	background: $green;	
+	animation: grass 3s forwards linear;
 }
+
 /*adding svg images in sections*/
-.explanation h3, .participation h3, .benefits h3, .requirements h3{	
+.explanation h3, .participation h3, .benefits h3, .requirements h3 {	
 	background-repeat: no-repeat;
 	background-size: 50px 50px;
 	background-position: top center;
 	height: 63px;	
 }
-.explanation h3{
+
+.explanation h3 {
 	background-image: url("blueYellow1.svg");
-	transition: 500ms background-size ease-out, 3000ms background-position;
-	}
-.explanation h3:hover{
+	animation: grass-font 3s forwards linear;
+	//transition: 500ms background-size ease-out, 3000ms background-position;
+}
+
+.explanation h3:hover {
 	background-image: url("blueYellow5.svg");
-	background-size:25%;	
+	background-size: 25%;	
 }
-.participation h3{
+
+.participation h3 {
 	background-image: url("pby1.svg");
-	transition: 500ms background-size ease-out, 3000ms background-position;
+	animation: dirt-font 3s forwards linear;
 }
-.participation h3:hover{
+
+.participation h3:hover {
 	background-image: url("pby5.svg");
 	background-size:20%;
 }
-.benefits h3{
+
+.benefits h3 {
 	background-image: url("pansy1.svg");
-	transition: 500ms background-size ease-out, 3000ms background-position;
+	animation: grass-font 3s forwards linear;
 }
-.benefits h3:hover{
+
+.benefits h3:hover {
 	background-image: url("pansy5.svg");
 	background-size:20%;
 }
-.requirements h3{
+
+.requirements h3 {
 	background-image: url("forgetMeKnot1.svg");
-	transition: 500ms background-size ease-out, 3000ms background-position;
+	animation: dirt-font 3s forwards linear;
 }
-.requirements h3:hover{
+
+.requirements h3:hover {
 	background-image: url("forgetMeKnot5.svg");
 	background-size:20%;
 	height: 55px;
 }
+
 /*styling for the footer*/
-footer{
+footer {
 	max-width: 100%;
 	height: 100px;
 	text-align: center;
-	background: rgb(0,204,0,.2);/*green*/
-	grid-column:1/13;
 	position: relative;
 	bottom:-420px;
 	display: flex;
 	align-items: center;
 	border-style: solid;
-	border-top-color: $color-1;
+	border-top-color: $blue;
 	border-width: 40px 0 0 0;
-	background-color: #bb516c;
+	background: $pink;	
+	animation: pink 3s forwards linear;
 }
-footer a{
+
+footer a {
 	padding: 25px;
 	display: flex;
 	align-items: center;
-	color: white;
+	color: white;	
+	animation: pink-font 3s forwards linear;
 }
-footer a:first-child{
+
+footer a:first-child {
 	padding-left: 15%;	
 }
-h1 {
-	font-family: arial, serif;
-	font-size: 45px;
-	position: relative;
-	top: 95px;	
-}
-/*fifth grid for section below the sidebar class*/
-.wrapper {
-	grid-column:1/13;
-	display:grid;
-	grid-template-columns: 20% 20% 5% 20% 20%;
-	grid-template-rows: 100px 100px 20px 100px 100px;
-	margin-left: 10%;
-	margin-top: -140px;	
-}
+
 /*styling individual sections in the sidebar section*/
-.design-selection{
-	grid-area: 1/1/6/4;
-	background: #EFD488;/*tan*/
+.design-selection {
+	background: $tan;
 	border-style: solid;
-	border-right-color: $color-1;	
+	border-right-color: $blue;	
 	border-width: 0 40px 0 0;	
+	animation: tan 3s forwards linear;	
 }
-.design-archives{
-	grid-area: 1/4/3/6;
-	background: rgb(0,204,0,.2);/*green*/
+
+.design-archives {
+	background: $green;
 	border-style: solid;
-	border-bottom-color: $color-1;	
+	border-bottom-color: $blue;	
 	border-width: 0 0 40px 0;	
 }
-.zen-resources{
-	background: #EFD488;/*tan*/
-	grid-area: 3/4/6/6;	
+
+.zen-resources {
+	background: $tan;
 }
+
 .design-selection, .design-archives, .zen-resources{
 	padding: 15px 5%;
 }
@@ -270,27 +274,24 @@ h1 {
 	}
 	.design-selection{
 		grid-area: 1/1/3/2;
-		border-color: $color-1;	
+		border-color: $blue;	
 		border-width: 40px 40px 0 40px;	
 	}
 	.design-archives{
 		grid-area: 3/1/4/2;
-		border-top-color: $color-1;
-		border-bottom-color: $color-1;
-		border-color: $color-1;
+		border-top-color: $blue;
+		border-bottom-color: $blue;
+		border-color: $blue;
 		border-width: 40px 40px 40px 40px;
 		z-index:-1;
 	}
 	.zen-resources{
 		grid-area: 4/1/5/2;
-		border-bottom-color: $color-1;
-		border-color: $color-1;
+		border-bottom-color: $blue;
+		border-color: $blue;
 		border-width: 0 40px 40px 40px;	
 	}
 	ul li{
 		padding-bottom: 4%;
 	}
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap');
