@@ -219,9 +219,15 @@ footer a:first-child {
 }
 /*styling changes for the mobile device*/
 @media (max-width:959px){
+	//the first value is width the following is height
+	@include sun(80px,250px);
 .explanation h3{
 		background-position: right center;
 	}
+}
+@media (max-width:400px){
+	//the first value is width the following is height
+	@include sun(50px,150px);
 }
 /*styling changes for the desk top*/
 @media (min-width:960px){

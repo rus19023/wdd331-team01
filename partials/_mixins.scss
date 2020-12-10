@@ -1,8 +1,8 @@
-@mixin template {
+@mixin template ($widthValue, $heightValue) {
   content: '';
   position: absolute;
-  width: 100px;
-  height: 300px;
+  width: $widthValue; //100px
+  height: $heightValue; //300px
   left: $leftv;
   top: $topv;
   transform-origin: bottom center;
@@ -11,4 +11,23 @@
   background: $colorb;
   z-index: -1;
   transition: transform 3s ease-in-out;  
+}
+$a:-90;
+
+@mixin sun($widthValue, $heightValue){
+  @for $i from 1 to 4 {
+    .extra#{$i}, .extra#{$i}::before, .extra#{$i}::after{
+        @include template($widthValue,$heightValue);
+    }
+    .extra#{$i}{
+        transform: translate(-$leftv, -$topv) rotate(#{$a}deg);
+    }
+    .extra#{$i}::before{
+        transform: translate(-$leftv, -$topv) rotate(22.5deg);
+    }
+    .extra#{$i}::after{
+        transform: translate(-$leftv, -$topv) rotate(45deg);
+    }
+    $a: $a + 67.5;
+}
 }
