@@ -12,33 +12,43 @@
 
 @keyframes let-there-be-light {
     // make dark sky turn skyblue, works in tandem with sunrise transition of Lotus sun
-    0% {background: $blue;}
-    100% {background: $blue-light;}
+    0% { background: $blue; }
+    100% { background: $blue-light; }
 }
 
 @keyframes grass {
-    from {background: $green;}
-    to {background: $green-light;}
+    from { background: $green; }
+    to { background: $green-light; }
 }
 
 @keyframes dirt {
-    from {background: $brown;}
-    to {background: $brown-light;}
+    from { background: $brown; }
+    to { background: $brown-light; }
 }
 
 @keyframes tan {
-    from {background: $tan;}
-    to {background: $tan-light;}
+    from { background: $tan; }
+    to { background: $tan-light; }
+}
+
+@keyframes pink {
+    from { background: $pink; }
+    to { background: $pink-light; }
 }
 
 @keyframes dirt-font {
     from { color: $brown-light; }
-    to { color: $brown; }
+    to { color: mix($brown, black, 70%); }
 }
 
 @keyframes grass-font {
     from { color: $green-light; }
-    to { color: $green; }
+    to { color: mix($green, black, 70%); }
+}
+
+@keyframes pink-font {
+    from { color: white; }
+    to { color: $raspberry; }
 }
 
 @keyframes h1-font {

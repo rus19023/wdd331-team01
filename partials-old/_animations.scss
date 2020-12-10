@@ -10,13 +10,13 @@
     }
 }
 
-@keyframes grass {
-    from {background: $green;}
-    to {background: $green-light;}
-  }
-
   @keyframes let-there-be-light {
       // start with no sun, make dark sky turn skyblue
-      0% {background: $blue;}
-      100% {background: $blue-light;}
+      0% { background: $blue; }
+      100% { background: $blue-light; }
+  }
+
+  @keyframes grass {
+      from { background: $green; }
+      to { background: $green-light; }
   }

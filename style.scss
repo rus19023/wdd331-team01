@@ -1,18 +1,22 @@
-//@import "partials/variables";
-//@import "partials/mixins";
-//@import "partials/layout";
-@import "partials/shapes";
-//@import "partials/animations";
 
+@import "partials/variables"; 
+@import "partials/mixins";
+@import "partials/animations";
+@import "partials/layout";
+@import "partials/shapes"; 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap');
 
-body { 
-	font-family: $font-text;
+html {
+	margin: 0;
+	padding: 0;
+}
 
+body { 
+	font-family: $font-text;	
 	color: black;
+	font-size: 14px;
 	background: $blue;
-	font-size: 13px;
 	animation: let-there-be-light 3s forwards linear;
 }
 
@@ -20,48 +24,45 @@ body {
 header {
 	text-align: center;
 	background-position: center;
-	line-height: 135px;	
+	background-size: 600px;
+	line-height: 135px;
+}
+
+h1 {
+	font-size: 45px;
+	position: relative;
+	top: 35px;	
 }
 
 /*color for CSS Zen Garden and Headers of each section*/
-h1, h3{
-	padding-top: 3rem; 
-	color: transparent;
+h1, h3 {
+	color: white;
 	font-family: $font-header;
-	animation: h1-font 3s linear forwards;
 }
 
 /*color for The Beauty of CSS Design*/
 h2 {
 	color: $blue;
 	font-family: $font-header;
-	animation: h2-font 3s linear forwards;
 }
 
 /*first paragraph styling in the top section*/	
 .summary {
-	align-content: space-around;
 	text-align: left;
-	width: 50%;
 	padding: 0 5% 10px 5%;
 	margin: -15px 0px 20px 0px;
 }
 
 /*styling for the second paragraph in the top section and two paragraphs in the main div*/	
 .preamble, .participation, .requirements {
-	background: $brown;	
 	margin-top: -20px;
-	grid-column:1/13;
 	border-style: solid;
-	border-right-color: $grey;
-	border-top-color: $grey;
+	border-right-color: $blue;
+	border-top-color: $blue;
 	border-width: 40px 40px 0 0;
 	padding-right: 10%;
-	width: 100%;
+	background: $brown;	
 	animation: dirt 3s forwards linear;
-	& h3 {		
-	animation: dirt-font 3s forwards linear;
-	}
 }
 
 /*styling for the second paragraph in the top section*/	
@@ -72,20 +73,20 @@ h2 {
 /*animation for flowers in the preamble*/
 .preamble h3 {
 	padding: 25px 5% 0 5%;
-	background-image: url("./assets/lotus5.svg");
+	background-image: url("lotus1.svg");
 	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 25%;
-	height: 45px;
-	transition: 3s background-size ease-out, 3s background-position;
+	background-position: right center;
+	background-size: 6%;
+	animation: dirt-font 3s forwards linear;
+	//transition: .5ms background-size ease-out, 3ms background-position;
 }
 
 .preamble h3:hover {
-	background-size: 35%;
-	background-position: top right;
+	background-image: url("lotus5.svg");
+	background-size:25%;
 }
 
-.preamble p:last-child {
+.preamble p:last-child{
 	padding-bottom: 25px;	
 }
 
@@ -94,9 +95,9 @@ h2 {
 	margin: 0 17px 0 17px;
 }
 
-.requirements {
+.requirements{
 	border-style: solid;
-	border-color: $grey;
+	border-color: $blue;
 	border-width: 40px 40px 0 0;
 }
 
@@ -104,24 +105,19 @@ h2 {
 	padding: 0 5%; 
 }
 
-/*fourth grid for the sidebar*/	
-.sidebar {
-	grid-column: 1/13;
-}
-
 /*styling for the main div with green background below the top section*/
 .explanation, .benefits {
-	background: $green;
 	border-style: solid;
-	border-left-color: $grey;
-	border-top-color: $grey;
+	border-left-color: $blue;
+	border-top-color: $blue;
 	border-width: 40px 0 0 35px;
-	grid-column: 1/13;
 	padding-left: 10%;
+	background: $green;	
+	animation: grass 3s forwards linear;
 }
 
 /*adding svg images in sections*/
-.explanation h3, .participation h3, .benefits h3 {	
+.explanation h3, .participation h3, .benefits h3, .requirements h3 {	
 	background-repeat: no-repeat;
 	background-size: 50px 50px;
 	background-position: top center;
@@ -129,15 +125,45 @@ h2 {
 }
 
 .explanation h3 {
-	background-image: url("Flower6.svg");
+	background-image: url("blueYellow1.svg");
+	animation: grass-font 3s forwards linear;
+	//transition: 500ms background-size ease-out, 3000ms background-position;
+}
+
+.explanation h3:hover {
+	background-image: url("blueYellow5.svg");
+	background-size: 25%;	
 }
 
 .participation h3 {
-	background-image: url("lotus3.svg");
+	background-image: url("pby1.svg");
+	animation: dirt-font 3s forwards linear;
+}
+
+.participation h3:hover {
+	background-image: url("pby5.svg");
+	background-size:20%;
 }
 
 .benefits h3 {
-	background-image: url("pansy2.svg");
+	background-image: url("pansy1.svg");
+	animation: grass-font 3s forwards linear;
+}
+
+.benefits h3:hover {
+	background-image: url("pansy5.svg");
+	background-size:20%;
+}
+
+.requirements h3 {
+	background-image: url("forgetMeKnot1.svg");
+	animation: dirt-font 3s forwards linear;
+}
+
+.requirements h3:hover {
+	background-image: url("forgetMeKnot5.svg");
+	background-size:20%;
+	height: 55px;
 }
 
 /*styling for the footer*/
@@ -145,160 +171,127 @@ footer {
 	max-width: 100%;
 	height: 100px;
 	text-align: center;
-	background: rgb(0,204,0,.2);/*green*/
-	grid-column:1/13;
 	position: relative;
 	bottom:-420px;
 	display: flex;
 	align-items: center;
 	border-style: solid;
-	border-top-color: $grey;
+	border-top-color: $blue;
 	border-width: 40px 0 0 0;
+	background: $pink;	
+	animation: pink 3s forwards linear;
 }
 
 footer a {
 	padding: 25px;
 	display: flex;
 	align-items: center;
+	color: white;	
+	animation: pink-font 3s forwards linear;
 }
 
 footer a:first-child {
 	padding-left: 15%;	
 }
 
-h1 {
-	font-size: 45px;
-	position: relative;
-	top: 95px;	
-}
-
-/*fifth grid for section below the sidebar class*/
-.wrapper {
-	grid-column:1/13;
-	display:grid;
-	grid-template-columns: 20% 20% 5% 20% 20%;
-	grid-template-rows: 100px 100px 20px 100px 100px;
-	margin-left: 10%;
-	margin-top: -140px;	
-}
-
 /*styling individual sections in the sidebar section*/
 .design-selection {
-	grid-area: 1/1/6/4;
-	background: #EFD488;/*tan*/
+	background: $tan;
 	border-style: solid;
-	border-right-color: $grey;	
+	border-right-color: $blue;	
 	border-width: 0 40px 0 0;	
+	animation: tan 3s forwards linear;	
 }
 
 .design-archives {
-	grid-area: 1/4/3/6;
-	background: rgb(0,204,0,.2);/*green*/
+	background: $green;
 	border-style: solid;
-	border-bottom-color: $grey;	
+	border-bottom-color: $blue;	
 	border-width: 0 0 40px 0;	
-} 
+}
 
 .zen-resources {
-	background: #EFD488;/*tan*/
-	grid-area: 3/4/6/6;	
+	background: $tan;
 }
 
-.design-selection, .design-archives, .zen-resources {
+.design-selection, .design-archives, .zen-resources{
 	padding: 15px 5%;
 }
-
-/*border changes for small device*/
-@media (max-width:959px) {
-	.requirements{
-		border-style: solid;
-		border-color: $grey;
-		border-width: 40px 40px 40px 0;
+/*styling changes for the mobile device*/
+@media (max-width:959px){
+.explanation h3{
+		background-position: right center;
 	}
 }
-
-/*styling changes for the desk top version*/
-@media (min-width:960px) {
-	.page-wrapper {
+/*styling changes for the desk top*/
+@media (min-width:960px){
+	.page-wrapper{
 		grid-template-rows: 35% 45% ;
 	}
-
-	.intro {
+	.intro{
 		grid-column:1/13;
 		grid-row:1/2;
 		display: grid;
 		grid-template-columns: $grid-12;
 	}	
-
 	header {
 		grid-column:1/13;
 	}
-
-	.summary {
+	.summary{
 		grid-column:1/13;
 	}
-
-	.preamble {
+	.preamble{
 		margin: 0 -1% 0 2%;
 		grid-column:1/10;
 	}
-
-	.participation, .requirements, .explanation, .benefits {
+	.participation, .requirements, .explanation, .benefits{
 		grid-column:1/10;
 	}
-
-	.main {
+	.main{
 		grid-column:1/13;
 		grid-row: 2/3;
 	}
-
-	.sidebar {
+	.sidebar{
 		grid-column:10/13;
 		grid-row: 2/4;	
 	}
 	
-	footer {
+	footer{
 		width: 120%;
 		grid-column:1/13;
 		bottom:-1px;
 		margin-left: -30px;
 	}
-
-	footer a:first-child {
+	footer a:first-child{
 		padding-left: 35%;	
 	}
-
-	.wrapper {
+	.wrapper{
 		grid-column:1/6;
 		grid-template-columns: 100%;
 		grid-template-rows: 448px 200px 300px;
 		margin-top: -90px;
 		margin-left: -18px;
 	}
-
-	.design-selection {
+	.design-selection{
 		grid-area: 1/1/3/2;
-		border-color: $grey;	
+		border-color: $blue;	
 		border-width: 40px 40px 0 40px;	
 	}
-
-	.design-archives {
+	.design-archives{
 		grid-area: 3/1/4/2;
-		border-top-color: $grey;
-		border-bottom-color: $grey;
-		border-color: $grey;
+		border-top-color: $blue;
+		border-bottom-color: $blue;
+		border-color: $blue;
 		border-width: 40px 40px 40px 40px;
 		z-index:-1;
 	}
-
-	.zen-resources {
+	.zen-resources{
 		grid-area: 4/1/5/2;
-		border-bottom-color: $grey;
-		border-color: $grey;
+		border-bottom-color: $blue;
+		border-color: $blue;
 		border-width: 0 40px 40px 40px;	
 	}
-
-	ul li {
+	ul li{
 		padding-bottom: 4%;
 	}
 }
