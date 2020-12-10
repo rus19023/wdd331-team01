@@ -134,87 +134,89 @@
   grid-area: 3/4/6/6;
 }
 
-.extra1, .extra1::before, .extra1::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 300px;
-  left: 50%;
-  top: 100vh;
-  transform-origin: bottom center;
-  border-radius: 100% 100%;
-  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 80%);
-  z-index: -1;
-  transition: transform 3s linear;
-}
+@media (min-width: 35em) {
+  .extra1, .extra1::before, .extra1::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 300px;
+    left: 50%;
+    top: 100vh;
+    transform-origin: bottom center;
+    border-radius: 100% 100%;
+    background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 80%);
+    z-index: -1;
+    transition: transform 3s linear;
+  }
 
-.extra1 {
-  transform: translate(-50%, -100vh) rotate(-90deg);
-}
+  .extra1 {
+    transform: translate(-50%, -100vh) rotate(-90deg);
+  }
 
-.extra1::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
-}
+  .extra1::before {
+    transform: translate(-50%, -100vh) rotate(22.5deg);
+  }
 
-.extra1::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
+  .extra1::after {
+    transform: translate(-50%, -100vh) rotate(45deg);
+  }
 
-.extra2, .extra2::before, .extra2::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 300px;
-  left: 50%;
-  top: 100vh;
-  transform-origin: bottom center;
-  border-radius: 100% 100%;
-  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 80%);
-  z-index: -1;
-  transition: transform 3s linear;
-}
+  .extra2, .extra2::before, .extra2::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 300px;
+    left: 50%;
+    top: 100vh;
+    transform-origin: bottom center;
+    border-radius: 100% 100%;
+    background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 80%);
+    z-index: -1;
+    transition: transform 3s linear;
+  }
 
-.extra2 {
-  transform: translate(-50%, -100vh) rotate(-22.5deg);
-}
+  .extra2 {
+    transform: translate(-50%, -100vh) rotate(-22.5deg);
+  }
 
-.extra2::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
-}
+  .extra2::before {
+    transform: translate(-50%, -100vh) rotate(22.5deg);
+  }
 
-.extra2::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
+  .extra2::after {
+    transform: translate(-50%, -100vh) rotate(45deg);
+  }
 
-.extra3, .extra3::before, .extra3::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 300px;
-  left: 50%;
-  top: 100vh;
-  transform-origin: bottom center;
-  border-radius: 100% 100%;
-  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 80%);
-  z-index: -1;
-  transition: transform 3s linear;
-}
+  .extra3, .extra3::before, .extra3::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 300px;
+    left: 50%;
+    top: 100vh;
+    transform-origin: bottom center;
+    border-radius: 100% 100%;
+    background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 80%);
+    z-index: -1;
+    transition: transform 3s linear;
+  }
 
-.extra3 {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
+  .extra3 {
+    transform: translate(-50%, -100vh) rotate(45deg);
+  }
 
-.extra3::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
-}
+  .extra3::before {
+    transform: translate(-50%, -100vh) rotate(22.5deg);
+  }
 
-.extra3::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
+  .extra3::after {
+    transform: translate(-50%, -100vh) rotate(45deg);
+  }
 }
-
 html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {

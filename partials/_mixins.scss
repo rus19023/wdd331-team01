@@ -1,8 +1,8 @@
 @mixin template {
   content: '';
   position: absolute;
-  width: 100px;
-  height: 300px;
+  width: $sun-width;
+  height: $sun-height;
   left: $leftv;
   top: $topv;
   transform-origin: bottom center;
