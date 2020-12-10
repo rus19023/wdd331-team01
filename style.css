@@ -134,87 +134,6 @@
   grid-area: 3/4/6/6;
 }
 
-.extra1, .extra1::before, .extra1::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 300px;
-  left: 50%;
-  top: 100vh;
-  transform-origin: bottom center;
-  background: #000;
-  border-radius: 100% 100%;
-  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 80%);
-  z-index: -1;
-  transition: transform 3s ease-in-out;
-}
-
-.extra1 {
-  transform: translate(-50%, -100vh) rotate(-90deg);
-}
-
-.extra1::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
-}
-
-.extra1::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
-
-.extra2, .extra2::before, .extra2::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 300px;
-  left: 50%;
-  top: 100vh;
-  transform-origin: bottom center;
-  background: #000;
-  border-radius: 100% 100%;
-  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 80%);
-  z-index: -1;
-  transition: transform 3s ease-in-out;
-}
-
-.extra2 {
-  transform: translate(-50%, -100vh) rotate(-22.5deg);
-}
-
-.extra2::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
-}
-
-.extra2::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
-
-.extra3, .extra3::before, .extra3::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 300px;
-  left: 50%;
-  top: 100vh;
-  transform-origin: bottom center;
-  background: #000;
-  border-radius: 100% 100%;
-  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 80%);
-  z-index: -1;
-  transition: transform 3s ease-in-out;
-}
-
-.extra3 {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
-
-.extra3::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
-}
-
-.extra3::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
-}
-
 html {
   margin: 0;
   padding: 0;
@@ -424,8 +343,89 @@ footer a:first-child {
   padding: 15px 5%;
 }
 
-/*styling changes for the mobile device*/
-@media (max-width: 959px) {
+.extra1, .extra1::before, .extra1::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 160px;
+  left: 50%;
+  top: 100vh;
+  transform-origin: bottom center;
+  background: #000;
+  border-radius: 100% 100%;
+  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 80%);
+  z-index: -1;
+  transition: transform 3s ease-in-out;
+}
+
+.extra1 {
+  transform: translate(-50%, -100vh) rotate(-90deg);
+}
+
+.extra1::before {
+  transform: translate(-50%, -100vh) rotate(22.5deg);
+}
+
+.extra1::after {
+  transform: translate(-50%, -100vh) rotate(45deg);
+}
+
+.extra2, .extra2::before, .extra2::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 160px;
+  left: 50%;
+  top: 100vh;
+  transform-origin: bottom center;
+  background: #000;
+  border-radius: 100% 100%;
+  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 80%);
+  z-index: -1;
+  transition: transform 3s ease-in-out;
+}
+
+.extra2 {
+  transform: translate(-50%, -100vh) rotate(-22.5deg);
+}
+
+.extra2::before {
+  transform: translate(-50%, -100vh) rotate(22.5deg);
+}
+
+.extra2::after {
+  transform: translate(-50%, -100vh) rotate(45deg);
+}
+
+.extra3, .extra3::before, .extra3::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 160px;
+  left: 50%;
+  top: 100vh;
+  transform-origin: bottom center;
+  background: #000;
+  border-radius: 100% 100%;
+  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 80%);
+  z-index: -1;
+  transition: transform 3s ease-in-out;
+}
+
+.extra3 {
+  transform: translate(-50%, -100vh) rotate(45deg);
+}
+
+.extra3::before {
+  transform: translate(-50%, -100vh) rotate(22.5deg);
+}
+
+.extra3::after {
+  transform: translate(-50%, -100vh) rotate(45deg);
+}
+
+/*styling changes for medium devices*/
+@media only screen and (min-width: 38rem) {
   .extra1, .extra1::before, .extra1::after {
     content: "";
     position: absolute;
@@ -511,12 +511,13 @@ footer a:first-child {
     background-position: right center;
   }
 }
-@media (max-width: 400px) {
+/*styling changes for the desk top*/
+@media only screen and (min-width: 64rem) {
   .extra1, .extra1::before, .extra1::after {
     content: "";
     position: absolute;
-    width: 50px;
-    height: 150px;
+    width: 100px;
+    height: 300px;
     left: 50%;
     top: 100vh;
     transform-origin: bottom center;
@@ -542,8 +543,8 @@ footer a:first-child {
   .extra2, .extra2::before, .extra2::after {
     content: "";
     position: absolute;
-    width: 50px;
-    height: 150px;
+    width: 100px;
+    height: 300px;
     left: 50%;
     top: 100vh;
     transform-origin: bottom center;
@@ -569,8 +570,8 @@ footer a:first-child {
   .extra3, .extra3::before, .extra3::after {
     content: "";
     position: absolute;
-    width: 50px;
-    height: 150px;
+    width: 100px;
+    height: 300px;
     left: 50%;
     top: 100vh;
     transform-origin: bottom center;
@@ -592,9 +593,7 @@ footer a:first-child {
   .extra3::after {
     transform: translate(-50%, -100vh) rotate(45deg);
   }
-}
-/*styling changes for the desk top*/
-@media (min-width: 960px) {
+
   .page-wrapper {
     grid-template-rows: 35% 45%;
   }

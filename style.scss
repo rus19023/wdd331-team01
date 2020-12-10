@@ -3,7 +3,6 @@
 @import "partials/mixins";
 @import "partials/animations";
 @import "partials/layout";
-@import "partials/shapes"; 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap');
 
@@ -217,20 +216,20 @@ footer a:first-child {
 .design-selection, .design-archives, .zen-resources{
 	padding: 15px 5%;
 }
-/*styling changes for the mobile device*/
-@media (max-width:959px){
+//The default design is for small devices
+//the first value is width the following is height
+@include sun(60px,160px);
+/*styling changes for medium devices*/
+@media only screen and (min-width: 38rem) {
 	//the first value is width the following is height
 	@include sun(80px,250px);
 .explanation h3{
 		background-position: right center;
 	}
 }
-@media (max-width:400px){
-	//the first value is width the following is height
-	@include sun(50px,150px);
-}
 /*styling changes for the desk top*/
-@media (min-width:960px){
+@media only screen and (min-width: 64rem) {
+	@include sun(100px,300px);
 	.page-wrapper{
 		grid-template-rows: 35% 45% ;
 	}
