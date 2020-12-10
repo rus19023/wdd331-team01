@@ -13,7 +13,6 @@
   transition: transform 3s ease-in-out;  
 }
 $a:-90;
-
 @mixin sun($widthValue, $heightValue){
   @for $i from 1 to 4 {
     .extra#{$i}, .extra#{$i}::before, .extra#{$i}::after{
