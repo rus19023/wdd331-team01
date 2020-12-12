@@ -1,32 +1,20 @@
-@mixin template ($widthValue, $heightValue) {
-    content: '';
-    position: absolute;
-    width: $widthValue; //100px
-    height: $heightValue; //300px
-    left: $leftv;
-    top: $topv;
-    transform-origin: bottom center;
-    background: #000;
-    border-radius: 100% 100%;
-    background: $colorb;
-    z-index: -1;
-    transition: transform 3s ease-in-out;  
+@mixin hex() {
+    .hex::before {
+      content: "Color code:";
+    }
   }
-  $a:-90;
-  @mixin sun($widthValue, $heightValue){
-    @for $i from 1 to 4 {
-      .extra#{$i}, .extra#{$i}::before, .extra#{$i}::after{
-          @include template($widthValue,$heightValue);
-      }
-      .extra#{$i}{
-          transform: translate(-$leftv, -$topv) rotate(#{$a}deg);
-      }
-      .extra#{$i}::before{
-          transform: translate(-$leftv, -$topv) rotate(22.5deg);
-      }
-      .extra#{$i}::after{
-          transform: translate(-$leftv, -$topv) rotate(45deg);
-      }
-      $a: $a + 67.5;
-  }
-  }
+
+  @mixin color-variations ($base-color) {
+    $comp: complement($base-color);
+    $comp2: mix(complement($base-color), white, 25%);
+    $comp3: mix(complement($base-color), white, 50%);
+    $accent: mix($comp2, black, 20%);
+    $highlight: mix($base-color, black, 20%);
+    $light: mix($base-color, white, 25%);
+    $light2: mix($base-color, white, 50%);
+    $dark: mix($base-color, black, 40%);
+}
+
+@mixin colorname ($base-color) {
+
+}

@@ -1,1014 +1,443 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap");
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
-html {
-  line-height: 1.15;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers (opinionated).
- */
-body {
-  margin: 0;
-}
-
-/**
- * Add the correct display in IE 9-.
- */
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
-figcaption,
-figure,
-main {
-  /* 1 */
-  display: block;
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
-
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-b,
-strong {
-  font-weight: inherit;
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
- * Add the correct font style in Android 4.3-.
- */
-dfn {
-  font-style: italic;
-}
-
-/**
- * Add the correct background and color in IE 9-.
- */
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-audio,
-video {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in iOS 4-7.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Remove the border on images inside links in IE 10-.
- */
-img {
-  border-style: none;
-}
-
-/**
- * Hide the overflow in IE.
- */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: sans-serif;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-html [type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-  /* 2 */
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
-}
-
-/**
- * Remove the default vertical scrollbar in IE.
- */
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
- */
-[type=search]::-webkit-search-cancel-button,
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- */
-details,
-menu {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-
-/* Scripting
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-canvas {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in IE.
- */
-template {
-  display: none;
-}
-
-/* Hidden
-   ========================================================================== */
-/**
- * Add the correct display in IE 10-.
- */
-[hidden] {
-  display: none;
-}
-
-h1, h2, h3 {
-  font-family: "Roboto Slab", serif;
-  color: #251182;
-}
-
-p {
-  font-family: "Poppins", Georgia, sans-serif;
-  color: black;
-}
-
-@keyframes grow {
-  0% {
-    top: 200px;
-  }
-  50% {
-    top: 50px;
-  }
-  100% {
-    top: 200px;
-  }
-}
-@keyframes let-there-be-light {
-  0% {
-    background: #251182;
-  }
-  100% {
-    background: #C3E4D7;
-  }
-}
-@keyframes grass {
-  from {
-    background: rgba(0, 204, 0, 0.2);
-  }
-  to {
-    background: rgba(246, 253, 246, 0.8);
-  }
-}
-@keyframes dirt {
-  from {
-    background: #532c10;
-  }
-  to {
-    background: #d4cac3;
-  }
-}
-@keyframes tan {
-  from {
-    background: #EFD488;
-  }
-  to {
-    background: #EFD488;
-  }
-}
-@keyframes pink {
-  from {
-    background: #bb516c;
-  }
-  to {
-    background: #eed4da;
-  }
-}
-@keyframes dirt-font {
-  from {
-    color: #d4cac3;
-  }
-  to {
-    color: #3a1f0b;
-  }
-}
-@keyframes grass-font {
-  from {
-    color: rgba(246, 253, 246, 0.8);
-  }
-  to {
-    color: rgba(0, 42, 0, 0.44);
-  }
-}
-@keyframes pink-font {
-  from {
-    color: white;
-  }
-  to {
-    color: #ac094b;
-  }
-}
-@keyframes h1-font {
-  from {
-    color: transparent;
-  }
-  to {
-    color: white;
-  }
-}
-@keyframes h2-font {
-  from {
-    color: transparent;
-  }
-  to {
-    color: #251182;
-  }
-}
 .extra1, .extra1::before, .extra1::after {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 130px;
+  width: 100px;
+  height: 300px;
   left: 50%;
-  top: 100vh;
+  top: 100px;
   transform-origin: bottom center;
   background: #000;
   border-radius: 100% 100%;
-  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 70%);
+  background-color: rgba(255, 203, 12, 0.4);
   z-index: -1;
-  transition: transform 3s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .extra1 {
-  transform: translate(-50%, -100vh) rotate(-90deg);
+  transform: translate(-50%, -100px) rotate(-90deg);
 }
 
 .extra1::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
+  transform: translate(-50%, -100px) rotate(22.5deg);
 }
 
 .extra1::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
+  transform: translate(-50%, -100px) rotate(45deg);
 }
 
 .extra2, .extra2::before, .extra2::after {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 130px;
+  width: 100px;
+  height: 300px;
   left: 50%;
-  top: 100vh;
+  top: 100px;
   transform-origin: bottom center;
   background: #000;
   border-radius: 100% 100%;
-  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 70%);
+  background-color: rgba(255, 203, 12, 0.4);
   z-index: -1;
-  transition: transform 3s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .extra2 {
-  transform: translate(-50%, -100vh) rotate(-22.5deg);
+  transform: translate(-50%, -100px) rotate(-22.5deg);
 }
 
 .extra2::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
+  transform: translate(-50%, -100px) rotate(22.5deg);
 }
 
 .extra2::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
+  transform: translate(-50%, -100px) rotate(45deg);
 }
 
 .extra3, .extra3::before, .extra3::after {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 130px;
+  width: 100px;
+  height: 300px;
   left: 50%;
-  top: 100vh;
+  top: 100px;
   transform-origin: bottom center;
   background: #000;
   border-radius: 100% 100%;
-  background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 70%);
+  background-color: rgba(255, 203, 12, 0.4);
   z-index: -1;
-  transition: transform 3s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .extra3 {
-  transform: translate(-50%, -100vh) rotate(45deg);
+  transform: translate(-50%, -100px) rotate(45deg);
 }
 
 .extra3::before {
-  transform: translate(-50%, -100vh) rotate(22.5deg);
+  transform: translate(-50%, -100px) rotate(22.5deg);
 }
 
 .extra3::after {
-  transform: translate(-50%, -100vh) rotate(45deg);
+  transform: translate(-50%, -100px) rotate(45deg);
+}
+
+.preamble {
+  height: 350px;
+}
+
+/*color of path #251182*/
+html {
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  font-family: 75% poppins 400 regular, georgia, sans-serif;
+  color: black;
+  /*url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; */
+  /*background-image: url("grass2.svg");*/
   background-color: #C3E4D7;
-  animation: let-there-be-light 3s forwards linear;
 }
 
-a {
-  color: #251182;
-  text-decoration: none;
-  font-family: "Poppins", Georgia, sans-serif;
+body p {
+  font-size: 1.1em;
 }
 
+/*first grid*/
 .page-wrapper {
-  display: block;
-}
-
-.intro {
-  display: block;
-}
-.intro header {
-  padding-top: 3.5rem;
-  padding-bottom: 0px;
   display: grid;
-  grid-template-columns: 1.2fr 1fr 1.2fr;
-}
-.intro header h1, .intro header h2 {
-  text-align: center;
-}
-.intro header h1 {
-  font-size: 1.6rem;
-  grid-column: 2/3;
-}
-.intro header h2 {
-  color: #bb516c;
-  font-size: 1.2rem;
-  grid-column: 1/4;
-}
-.intro .summary {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  grid-template-columns: repeat(12, 1fr);
 }
 
-/*borders of Path*/
+/*centers the text in the header*/
+header {
+  text-align: center;
+  background-position: center;
+  background-size: 600px;
+  line-height: 135px;
+}
+
+/*color for CSS Zen Garden and Headers of each section*/
+h1, h3 {
+  color: #251182;
+}
+
+/*color for The Beauty of CSS Design*/
+h2 {
+  color: #ac094b;
+}
+
+/*second grid for next level down*/
+.intro {
+  grid-column: 1/13;
+}
+
+/*first paragraph styling in the top section*/
+.summary {
+  text-align: left;
+  padding: 0 5% 10px 5%;
+  margin: -15px 0px 20px 0px;
+}
+
+/*styling for the second paragraph in the top section and two paragraphs in the main div*/
 .preamble, .participation, .requirements {
   background: #EFD488;
+  /* tan*/
+  margin-top: -20px;
+  grid-column: 1/13;
   border-style: solid;
-  border-color: #808080;
+  border-right-color: #d4d1c4;
+  border-top-color: #d4d1c4;
   border-width: 40px 40px 0 0;
-  padding: 1rem;
+  padding-right: 10%;
 }
 
+/*styling for the second paragraph in the top section*/
+.preamble {
+  margin: 20px 1.25% -10px 1%;
+  height: 100%;
+}
+
+/*animation for flowers in the preamble*/
+.preamble h3 {
+  padding: 25px 5% 0 5%;
+  background-image: url("lotus5.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 25%;
+}
+
+.preamble p:last-child {
+  padding-bottom: 25px;
+}
+
+/*styling for the main div below the top section*/
+.participation, .requirements, .explanation, .benefits, footer {
+  margin: 0 17px 0 17px;
+}
+
+.requirements {
+  border-style: solid;
+  border-color: #d4d1c4;
+  border-width: 40px 40px 0 0;
+}
+
+/*third grid*/
+.main {
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, auto);
+  margin-top: 1rem;
+}
+
+.main h3, p {
+  padding: 0 5%;
+}
+
+/*forth grid for the sidebar*/
+.sidebar {
+  grid-column: 1/13;
+}
+
+/*styling for the main div with green background below the top section*/
 .explanation, .benefits {
   background: rgba(0, 204, 0, 0.2);
+  /*green*/
   border-style: solid;
-  border-color: #808080;
-  border-width: 40px 0 0 40px;
-  padding: 1rem;
+  border-left-color: #d4d1c4;
+  border-top-color: #d4d1c4;
+  border-width: 40px 0 0 35px;
+  grid-column: 1/13;
+  padding-left: 10%;
 }
 
-.main {
-  display: block;
+/*adding svg images in sections*/
+.explanation h3, .participation h3, .benefits h3, .requirements h3 {
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: top center;
+  height: 63px;
 }
 
-.wrapper {
-  display: block;
-  margin-top: -120px;
+.explanation h3 {
+  background-image: url("blueYellow5.svg");
 }
-.wrapper .design-selection, .wrapper .zen-resources {
-  background: rgba(0, 204, 0, 0.2);
-  border-style: solid;
-  border-color: #808080;
-  border-width: 40px 0 0 40px;
-  padding: 1rem;
+
+.participation h3 {
+  background-image: url("pby5.svg");
 }
-.wrapper .design-archives {
-  background: #EFD488;
-  border-style: solid;
-  border-color: #808080;
-  border-width: 40px 40px 0 0;
-  padding: 1rem;
+
+.benefits h3 {
+  background-image: url("pansy5.svg");
+}
+
+.requirements h3 {
+  background-image: url("forgetMeKnot5.svg");
 }
 
 /*styling for the footer*/
 footer {
   max-width: 100%;
-  height: 80px;
+  height: 100px;
+  text-align: center;
   background: rgba(0, 204, 0, 0.2);
   /*green*/
+  grid-column: 1/13;
   position: relative;
-  bottom: -740px;
+  bottom: -420px;
   display: flex;
   align-items: center;
   border-style: solid;
-  border-top-color: #808080;
+  border-top-color: #d4d1c4;
   border-width: 40px 0 0 0;
   background-color: #bb516c;
 }
 
 footer a {
-  padding: 0.2rem;
+  padding: 25px;
+  display: flex;
+  align-items: center;
   color: white;
-  flex: 1;
-  text-align: center;
 }
 
-@media only screen and (min-width: 38rem) {
-  .intro header {
-    padding-top: 7.5rem;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    padding-bottom: 1rem;
-  }
-  .intro header h1 {
-    font-size: 2rem;
-  }
-  .intro header h2 {
-    font-size: 1.5rem;
+footer a:first-child {
+  padding-left: 15%;
+}
+
+footer a::before {
+  content: "";
+  width: 2em;
+  height: 2em;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url("forgetMeKnot1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 20px;
+}
+
+h1 {
+  font-family: arial, serif;
+  font-size: 45px;
+  position: relative;
+  top: 95px;
+}
+
+/*fifth grid for section below the sidebar class*/
+.wrapper {
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: 20% 20% 5% 20% 20%;
+  grid-template-rows: 100px 100px 20px 100px 100px;
+  margin-left: 10%;
+  margin-top: -140px;
+}
+
+/*styling individual sections in the sidebar section*/
+.design-selection {
+  grid-area: 1/1/6/4;
+  background: #EFD488;
+  /*tan*/
+  border-style: solid;
+  border-right-color: #d4d1c4;
+  border-width: 0 40px 0 0;
+}
+
+.design-selection h3, .design-archives h3, .zen-resources h3 {
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: right top;
+  height: 63px;
+}
+
+.design-selection h3 {
+  background-image: url("pinkyellow1.svg");
+}
+
+.design-archives {
+  grid-area: 1/4/3/6;
+  background: rgba(0, 204, 0, 0.2);
+  /*green*/
+  border-style: solid;
+  border-bottom-color: #d4d1c4;
+  border-width: 0 0 40px 0;
+}
+
+.design-archives h3 {
+  background-image: url("PinkYellowBlue1.svg");
+}
+
+.zen-resources {
+  background: #EFD488;
+  /*tan*/
+  border-style: solid;
+  border-bottom-color: #d4d1c4;
+  border-width: 0 40px 40px 0;
+  grid-area: 3/4/6/6;
+}
+
+.zen-resources h3 {
+  background-image: url("sunflower1.svg");
+}
+
+.design-selection, .design-archives, .zen-resources {
+  padding: 15px 5%;
+}
+
+/*styling changes for the mobile device*/
+@media (max-width: 959px) {
+  .explanation h3 {
+    background-position: right center;
   }
 
-  .extra1, .extra1::before, .extra1::after {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 250px;
-    left: 50%;
-    top: 100vh;
-    transform-origin: bottom center;
-    background: #000;
-    border-radius: 100% 100%;
-    background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 70%);
-    z-index: -1;
-    transition: transform 3s ease-in-out;
+  .zen-resources {
+    border-color: #d4d1c4;
+    border-width: 0 0 0 40px;
   }
-
-  .extra1 {
-    transform: translate(-50%, -100vh) rotate(-90deg);
-  }
-
-  .extra1::before {
-    transform: translate(-50%, -100vh) rotate(22.5deg);
-  }
-
-  .extra1::after {
-    transform: translate(-50%, -100vh) rotate(45deg);
-  }
-
-  .extra2, .extra2::before, .extra2::after {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 250px;
-    left: 50%;
-    top: 100vh;
-    transform-origin: bottom center;
-    background: #000;
-    border-radius: 100% 100%;
-    background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 70%);
-    z-index: -1;
-    transition: transform 3s ease-in-out;
-  }
-
-  .extra2 {
-    transform: translate(-50%, -100vh) rotate(-22.5deg);
-  }
-
-  .extra2::before {
-    transform: translate(-50%, -100vh) rotate(22.5deg);
-  }
-
-  .extra2::after {
-    transform: translate(-50%, -100vh) rotate(45deg);
-  }
-
-  .extra3, .extra3::before, .extra3::after {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 250px;
-    left: 50%;
-    top: 100vh;
-    transform-origin: bottom center;
-    background: #000;
-    border-radius: 100% 100%;
-    background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 70%);
-    z-index: -1;
-    transition: transform 3s ease-in-out;
-  }
-
-  .extra3 {
-    transform: translate(-50%, -100vh) rotate(45deg);
-  }
-
-  .extra3::before {
-    transform: translate(-50%, -100vh) rotate(22.5deg);
-  }
-
-  .extra3::after {
-    transform: translate(-50%, -100vh) rotate(45deg);
-  }
-
+}
+/*styling changes for the desk top*/
+@media (min-width: 960px) {
   .page-wrapper {
-    padding-left: 10%;
-    padding-right: 10%;
+    grid-template-rows: 35% 45%;
+  }
+
+  .intro {
+    grid-column: 1/13;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  header {
+    grid-column: 1/13;
+  }
+
+  .summary {
+    grid-column: 1/13;
+  }
+
+  .preamble {
+    margin: 0 -1% 0 2%;
+    grid-column: 1/10;
+  }
+
+  .participation, .requirements, .explanation, .benefits {
+    grid-column: 1/10;
+  }
+
+  .main {
+    grid-column: 1/13;
+    grid-row: 2/3;
+  }
+
+  .sidebar {
+    grid-column: 10/13;
+    grid-row: 2/4;
+  }
+
+  footer {
+    width: 120%;
+    grid-column: 1/13;
+    bottom: -1px;
+    margin-left: -30px;
+  }
+
+  footer a:first-child {
+    padding-left: 35%;
   }
 
   .wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 1fr;
-  }
-  .wrapper .design-selection {
-    grid-column: 1/7;
-    grid-row: 1/3;
-    border-width: 40px 40px 0 0;
-    padding: 1rem;
-  }
-  .wrapper .design-archives {
-    grid-column: 7/13;
-    grid-row: 1/2;
-    border-width: 40px 0 0 0;
-  }
-  .wrapper .zen-resources {
-    grid-column: 7/13;
-    grid-row: 2/3;
-    border-width: 0 0 0 0;
+    grid-column: 1/6;
+    grid-template-columns: 100%;
+    grid-template-rows: 448px 200px 300px;
+    margin-top: -90px;
+    margin-left: -18px;
   }
 
-  footer {
-    bottom: -450px;
+  .design-selection {
+    grid-area: 1/1/3/2;
+    border-color: #d4d1c4;
+    border-width: 40px 40px 0 40px;
   }
 
-  h3 {
-    display: flex;
-    align-items: center;
-  }
-
-  h3:before {
-    content: "";
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    background-size: contain;
-    margin-right: 1rem;
-  }
-
-  .preamble h3:before {
-    background-image: url("svg/blueYellow1.svg");
-  }
-
-  .explanation h3:before {
-    background-image: url("svg/forgetMeKnot1.svg");
-  }
-
-  .participation h3:before {
-    background-image: url("svg/lotus1.svg");
-  }
-
-  .benefits h3:before {
-    background-image: url("svg/pansy1.svg");
-  }
-
-  .requeriments h3:before {
-    background-image: url("svg/pby1.svg");
-  }
-
-  .design-selection h3:before {
-    background-image: url("svg/pansy1.svg");
-  }
-
-  .design-archives h3:before {
-    background-image: url("svg/forgetMeKnot1.svg");
-  }
-
-  .zen-resources h3:before {
-    background-image: url("svg/lotus1.svg");
-  }
-
-  footer a::before {
-    content: "";
-    width: 50px;
-    height: 50px;
-    position: relative;
-    display: inline-block;
-    top: 0px;
-    left: 0px;
-    background-image: url("svg/blueYellow1.svg");
-    background-size: contain;
-  }
-
-  footer a {
-    display: flex;
-    align-items: center;
-  }
-}
-@media only screen and (min-width: 64rem) {
-  .extra1, .extra1::before, .extra1::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 300px;
-    left: 50%;
-    top: 100vh;
-    transform-origin: bottom center;
-    background: #000;
-    border-radius: 100% 100%;
-    background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 70%);
+  .design-archives {
+    grid-area: 3/1/4/2;
+    border-top-color: #d4d1c4;
+    border-bottom-color: #d4d1c4;
+    border-color: #d4d1c4;
+    border-width: 40px 40px 40px 40px;
     z-index: -1;
-    transition: transform 3s ease-in-out;
   }
 
-  .extra1 {
-    transform: translate(-50%, -100vh) rotate(-90deg);
+  .zen-resources {
+    grid-area: 4/1/5/2;
+    border-color: #d4d1c4;
+    border-width: 0 40px 40px 40px;
   }
 
-  .extra1::before {
-    transform: translate(-50%, -100vh) rotate(22.5deg);
-  }
-
-  .extra1::after {
-    transform: translate(-50%, -100vh) rotate(45deg);
-  }
-
-  .extra2, .extra2::before, .extra2::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 300px;
-    left: 50%;
-    top: 100vh;
-    transform-origin: bottom center;
-    background: #000;
-    border-radius: 100% 100%;
-    background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 70%);
-    z-index: -1;
-    transition: transform 3s ease-in-out;
-  }
-
-  .extra2 {
-    transform: translate(-50%, -100vh) rotate(-22.5deg);
-  }
-
-  .extra2::before {
-    transform: translate(-50%, -100vh) rotate(22.5deg);
-  }
-
-  .extra2::after {
-    transform: translate(-50%, -100vh) rotate(45deg);
-  }
-
-  .extra3, .extra3::before, .extra3::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 300px;
-    left: 50%;
-    top: 100vh;
-    transform-origin: bottom center;
-    background: #000;
-    border-radius: 100% 100%;
-    background: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3, rgba(187, 81, 108, 0.6), rgba(255, 203, 12, 0.8), rgba(255, 255, 0, 0.9) 70%);
-    z-index: -1;
-    transition: transform 3s ease-in-out;
-  }
-
-  .extra3 {
-    transform: translate(-50%, -100vh) rotate(45deg);
-  }
-
-  .extra3::before {
-    transform: translate(-50%, -100vh) rotate(22.5deg);
-  }
-
-  .extra3::after {
-    transform: translate(-50%, -100vh) rotate(45deg);
-  }
-
-  .intro header {
-    padding-top: 9rem;
-    padding-bottom: 1rem;
-  }
-  .intro header h1 {
-    font-size: 2.5rem;
-  }
-  .intro header h2 {
-    font-size: 2rem;
-  }
-
-  footer {
-    bottom: -460px;
-  }
-
-  h3 {
-    font-size: 1.5rem;
+  ul li {
+    padding-bottom: 4%;
   }
 }
 
