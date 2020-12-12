@@ -1,60 +1,52 @@
 @media only screen and (min-width: 38rem) {
-
-    .intro {
-        header {
+    .intro{
+        header{
             padding-top: 7.5rem;
             grid-template-columns: 0.5fr 1fr 0.5fr;
-            h1 {
+            h1{
                 font-size: 2rem;
             }
-            h2 {
+            h2{
                 font-size: 1.5rem;
             }
             padding-bottom: 1rem;
         }
     }
-
     @include sun(80px,250px);
-
-    .page-wrapper {
+    .page-wrapper{
         padding-left: 10%;
         padding-right: 10%;
     }
-
-    .wrapper {
+    .wrapper{
         display: grid;
         grid-template-columns: $grid-12;
         grid-template-rows: 1fr 1fr;
-
-        .design-selection {
+        .design-selection{
             grid-column: 1/7;
             grid-row: 1/3;
             border-width: 40px  40px 0 0;
             padding: 1rem;
         }
-        .design-archives {
+        .design-archives{
             grid-column: 7/13;
             grid-row: 1/2;
             border-width: 40px  0 0 0;
         }
-        .zen-resources {
+        .zen-resources{
             grid-column: 7/13;
             grid-row: 2/3;
             border-width: 0 0 0 0;
         }
     }
-
     //Footer
-    footer {
+    footer{
         bottom:-450px;
     }
-
-    h3 {
+    h3{
         display: flex;
         align-items: center;
     }
-
-    h3:before {
+    h3:before{
         content: "";
         width: 50px;
         height: 50px;
@@ -65,18 +57,15 @@
         background-size: contain;
         margin-right: 1rem;
     }
-
     //change the flower
     //#1
     .preamble h3:before{
         background-image: url("svg/blueYellow1.svg");
     }
-
     //#2
     .explanation h3:before{
         background-image: url("svg/forgetMeKnot1.svg");
     }
-
     //#3
     .participation h3:before{
         background-image: url("svg/lotus1.svg");
@@ -85,24 +74,20 @@
     .benefits h3:before{
         background-image: url("svg/pansy1.svg");
     }
-
     //#5
     .requeriments h3:before{
         background-image: url("svg/pby1.svg");
     }
-
     .design-selection h3:before{
         background-image: url("svg/pansy1.svg");
     }
-    .design-archives h3:before {
+    .design-archives h3:before{
         background-image: url("svg/forgetMeKnot1.svg");
     }
-
-    .zen-resources h3:before {
+    .zen-resources h3:before{
         background-image: url("svg/lotus1.svg");
     }
-
-    footer a::before {
+    footer a::before{
         content: "";
         width: 50px;
         height: 50px;
@@ -113,8 +98,7 @@
         background-image: url("svg/blueYellow1.svg");
         background-size: contain;
     }
-
-    footer a {
+    footer a{
         display: flex;
         align-items: center;
     }
