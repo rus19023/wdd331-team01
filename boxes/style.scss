@@ -1,0 +1,237 @@
+@import "partials/layout";
+@import "partials/variables";
+
+* {
+    padding: .5rem;         
+    margin: .5rem;
+}
+
+*, *::before, *::after { 
+    box-sizing: border-box;
+}
+
+body, html {
+    height:100%;
+    width:100%;
+    margin: 0;
+}
+
+// "lotus" sun
+$colorb: linear-gradient(to bottom,
+rgba(134, 160, 255, 0.8), rgba(172, 9, 75, 0.7), 
+ rgba(187, 81, 108, 0.6),
+  rgba(255, 203, 12, .8), rgba(255, 255, 0, .9) 70%);
+$leftv: 50%;
+$topv: 100vh;
+
+
+
+ $a: -90;
+
+@mixin sun($widthValue, $heightValue) {
+    @for $i from 1 to 4 {
+        .extra#{$i}, .extra#{$i}::before, .extra#{$i}::after{
+            @include template($widthValue,$heightValue);
+        }
+
+        .extra#{$i} {
+            transform: translate(-$leftv, -$topv) rotate(#{$a}deg);
+            -webkit-transform: translate(-$leftv, -$topv) rotate(#{$a}deg);
+        }
+
+        .extra#{$i}::before {
+            transform: translate(-$leftv, -$topv) rotate(22.5deg);
+            -webkit-transform: translate(-$leftv, -$topv) rotate(22.5deg);
+        }
+
+        .extra#{$i}::after {
+            transform: translate(-$leftv, -$topv) rotate(45deg);
+            -webkit-transform: translate(-$leftv, -$topv) rotate(45deg);
+        }
+
+        $a: $a + 67.5;
+    }
+}
+
+$svg-url: url("./svg/greyCloud.svg");
+
+@mixin cloud {
+    //content: '';
+    position: absolute;
+    background-image: $svg-url;
+    background-size: 100px, 100px;
+    background-position: top left, 0 0;
+    background-repeat: no-repeat, repeat;
+    width: 300px;
+    height: 200px;
+    z-index: -10;
+    -webkit-transition: transform 10s linear;
+}
+
+a:visited:before {
+    content:  "\2713 ";
+} 
+
+body {
+    //the sun
+    @include sun(100px, 300px);
+    //cloud1
+    @include cloud;
+}
+
+// clouds
+.extra4 {
+    @include cloud;
+}
+
+footer { font-size: 10px; }
+
+#design-selection { font-size: 12px; }
+
+#css-zen-garden { 
+    display: grid;
+    grid-area: "css-zen-garden "; 
+    border: 2px solid purple; 
+} 
+#css-zen-garden:before { content: " id = css-zen-garden "; }
+
+.page-wrapper { grid-area: "page-wrapper "; border: 2px solid purple; } 
+.page-wrapper:before { content: " class = page-wrapper "; }
+
+#zen-intro { grid-area: "intro "; border: 2px solid purple; } 
+#zen-intro:before { content: " id = zen-intro, class = intro  "; }
+
+header { grid-area: "header "; border: 2px solid purple; } 
+header:before { content: "tag = header "; }
+
+#zen-summary { grid-area: "zen-summary "; border: 2px solid purple; } 
+#zen-summary:before { content: " id = zen-summary, class = summary "; }
+
+#zen-supporting { grid-area: "zen-supporting "; border: 2px solid purple; } 
+#zen-supporting:before { content: " id = zen-supporting, class = summary, class = main "; }
+
+#zen-preamble { grid-area: "zen-preamble "; border: 2px solid purple; } 
+#zen-preamble:before { content: " id = zen-preamble class = preamble  "; }
+
+#zen-explanation { grid-area: "zen-explanation "; border: 2px solid purple; } 
+#zen-explanation:before { content: " id = zen-explanation, class = explanation "; }
+
+#zen-participation { grid-area: "zen-participation "; border: 2px solid purple; } 
+#zen-participation:before { content: " id = zen-participation, class = participation  "; }
+
+#zen-benefits { grid-area: "zen-benefits "; border: 2px solid purple; } 
+#zen-benefits:before { content: " id = zen-benefits, class = benefits  "; }
+
+#zen-requirements { grid-area: "zen-requirements "; border: 2px solid purple; } 
+#zen-requirements:before { content: " id = zen-requirements, class = requirements  "; }
+
+footer { grid-area: "footer "; border: 2px solid purple; } 
+footer:before { content: "tag = footer "; }
+
+.content-info { grid-area: "content-info "; border: 2px solid purple; } 
+.content-info :before { content: " class = content-info  "; }
+
+.zen-validate-css { grid-area: "zen-validate-css "; border: 2px solid purple; } 
+.zen-validate-css:before { content: " class = zen-validate-css  "; }
+
+.zen-validate-html { grid-area: "zen-validate-html "; border: 2px solid purple; } 
+.zen-validate-html:before { content: " class = zen-validate-html  "; }
+
+.zen-accessibility { grid-area: "zen-accessibility "; border: 2px solid purple; } 
+.zen-accessibility:before { content: " class = zen-accessibility  "; }
+
+.zen-license { grid-area: "zen-license "; border: 2px solid purple; } 
+.zen-license:before { content: " class = zen-license "; }
+
+.extra1 { grid-area: "extra1 "; /*border: 2px solid purple;*/ } 
+.extra1:before { content: " class = extra1  "; }
+
+.extra2 { grid-area: "extra2 "; /*border: 2px solid purple;*/  } 
+.extra2:before { content: " class = extra2  "; }
+
+.extra3 { grid-area: "extra3 "; /*border: 2px solid purple;*/  } 
+.extra3:before { content: " class = extra3 "; }
+
+.extra4 { grid-area: "extra4 "; border: 2px solid purple; } 
+.extra4:before { content: " class = extra4 "; }
+
+.extra5 { grid-area: "extra5 "; border: 2px solid purple; } 
+.extra5:before { content: " class = extra5 "; }
+
+.extra6 { grid-area: "extra6 "; border: 2px solid purple; } 
+.extra6:before { content: " class = extra6 "; }
+
+.zen-github { grid-area: "zen-github "; border: 2px solid purple; } 
+.zen-github:before { content: " class = zen-github "; }
+
+.sidebar { grid-area: "sidebar "; border: 2px solid purple; } 
+.sidebar:before { content: " class = sidebar "; }
+
+.wrapper { grid-area: "wrapper "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+.design-selection { grid-area: "design-selection "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+.select { grid-area: "select "; border: 2px solid purple; } 
+.select:before { content: " class = select "; }
+
+#design-selection { grid-area: "design-selection-id "; border: 2px solid purple; } 
+#design-selection:before { content: " id = design-selection "; }
+
+.designer-name { grid-area: "designer-name "; border: 2px solid purple; } 
+.designer-name:before { content: " class = designer-name "; }
+
+.design-name { grid-area: "design-name "; border: 2px solid purple; } 
+.design-name:before { content: " class = design-name "; }
+
+.design-archives { grid-area: "design-archives "; border: 2px solid purple; } 
+.design-archives:before { content: " class = design-archives "; }
+
+#design-archives { grid-area: "design-archives-id "; border: 2px solid purple; } 
+#design-archives:before { content: " id = design-archives "; }
+
+.archives { grid-area: "archives "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+.next { grid-area: "next "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+.indicator { grid-area: "indicator "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+.viewall { grid-area: "viewall "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+.zen-resources { grid-area: "zen-resources "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+#zen-resources { grid-area: "zen-resources-id "; border: 2px solid purple; } 
+#garden:before { content: " id = garden "; }
+
+.css-resources { grid-area: "css-resources "; border: 2px solid purple; }  
+.wrapper:before { content: " class = wrapper "; }
+ 
+.zen-faq { grid-area: "zen-faq "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+.zen-submit { grid-area: "zen-submit "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+.zen-translations { grid-area: "zen-translations "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+.resources { grid-area: "resources "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+.view-css { grid-area: "view-css "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+.extra6 { grid-area: "extra6 "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+.extra6 { grid-area: "extra6 "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }
+
+.extra6 { grid-area: "extra6 "; border: 2px solid purple; } 
+.wrapper:before { content: " class = wrapper "; }

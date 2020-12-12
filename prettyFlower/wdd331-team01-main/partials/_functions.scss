@@ -1,9 +1,0 @@
-@function get-hex-code($color-string) {
-    @if type-of($color-string) == 'color' and str-index(#{color-$string}, '#') == 1 {
-        $code: str-slice(ie-hex-str($color-string), 4);
-        $color-string: unquote('#{$code}');
-
-        @return '#' + $color-string;
-    }
-    @return $color-string;
-}

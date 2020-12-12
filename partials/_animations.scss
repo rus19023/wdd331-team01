@@ -47,8 +47,8 @@
 }
 
 @keyframes pink-font {
-    from { color: white; }
-    to { color: $raspberry; }
+    from { color: $pink-light; }
+    to { color: mix($raspberry, black, 70%); }
 }
 
 @keyframes h1-font {
@@ -60,3 +60,12 @@
     from { color: transparent; }
     to { color: $blue; }
 }
+
+@keyframes drift {
+    0% {left: 0px;}
+    49% {left: 100%; opacity: 1;}
+    50% {left: 100%; opacity: 0;}
+    51% {left: -100%; opacity: 0;} 
+    52% {left: -100%; opacity: 1;} 
+    100% {left: 0px;} 
+  }

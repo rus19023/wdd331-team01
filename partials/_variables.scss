@@ -1,21 +1,31 @@
-// VARIABLES
-$grid-12: repeat(12,1fr);
-$font-text: "Poppins", Georgia, sans-serif;
-$font-alt: "Roboto Slab", serif;
-$font-header: "Lemonada", cursive;  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap');
+$grid-12:repeat(12, 1fr);
 
 // "lotus" sun
-$colorb: linear-gradient(to bottom, rgba(134, 160, 255, 0.8), #ac094bb3,  rgba(187, 81, 108, 0.6), rgba(255, 203, 12, .8), rgba(255, 255, 0, .9) 80%);
+$a: -90;
+
+$colorb: linear-gradient(to bottom,
+ rgba(134, 160, 255, 0.8), rgba(172, 9, 75, 0.7), 
+  rgba(187, 81, 108, 0.6),
+   rgba(255, 203, 12, .8), rgba(255, 255, 0, .9) 70%);
+
 $leftv: 50%;
 $topv: 100vh;
 
+//Fonts
+$font-text: "Poppins", Georgia, sans-serif;
+$font-header: "Roboto Slab", serif;
+$font-alt: "Lemonada", cursive;  
+
+//Colors
 // Colors - Dark mode
 $tan: #8b4513;
-$brown: #532c10;
-$green: #09ac6a;
-$blue: #251182;
-$grey: #808080;/*color of path*/
+$grey: #808080;
 $pink: #bb516c;
+$yellow: #ffcb0c;
+$blue: #251182;
+$green:#09ac6a;
+$brown: #532c10;
 $raspberry: #ac094b;
 
 // Colors - Garden of Light mode
@@ -24,8 +34,7 @@ $brown-light: mix($brown, white, 25%);
 $green-light: mix($green, white, 25%);
 $green-comp: complement($green);
 $green-comp-light: mix($green-comp, white, 30%);
-$yellow: rgb(255, 203, 12);
 $yellow-light: mix($yellow, white, 20%);
-$blue-light: mix(complement($yellow), white, 50%);
+$blue-light: mix(complement($yellow), white, 25%);
 $pink-light: mix($pink, white, 25%);
 $grey-light: mix($grey, white, 25%);
