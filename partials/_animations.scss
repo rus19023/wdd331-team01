@@ -12,51 +12,41 @@
 
 @keyframes let-there-be-light {
     // make dark sky turn skyblue, works in tandem with sunrise transition of Lotus sun
-    0% { background: $blue; }
-    100% { background: #C3E4D7; }
+    from { background: $blue; color: white;}
+    to { background: $blue-light; color: $blue-dark; }
 }
 
 @keyframes grass {
-    from { background: $green; }
-    to { background: $green-light; }
+    from { background: $green; color: white;}
+    to { background: $green-light; color: $green-dark; }
 }
 
 @keyframes dirt {
-    from { background: $brown; }
-    to { background: $brown-light; }
+    from { background: $tan; color: white; }
+    to { background: $tan-light; color: $brown-dark; }
 }
 
-@keyframes tan {
-    from { background: $tan; }
-    to { background: $tan-light; }
+@keyframes pinky {
+    from { background: $raspberry; color: white; }
+    to { background: $pink-light; color: $raspberry-dark; }
 }
 
-@keyframes pink {
-    from { background: $pink; }
-    to { background: $pink-light; }
-}
-
-@keyframes dirt-font {
-    from { color: $brown-light; }
-    to { color: mix($brown, black, 70%); }
-}
-
-@keyframes grass-font {
-    from { color: $green-light; }
-    to { color: mix($green, black, 70%); }
-}
-
-@keyframes pink-font {
-    from { color: white; }
-    to { color: $raspberry; }
-}
-
-@keyframes h1-font {
+@keyframes heading-font {
     from { color: transparent; }
     to { color: white; }
 }
 
-@keyframes h2-font {
+@keyframes blue-font {
     from { color: transparent; }
-    to { color: $blue; }
+    to { color: $blue-dark; }
+}
+
+@keyframes change-links {
+    from { color: $blue; }
+    to { color: $pink-light; }
+}
+
+@keyframes change-links2 {
+    from { color: $raspberry-dark; }
+    to { color: $pink-light; }
 }

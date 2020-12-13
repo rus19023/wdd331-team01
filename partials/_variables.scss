@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@400;500;600;700;900&display=swap');
-$grid-12:repeat(12,1fr);
+
+$grid-12: repeat(12, 1fr);
 
 // "lotus" sun
 
 $colorb: linear-gradient(to bottom,
- rgba(134, 160, 255, 0.8), #ac094bb3, 
+ rgba(134, 160, 255, 0.8), rgba(172, 9, 75, 0.702), 
   rgba(187, 81, 108, 0.6),
    rgba(255, 203, 12, .8), rgba(255, 255, 0, .9) 70%);
 
@@ -19,12 +20,12 @@ $font-alt: "Lemonada", cursive;
 
 //Colors
 // Colors - Dark mode
-$tan: #EFD488;
+$tan: #8b4513;
 $grey: #808080;
 $pink: #bb516c;
 $yellow: #ffcb0c;
 $blue: #251182;
-$green: rgb(0,204,0,.2);
+$green: #09ac6a;
 $brown: #532c10;
 
 $raspberry: #ac094b;
@@ -37,6 +38,11 @@ $green-comp: complement($green);
 $green-comp-light: mix($green-comp, white, 30%);
 $yellow: rgb(255, 203, 12);
 $yellow-light: mix($yellow, white, 20%);
-$blue-light: mix(complement($yellow), white, 50%);
+$blue-light: mix(complement($yellow), white, 40%);
 $pink-light: mix($pink, white, 25%);
 $grey-light: mix($grey, white, 25%);
+
+$green-dark: mix($green, black, 50%);
+$blue-dark: mix($blue, black, 70%);
+$brown-dark: mix($brown, black, 70%);
+$raspberry-dark: mix($raspberry, black, 70%);

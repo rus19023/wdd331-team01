@@ -1,8 +1,146 @@
+
+@import "partials/normalize";
 @import "partials/variables";
 @import "partials/mixins";
-@import "partials/normalize";
-@import "partials/fonts";
 @import "partials/animations";
-@import "partials/small";
+@import "partials/layout";
+@import "partials/fonts";
 @import "partials/medium";
 @import "partials/large";
+
+//the sun
+@include sun(40px, 130px);
+
+//page wrapper
+body { 
+    margin: 0;
+    box-sizing: border-box;
+    background: $blue;
+    animation: let-there-be-light 3s forwards linear;
+}
+
+a {
+    color: $blue;
+    font-family: $font-text;
+    font-weight: bold;
+}
+a:visited { color: $green; }
+a:hover { color: black; font-weight: bolder;}
+
+//section intro
+.intro {
+
+    header {
+        padding-top: 3.5rem;
+        padding-bottom: 0px;
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            grid-column: 2/3;
+        }
+
+        h2 {
+            padding: 2em;
+            color: white;
+            font-size: 1.2rem;
+            grid-column: 1/4;
+        }        
+    }
+
+    .summary {
+        color: transparent;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+        animation: blue-font 3s linear forwards;
+    }
+}
+
+/*borders of Path*/
+.preamble,.participation, .requirements {
+	background: $tan;	
+	border-style: solid;
+	border-color: $grey;
+    border-width: 40px 40px 0 0;
+    padding: 1rem;
+    animation: dirt 3s linear forwards;
+}
+
+.explanation, .benefits {
+    background: $green;	
+	border-style: solid;
+	border-color: $grey;
+    border-width: 40px  0 0 40px;
+    padding: 1rem;
+    animation: grass 3s linear forwards;
+}
+
+//main
+.main, .supporting {
+    //display: block;
+    color: $blue;
+    margin:0;
+}
+
+//sidebar
+.wrapper, .preamble {
+    margin-top: -320px;
+    margin: 0;
+
+     .design-selection, .zen-resources {
+        margin: 0;	
+        border-style: solid;
+        border-color: $grey;
+        border-width: 40px 0 0 40px;
+        padding: 1rem;
+    }
+
+    .zen-resources { padding-bottom: 2rem;}
+
+    .design-selection { animation: pinky 3s linear forwards; }
+    .zen-resources { animation: grass 3s linear forwards; }
+
+    .design-archives {
+        margin: 0;
+        background: $tan;	
+	    border-style: solid;
+        border-color: $grey;
+        border-width: 40px 40px 0 0;
+        padding: 1rem;
+        animation: dirt 3s linear forwards;
+    }
+
+    a.design-archives {
+        animation: change-links 3s linear forwards ;
+    }
+    
+    a.design-name {
+        animation: change-links2 3s linear forwards reverse ;
+    }
+}
+
+/*styling for the footer*/
+footer {
+	max-width: 100%;
+	height: 80px;
+	background: $raspberry;
+	position: relative;
+	bottom: -655px;
+	display: flex;
+	align-items: center;
+    justify-content: space-evenly;
+	border-style: solid;
+	border-top-color: $grey;
+	border-width: 40px 0 0 0;
+	background-color: $raspberry;
+}
+footer a {
+	padding: 0.2rem;
+    color: white;
+    flex: 1;
+    text-align: center;
+}
