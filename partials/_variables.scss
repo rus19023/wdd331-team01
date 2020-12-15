@@ -36,7 +36,7 @@ $brown-light: mix($brown, white, 25%);
 $green-light: mix($green, white, 25%);
 $green-comp: complement($green);
 $green-comp-light: mix($green-comp, white, 30%);
-$yellow: rgb(255, 203, 12);
+$yellow: #ffcb0c;
 $yellow-light: mix($yellow, white, 20%);
 $blue-light: mix(complement($yellow), white, 40%);
 $pink-light: mix($pink, white, 25%);
@@ -44,5 +44,5 @@ $grey-light: mix($grey, white, 25%);
 
 $green-dark: mix($green, black, 50%);
 $blue-dark: mix($blue, black, 70%);
-$brown-dark: mix($brown, black, 70%);
-$raspberry-dark: mix($raspberry, black, 70%);
+$brown-dark: mix($brown, black, 70%);  
+$raspberry-dark: mix($raspberry, black, 70%);  // #780635

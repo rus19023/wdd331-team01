@@ -12,7 +12,7 @@
  html {
     line-height: 1.15; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */
-    -webkit-text-size-adjust: 100%; /* 2 */
+    //-webkit-text-size-adjust: 100%; /* 2 *** GIVES "INVALID PROPERTY VALUE in inspector ***  */
   }
   
   /* Sections
@@ -125,9 +125,7 @@
     font-weight: inherit;
   }
   
-  /**
-   * Add the correct font weight in Chrome, Edge, and Safari.
-   */
+  /**   * Add the correct font weight in Chrome, Edge, and Safari.   */
   
   b,
   strong {

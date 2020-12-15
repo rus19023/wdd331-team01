@@ -11,14 +11,11 @@
 }
 
 @keyframes let-there-be-light {
-    // make dark sky turn skyblue, works in tandem with sunrise transition of Lotus sun
-    from { background: $blue; color: white;}
-    to { background: $blue-light; color: $blue-dark; }
+    @include light($blue, white, $blue-light, $blue-dark);
 }
 
 @keyframes grass {
-    from { background: $green; color: white;}
-    to { background: $green-light; color: $green-dark; }
+    @include light($green, $green-light, $green-light, $green-dark);
 }
 
 @keyframes dirt {

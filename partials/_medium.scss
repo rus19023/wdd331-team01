@@ -1,8 +1,6 @@
 @media only screen and (min-width: 38rem) {
     .intro {
         
-        @include sun(100px, 300px);
-        
         header {
             padding-top: 7.5rem;
             grid-template-columns: 0.5fr 1fr 0.5fr;
@@ -28,11 +26,9 @@
     .wrapper {
         margin: 0;
         display: grid;
-        grid-template-columns: 6fr 6fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-        "selection resources" 
-        "selection archives" ;
+        //grid-template-areas: "selection resources" "... archives" ;
 
         .design-selection {
             grid-column: 1/7;
@@ -56,7 +52,7 @@
 
     //Footer
     footer {
-        bottom:-450px;
+        bottom: -410px;
     }
     h3 {
         display: flex;

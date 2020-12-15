@@ -1,156 +1,114 @@
- 
+ // grid areas
+
   footer {
+    grid-area: "footer";
     //margin-top: -120px;
     font-size: 10px;
   }
-  
-  #design-selection {
-    font-size: 15px;
-  }
-  
-  #css-zen-garden {
-    grid-area: "css-zen-garden"; 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "page-wrapper";
-    margin: 0;
-  }
-  
-  .page-wrapper {
-    grid-area: "page-wrapper";
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "intro" 
-    "main" 
-    "sidebar" 
-    "footer"; 
-  }
-  
-  #zen-intro {
-    grid-area: "intro";
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "header" 
-    "summary" 
-    "preamble"; 
-  }
-  
-  header {
-    grid-area: "header";
-    display: grid;
-    grid-template-columns: 1.2fr 1fr 1.2fr; 
-  }
-  
-  #zen-summary {
+
+  .summary {
     grid-area: "summary"; 
   }
   
-  #zen-supporting {
-    margin-top: -120px;
-    grid-area: "main"; 
+  .preamble {
+    grid-area: "preamble";
+    display: grid;
+    grid-template-columns: 1fr; 
   }
   
-  #zen-preamble {
-    grid-area: "preamble"; 
-  }
-  
-  #zen-explanation {
+  .explanation {
     grid-area: "explanation"; 
   }
   
-  #zen-participation {
+  .participation {
     grid-area: "participation"; 
   }
     
-  #zen-requirements {
-    grid-area: "zen-requirements"; 
+  .requirements {
+    grid-area: "requirements"; 
   }
+    
+  .benefits {
+    grid-area: "benefits"; 
+  }
+
+.zen-resources { grid-area: resources; }
+
+.design-archives { grid-area: archives; }
+
+.extra4 {
+grid-area: "cloud1";
+background-image: url("./svg/greyCloud.svg");
+background-size: contain; 
+}
+
+.extra4::before {
+content: "";
+}
+
+.extra5 {
+grid-area: "cloud2"; 
+}
+
+.extra6 {
+grid-area: "cloud3"; 
+}
+
+
+// grids  
+
+.page-wrapper {
+grid-area: "page-wrapper";
+display: grid;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"intro" 
+"main" 
+"sidebar" 
+"footer"; 
+}
+
+.intro {
+grid-area: "intro";
+display: grid;
+grid-template-columns: 1fr;
+grid-template-areas:
+"summary" 
+"preamble"
+"header"; 
+}
+
+header {
+grid-area: "header";
+grid-template-columns: 1.2fr 1fr 1.2fr;
+grid-template-areas:
+"cloud1"
+"cloud2"
+"cloud3" ;
+}
+
+.main {
+//margin-top: -120px;
+grid-area: "main";
+grid-template-columns: 1fr;
+grid-template-areas:
+"explanation"
+"participation"
+"benefits"
+"requirements"; 
+}
   
-  footer {
-    grid-area: "footer"; 
-  }
-  
-  .content-info {
-    grid-area: "content-info"; 
-  }
-  
-  .zen-validate-css {
-    grid-area: "zen-validate-css"; 
-  }
-  
-  .zen-validate-html {
-    grid-area: "zen-validate-html"; 
-  }
-  
-  .zen-accessibility {
-    grid-area: "zen-accessibility"; 
-  }
-  
-  .zen-license {
-    grid-area: "zen-license"; 
-  }
-  
-  .extra1 {
-    grid-area: "extra1"; 
-  }
-  
-  .extra2 {
-    grid-area: "extra2"; 
-  }
-  
-  .extra3 {
-    grid-area: "extra3"; 
-  }
-  
-  .extra4 {
-    grid-area: "extra4"; 
-  }
-  
-  .extra4::before {
-    content: "";
-    background-image: url("./svg/greyCloud.svg");
-    background-size: contain;
-  }
-  
-  .extra5 {
-    grid-area: "extra5"; 
-  }
-  
-  .extra5:before { 
-     
-    content: " (class = extra5)";
-  }
-  
-  .extra6 {
-    grid-area: "extra6"; 
-  }
-  
-  .extra6:before { 
-     
-    content: " (class = extra6)";
-  }
-  
-  .zen-github {
-    grid-area: "zen-github"; 
-  }
-  
-  .wrapper {
-    grid-area: "sidebar";
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "selection"
-    "resources" 
-    "archives" ;
-  }
-  
-  .select {
-    grid-area: "select"; 
-  }
-  
-  #design-selection {
-    margin-top: -120px;
-    grid-area: "selection"; 
-  }
+.wrapper {
+  grid-area: "sidebar";
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "selection"
+  "resources" 
+  "archives" ;
+}
+
+.design-selection {
+  font-size: 15px;
+  //margin-top: -120px;
+  grid-area: "selection"; 
+}
